@@ -1,1 +1,1 @@
-# student-management
+this is an CMS to manage students.

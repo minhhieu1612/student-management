@@ -27,8 +27,16 @@ Route::prefix('hosohocsinh')->group(function () {
 
 Route::prefix('lophoc')->group(function () {
     Route::get('/', 'LophocController@index')->name('lophocs.index');
-    Route::post('/', 'LophocController@store');
+    Route::post('/create', 'LophocController@store1');
+    Route::post('/add', 'LophocController@store2');
     Route::get('/create', 'LophocController@create');
-    Route::get('/delete', 'LophocController@delete');
-    Route::delete('/', 'LophocController@deleted');
+    Route::get('/add', 'LophocController@add');
+});
+
+Route::prefix('monhoc')->group(function () {
+    Route::get('/', 'MonhocController@index')->name('monhocs.index');
+    Route::get('/create', 'MonhocController@create');
+    Route::post('/create', 'MonhocController@store');
+    Route::get('/delete', 'MonhocController@delete');
+    Route::delete('/', 'MonhocController@deleted');
 });

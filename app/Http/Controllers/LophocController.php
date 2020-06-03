@@ -13,11 +13,13 @@ class LophocController extends Controller
         $lophocs = Lophoc::all();
         return view('lophocs.index', compact('lophocs'));
     }
+
     public function create()
     {
         return view('lophocs.create');
     }
-    public function store(Request $request)
+
+    public function store1(Request $request)
     {
         $MaHocSinhs = explode(',', $request->input('MaHocSinh'));
         $siso = count($MaHocSinhs);
@@ -34,6 +36,29 @@ class LophocController extends Controller
                 'MaHocSinh' => $ma
             ]);
         }
+        
         return redirect(route('lophocs.index'));
+    }
+
+    public function store2(Request $request)
+    {
+        $MaHocSinhs = explode(',', $request->input('MaHocSinh'));
+        $siso = count($MaHocSinhs);
+        foreach ($MaHocSinhs as $ma) 
+        {
+           DB::table('chitietlophocs')->insert([
+                'MaLopHoc' => $id,
+                'MaHocSinh' => $ma
+            ]);
+        }
+        $old_siso = DB::table('lophocs')->where('MaLopHoc', $request->input('MaLopHoc'))->value('SiSo');
+        DB::table('lophocs')->where('MaLopHoc', $request->input('MaLopHoc'))->update(['SiSo' => $old_siso + $siso]);
+
+        return redirect(route('lophocs.index'));
+    }
+
+    public function add()
+    {
+        return view('lophocs.add');
     }
 }

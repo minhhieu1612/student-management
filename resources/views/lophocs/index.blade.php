@@ -8,6 +8,7 @@
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="table-responsive">
             <p><a href="/lophoc/create"><button>Xep lop moi</button></a></p>
+            <p><a href="/lophoc/add"><button>Xep hoc sinh</button></a></p>
             <table id="DataList" class="table table-bordered table-hover">
                 <thead>
                     <tr>

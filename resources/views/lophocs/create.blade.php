@@ -4,7 +4,7 @@
 
 <div class="page-header"><h4>###</h4></div>
 <div>
-    <form method="POST" action="/lophoc">
+    <form method="POST" action="/lophoc/create">
         @csrf
         <div class="field">
             <label class="label" for="NamHoc">Nam Hoc</label>

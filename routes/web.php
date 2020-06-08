@@ -22,7 +22,7 @@ Route::prefix('hosohocsinh')->group(function () {
     Route::post('/', 'HocsinhController@store');
     Route::get('/create', 'HocsinhController@create');
     Route::get('/delete', 'HocsinhController@delete');
-    Route::delete('/', 'HocsinhController@deleted');
+    Route::post('/', 'HocsinhController@deleted');
 });
 
 Route::prefix('lophoc')->group(function () {

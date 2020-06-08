@@ -21,20 +21,27 @@ class LophocController extends Controller
 
     public function store1(Request $request)
     {
+        $max_siso = DB::table('thamsos')->value('SiSoToiDa');
+        $max_solop = DB::table('thamsos')->value('SoLopToiDa');
         $MaHocSinhs = explode(',', $request->input('MaHocSinh'));
         $siso = count($MaHocSinhs);
-        $id = DB::table('lophocs')->insertGetID([
-            'NamHoc' => $request->input('NamHoc'),
-            'Khoi' => $request->input('Khoi'),
-            'TenLop' => $request->input('TenLop'),
-            'SiSo' => $siso,
-        ]);
-        foreach ($MaHocSinhs as $ma) 
+        $solop = Lophoc::find($request->input('Khoi'))->count();
+        
+        if ($siso <= $max_siso && $solop <= $max_solop)
         {
-           DB::table('chitietlophocs')->insert([
-                'MaLopHoc' => $id,
-                'MaHocSinh' => $ma
+            $id = DB::table('lophocs')->insertGetID([
+                'NamHoc' => $request->input('NamHoc'),
+                'Khoi' => $request->input('Khoi'),
+                'TenLop' => $request->input('TenLop'),
+                'SiSo' => $siso,
             ]);
+            foreach ($MaHocSinhs as $ma) 
+            {
+               DB::table('chitietlophocs')->insert([
+                    'MaLopHoc' => $id,
+                    'MaHocSinh' => $ma
+                ]);
+            }
         }
         
         return redirect(route('lophocs.index'));
@@ -43,16 +50,20 @@ class LophocController extends Controller
     public function store2(Request $request)
     {
         $MaHocSinhs = explode(',', $request->input('MaHocSinh'));
-        $siso = count($MaHocSinhs);
-        foreach ($MaHocSinhs as $ma) 
+        $soma = count($MaHocSinhs);
+        $max_siso = DB::table('thamsos')->value('SiSoToiDa');
+        $siso = Lophoc::find($request->input('MaLopHoc'))->value('SiSo');
+        if ($siso + $soma <= $max_siso)
         {
-           DB::table('chitietlophocs')->insert([
-                'MaLopHoc' => $id,
-                'MaHocSinh' => $ma
-            ]);
+            foreach ($MaHocSinhs as $ma) 
+            {
+                DB::table('chitietlophocs')->insert([
+                    'MaLopHoc' => $request->input('MaLopHoc'),
+                    'MaHocSinh' => $ma
+                ]);
+            }
+            Lophoc::where('MaLopHoc', $request->input('MaLopHoc'))->update(['SiSo' => $siso + $soma]);
         }
-        $old_siso = DB::table('lophocs')->where('MaLopHoc', $request->input('MaLopHoc'))->value('SiSo');
-        DB::table('lophocs')->where('MaLopHoc', $request->input('MaLopHoc'))->update(['SiSo' => $old_siso + $siso]);
 
         return redirect(route('lophocs.index'));
     }

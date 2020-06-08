@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Hocsinh;
+use Illuminate\Support\Facades\DB;
 
 class HocsinhController extends Controller
 {
@@ -16,9 +17,22 @@ class HocsinhController extends Controller
     {
         return view('hocsinhs.create');
     }
-    public function store()
+    public function store(Request $request)
     {
-        Hocsinh::create($this->validateHocsinh());
+        $today = new Datetime(date('m.d.y'));
+        $diff = $today->diff($request->input('NgaySinh'));
+        $min_age = DB::table('thamsos')->value('TuoiToiThieu');
+        if ($diff->y >= $min_age)
+        {
+            DB::table('hocsinhs')->insertOrIgnore([
+                'HoVaTen' => $request->input('HoVaTen'),
+                'NgaySinh' => $request->input('NgaySinh'),
+                'GioiTinh' => $request->input('GioiTinh'),
+                'DiaChi' => $request->input('DiaChi'),
+                'QueQuan' => $request->input('QueQuan')
+            ]);
+        }
+        
         return redirect(route('hocsinhs.index'));
     }
     public function delete()
@@ -28,17 +42,12 @@ class HocsinhController extends Controller
     public function deleted(Request $request)
     {
         $hocsinh = Hocsinh::find($request->MaHocSinh);
-        $hocsinh->delete();
+        $isInClass = DB::table('chitietlophocs')->where('MaHocSinh',$request->MaHocSinh)->get();
+        if ($isInClass == [])
+        {
+            $hocsinh->delete();
+        }
+        
         return redirect(route('hocsinhs.index'));
-    }
-    protected function validateHocsinh()
-    {
-        return request()->validate([
-            'HoVaTen' => 'required',
-            'NgaySinh' => 'required',
-            'GioiTinh' => 'required',
-            'DiaChi' => 'required',
-            'QueQuan' => '',
-        ]);
     }
 }

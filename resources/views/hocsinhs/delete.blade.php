@@ -6,7 +6,6 @@
 <div>
     <form method="POST" action="/hosohocsinh">
         @csrf
-        @method('DELETE')
         <div class="field">
             <label class="label" for="MaHocSinh">Mã Học Sinh</label>
             <input type="text" name="MaHocSinh">

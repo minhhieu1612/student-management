@@ -27,10 +27,10 @@ Route::prefix('hosohocsinh')->group(function () {
 
 Route::prefix('lophoc')->group(function () {
     Route::get('/', 'LophocController@index')->name('lophocs.index');
-    Route::post('/create', 'LophocController@store1');
-    Route::post('/add', 'LophocController@store2');
     Route::get('/create', 'LophocController@create');
+    Route::post('/create', 'LophocController@store1');
     Route::get('/add', 'LophocController@add');
+    Route::post('/add', 'LophocController@store2');
 });
 
 Route::prefix('monhoc')->group(function () {
@@ -39,4 +39,11 @@ Route::prefix('monhoc')->group(function () {
     Route::post('/create', 'MonhocController@store');
     Route::get('/delete', 'MonhocController@delete');
     Route::delete('/', 'MonhocController@deleted');
+});
+
+Route::prefix('diem')->group(function() {
+    Route::get('/', 'DiemmonhocController@index')->name('diemmonhocs.index');
+    Route::get('/add', 'DiemmonhocController@add');
+    Route::get('/edit', 'DiemmonhocController@edit');
+    Route::post('/', 'DiemmonhocController@store');
 });

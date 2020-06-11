@@ -16,9 +16,7 @@ class CreateDiemmonhocsTable extends Migration
         Schema::create('diemmonhocs', function (Blueprint $table) {
             $table->bigIncrements('MaDiemMH');
             $table->unsignedBigInteger('MaHocSinh');
-            $table->foreign('MaHocSinh')->references('MaHocSinh')->on('hocsinhs')->onDelete('cascade');
             $table->unsignedBigInteger('MaMonHoc');
-            $table->foreign('MaMonHoc')->references('MaMonHoc')->on('monhocs')->onDelete('cascade');
             $table->integer('HocKy');
             $table->integer('NamHoc');
             $table->decimal('DiemMieng',8,2)->nullable();
@@ -27,6 +25,9 @@ class CreateDiemmonhocsTable extends Migration
             $table->decimal('DiemHK',8,2)->nullable();
             $table->decimal('DiemTongHK',8,2)->nullable();
             $table->timestamps();
+
+            $table->foreign('MaHocSinh')->references('MaHocSinh')->on('hocsinhs')->onDelete('cascade');
+            $table->foreign('MaMonHoc')->references('MaMonHoc')->on('monhocs')->onDelete('cascade');
         });
     }
 

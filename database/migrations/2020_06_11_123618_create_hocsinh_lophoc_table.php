@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateChitietlophocsTable extends Migration
+class CreateHocsinhLophocTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class CreateChitietlophocsTable extends Migration
      */
     public function up()
     {
-        Schema::create('chitietlophocs', function (Blueprint $table) {
+        Schema::create('hocsinh_lophoc', function (Blueprint $table) {
             $table->bigIncrements('MaCTLopHoc');
+            $table->unsignedBigInteger('MaHocSinh');
             $table->unsignedBigInteger('MaLopHoc');
-            $table->foreign('MaLopHoc')->references('MaLopHoc')->on('lophocs')->onDelete('cascade');
-            $table->unsignedBigInteger('MaHocSinh')->nullable();
+
+            $table->foreign('MaLopHoc')->references('MaLopHoc')->on('lophocs')->onDelete('cascade');     
             $table->foreign('MaHocSinh')->references('MaHocSinh')->on('hocsinhs')->onDelete('cascade');
-            $table->timestamps();
         });
     }
 
@@ -30,6 +30,6 @@ class CreateChitietlophocsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('chitietlophocs');
+        Schema::dropIfExists('hocsinh_lophoc');
     }
 }

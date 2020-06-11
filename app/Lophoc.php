@@ -9,6 +9,6 @@ class Lophoc extends Model
     protected $primaryKey = 'MaLopHoc';
     public function hocsinhs()
     {
-        return $this->belongsToMany(Hocsinh::class);
+        return $this->belongsToMany('App\Hocsinh', 'hocsinh_lophoc', 'MaLopHoc', 'MaHocSinh');
     }
 }

@@ -37,7 +37,7 @@ class LophocController extends Controller
             ]);
             foreach ($MaHocSinhs as $ma) 
             {
-               DB::table('chitietlophocs')->insert([
+               DB::table('hocsinh_lophoc')->insert([
                     'MaLopHoc' => $id,
                     'MaHocSinh' => $ma
                 ]);
@@ -57,7 +57,7 @@ class LophocController extends Controller
         {
             foreach ($MaHocSinhs as $ma) 
             {
-                DB::table('chitietlophocs')->insert([
+                DB::table('hocsinh_lophoc')->insert([
                     'MaLopHoc' => $request->input('MaLopHoc'),
                     'MaHocSinh' => $ma
                 ]);

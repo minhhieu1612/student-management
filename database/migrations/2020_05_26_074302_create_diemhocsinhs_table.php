@@ -15,12 +15,13 @@ class CreateDiemhocsinhsTable extends Migration
     {
         Schema::create('diemhocsinhs', function (Blueprint $table) {
             $table->bigIncrements('MaDiemHS');
-            $table->unsignedBigInteger('MaHocSinh');
-            $table->foreign('MaHocSinh')->references('MaHocSinh')->on('hocsinhs')->onDelete('cascade');
+            $table->unsignedBigInteger('MaHocSinh');   
             $table->decimal('DiemHKI',8,2)->nullable();
             $table->decimal('DiemHKII',8,2)->nullable();
             $table->decimal('DiemCaNam',8,2)->nullable();
             $table->timestamps();
+
+            $table->foreign('MaHocSinh')->references('MaHocSinh')->on('hocsinhs')->onDelete('cascade');
         });
     }
 

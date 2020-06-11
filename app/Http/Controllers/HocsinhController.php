@@ -41,8 +41,8 @@ class HocsinhController extends Controller
     }
     public function deleted(Request $request)
     {
-        $hocsinh = Hocsinh::find($request->MaHocSinh);
-        $isInClass = DB::table('chitietlophocs')->where('MaHocSinh',$request->MaHocSinh)->get();
+        $hocsinh = Hocsinh::find($request->input('MaHocSinh'));
+        $isInClass = DB::table('hocsinh_lophoc')->where('MaHocSinh',$request->input('MaHocSinh'))->get();
         if ($isInClass == [])
         {
             $hocsinh->delete();

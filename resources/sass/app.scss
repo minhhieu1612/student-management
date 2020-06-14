@@ -1,1 +1,9 @@
-//
+// remove sort icon from datatable
+table.dataTable thead .sorting {
+    &::before {
+        display: none;
+    }
+    &::after {
+        display: none;
+    }
+}

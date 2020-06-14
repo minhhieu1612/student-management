@@ -22,7 +22,7 @@ Route::prefix('hosohocsinh')->group(function () {
     Route::post('/', 'HocsinhController@store');
     Route::get('/create', 'HocsinhController@create');
     Route::get('/delete', 'HocsinhController@delete');
-    Route::post('/', 'HocsinhController@deleted');
+    Route::post('/', 'HocsinhController@destroy');
 });
 
 Route::prefix('lophoc')->group(function () {
@@ -38,7 +38,7 @@ Route::prefix('monhoc')->group(function () {
     Route::get('/create', 'MonhocController@create');
     Route::post('/create', 'MonhocController@store');
     Route::get('/delete', 'MonhocController@delete');
-    Route::delete('/', 'MonhocController@deleted');
+    Route::delete('/', 'MonhocController@destroy');
 });
 
 Route::prefix('diem')->group(function() {

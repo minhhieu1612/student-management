@@ -25,18 +25,18 @@ class DiemmonhocController extends Controller
     {
         $lophoc = Lophoc::findOrFail($request->input('MaLopHoc'));
         $hocsinhs = $lophoc->hocsinhs();
-        $diems = [];
-        foreach ($hocsinhs as $hocsinh)
-        {
-            array_push($diems, $hocsinh->diemmonhocs()
-                    ->where('MaMonHoc',$request->input('MaMonHoc'))
-                    ->where('HocKy',$request->input('HocKy'))
-                    ->where('NamHoc',$request->input('NamHoc'))
-                    ->get());
-        }
+        // $diems = [];
+        // foreach ($hocsinhs as $hocsinh)
+        // {
+        //     array_push($diems, $hocsinh->diemmonhocs()
+        //             ->where('MaMonHoc',$request->input('MaMonHoc'))
+        //             ->where('HocKy',$request->input('HocKy'))
+        //             ->where('NamHoc',$request->input('NamHoc'))
+        //             ->get());
+        // }
         
         
-        return view('diemmonhocs.edit', compact('hocsinhs', 'diems'));
+        return view('diemmonhocs.edit', compact('hocsinhs'));
     }
 
     public function store(Request $req)
@@ -47,7 +47,16 @@ class DiemmonhocController extends Controller
             $req->input('DiemHK') <= 10 && $req->input('DiemHK') > 0 &&
             $req->input('DiemTongHK') <= 10 && $req->input('DiemTongHK') > 0)
         {
-
+            $lophoc = Lophoc::findOrFail($request->input('MaLopHoc'));
+            $hocsinhs = $lophoc->hocsinhs();
+            foreach ($hocsinhs as $hocsinh)
+            {
+                Diemmonhoc::where('MaHocSinh',$hocsinh->MaHocSinh)
+                        ->where('MaMonHoc',$request->input('MaMonHoc'))
+                        ->where('HocKy',$request->input('HocKy'))
+                        ->where('NamHoc',$request->input('NamHoc'))
+                        ->insert([]);
+            }
         }
     }
 }

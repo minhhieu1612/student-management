@@ -24,25 +24,27 @@ class HocsinhController extends Controller
         $min_age = DB::table('thamsos')->value('TuoiToiThieu');
         if ($diff->y >= $min_age)
         {
-            DB::table('hocsinhs')->insertOrIgnore([
-                'HoVaTen' => $request->input('HoVaTen'),
-                'NgaySinh' => $request->input('NgaySinh'),
-                'GioiTinh' => $request->input('GioiTinh'),
-                'DiaChi' => $request->input('DiaChi'),
-                'QueQuan' => $request->input('QueQuan')
-            ]);
+            $hocsinh = new Hocsinh();
+                $hocsinh->HoVaTen = $request->input('HoVaTen');
+                $hocsinh->NgaySinh = $request->input('NgaySinh');
+                $hocsinh->GioiTinh = $request->input('GioiTinh');
+                $hocsinh->DiaChi = $request->input('DiaChi');
+                $hocsinh->QueQuan = $request->input('QueQuan');
+                $hocsinh->save();
         }
         
         return redirect(route('hocsinhs.index'));
     }
+
     public function delete()
     {
         return view('hocsinhs.delete');
     }
-    public function deleted(Request $request)
+
+    public function destroy($MaHocSinh)
     {
-        $hocsinh = Hocsinh::find($request->input('MaHocSinh'));
-        $isInClass = DB::table('hocsinh_lophoc')->where('MaHocSinh',$request->input('MaHocSinh'))->get();
+        $hocsinh = Hocsinh::find($MaHocSinh);
+        $isInClass = DB::table('hocsinh_lophoc')->where('MaHocSinh', $MaHocSinh)->get();
         if ($isInClass == [])
         {
             $hocsinh->delete();

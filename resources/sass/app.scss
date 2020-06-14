@@ -1,9 +1,31 @@
-// remove sort icon from datatable
-table.dataTable thead .sorting {
-    &::before {
-        display: none;
+@import "./variables";
+
+body {
+  background-color: #fafafa;
+}
+
+.login-box {
+  max-width: 600px;
+  margin: 7em auto;
+  /* text-align: center; */
+  background: linear-gradient(-45deg, lightblue, transparent);
+  padding: 3em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  -webkit-box-shadow: -14px 14px 10px -4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -14px 14px 10px -4px rgba(0, 0, 0, 0.5);
+  box-shadow: -14px 14px 10px -4px rgba(0, 0, 0, 0.5);
+
+  .header {
+    padding: 2em;
+  }
+
+  .body {
+    .text-forgot {
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
     }
-    &::after {
-        display: none;
-    }
+  }
 }

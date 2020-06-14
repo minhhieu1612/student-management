@@ -1,100 +1,68 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Quản lý học sinh</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-  <!-- Styles -->
-  <style>
-  html,
-  body {
-    background-color: #fff;
-    color: #636b6f;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 200;
-    height: 100vh;
-    margin: 0;
-  }
-
-  .full-height {
-    height: 100vh;
-  }
-
-  .flex-center {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-
-  .position-ref {
-    position: relative;
-  }
-
-  .top-right {
-    position: absolute;
-    right: 10px;
-    top: 18px;
-  }
-
-  .content {
-    text-align: center;
-  }
-
-  .title {
-    font-size: 84px;
-  }
-
-  .links>a {
-    color: #636b6f;
-    padding: 0 25px;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  .m-b-md {
-    margin-bottom: 30px;
-  }
-  </style>
-</head>
-
-<body>
-  <div class="flex-center position-ref full-height">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="{{ asset('favicon.png')}}" sizes="36x16">
+    <title>Quản lý học sinh</title>
+    <link
+      href="{{ asset('css/bootstrap.min.css') }}"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  </head>
+  <body>
     @if (Route::has('login'))
-    <div class="top-right links">
-      @auth
-      <a href="{{ url('/home') }}">Home</a>
-      @else
-      <a href="{{ route('login') }}">Login</a>
+      <div class="top-right links">
+        @auth
+          <a href="{{ url('/') }}">Home</a>
+          @else
+            <a href="{{ route('login') }}">Login</a>
 
-      @if (Route::has('register'))
-      <a href="{{ route('register') }}">Register</a>
-      @endif
-      @endauth
-    </div>
+          @if (Route::has('register'))
+            <a href="{{ route('register') }}">Register</a>
+          @endif
+        @endauth
+      </div>
     @endif
 
-    <div class="content">
-      <div class="title m-b-md">
-        Quản lý học sinh
+    <div class="container">
+      <div class="login-box">
+        <div class="header">
+          <h3 class="text-center">Đăng nhập</h3>
+        </div>
+        <div class="body">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fa fa-user"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Tên đăng nhập">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fa fa-lock"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Mật khẩu">
+          </div>
+          <div class="input-group mb-3">
+            <button class="btn btn-primary">Đăng nhập</button>
+          </div>
+          <div class="input-group mb-3">
+            <small id="helpId" class="text-forgot">Quên mật khẩu</small>
+          </div>
+        </div>
       </div>
-
-      <div class="links">
-        <a href="/hosohocsinh">Học sinh</a>
-        <a href="/lophoc">Lớp học</a>
-        <a href="#">GitHub</a>
+      <div class="d-flex justify-content-center">
+        <a class="mr-3 mb-5" href="/hosohocsinh">Học sinh</a>
+        <a class="mr-3 mb-5" href="/lophoc">Lớp học</a>
       </div>
-      @yield('content')
     </div>
-  </div>
-</body>
 
+  </body>
 </html>

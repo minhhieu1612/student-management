@@ -1,11 +1,11 @@
 @extends('templates.master')
-@section('title','###')
+@section('title','Thêm lớp học')
 @section('content')
 
-<div class="page-header">
-  <h4>###</h4>
-</div>
 <div>
+  <div class="page-header">
+    <h4>Thêm lớp học</h4>
+  </div>
   <form method="POST" action="/lophoc/add">
     @csrf
     <div class="field">
@@ -24,3 +24,5 @@
       </div>
   </form>
 </div>
+
+@endsection

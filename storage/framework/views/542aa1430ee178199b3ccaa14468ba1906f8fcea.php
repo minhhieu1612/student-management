@@ -1,10 +1,10 @@
-<?php $__env->startSection('title','###'); ?>
+<?php $__env->startSection('title','Thêm lớp học'); ?>
 <?php $__env->startSection('content'); ?>
 
-<div class="page-header">
-  <h4>###</h4>
-</div>
 <div>
+  <div class="page-header">
+    <h4>Thêm lớp học</h4>
+  </div>
   <form method="POST" action="/lophoc/add">
     <?php echo csrf_field(); ?>
     <div class="field">
@@ -23,4 +23,7 @@
       </div>
   </form>
 </div>
+
+<?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\hieupc\Desktop\student-management\resources\views/lophocs/add.blade.php ENDPATH**/ ?>

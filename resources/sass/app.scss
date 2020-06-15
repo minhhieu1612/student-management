@@ -1,17 +1,67 @@
 @import "./variables";
-
+$enable-rounded: false;
 body {
   background-color: #fafafa;
+}
+
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
+}
+
+.bg-linear {
+  background: linear-gradient(-45deg, #2196f3, #e60a0a);
+  &-reverse {
+    background: linear-gradient(-45deg, #e60a0a, #2196f3);
+  }
+}
+
+.text-linear {
+  background: linear-gradient(-45deg, #2196f3, #e60a0a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &::placeholder {
+    background: linear-gradient(-45deg, #2196f3, #e60a0a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.header {
+  .header-dropdown-menu {
+    .header-dropdown-item {
+      @extend .text-linear;
+      i.fa {
+        @extend .text-linear;
+      }
+      &:hover {
+        @extend .bg-linear;
+        color: white !important;
+        -webkit-text-fill-color: white;
+        i.fa {
+          color: white !important;
+          -webkit-text-fill-color: white;
+        }
+      }
+    }
+  }
+}
+
+.fix-drop-bottom {
+  top: 2.9em !important;
+  left: -5.9em !important;
 }
 
 .login-box {
   max-width: 600px;
   margin: 7em auto;
   /* text-align: center; */
-  background: linear-gradient(-45deg, lightblue, transparent);
+  // background: linear-gradient(-45deg, lightblue, transparent);
+  @extend .bg-linear;
   padding: 3em;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
+  // border: 1px solid rgba(0, 0, 0, 0.1);
+  // border-radius: 12px;
   -webkit-box-shadow: -14px 14px 10px -4px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: -14px 14px 10px -4px rgba(0, 0, 0, 0.5);
   box-shadow: -14px 14px 10px -4px rgba(0, 0, 0, 0.5);
@@ -28,4 +78,9 @@ body {
       }
     }
   }
+}
+
+.footer {
+  padding: 1em 0;
+  margin-top: 15em;
 }

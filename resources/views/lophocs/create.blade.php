@@ -1,9 +1,9 @@
 @extends('templates.master')
-@section('title','###')
+@section('title','Thêm lớp mới')
 @section('content')
 
 <div class="page-header">
-  <h4>###</h4>
+  <h4>Thêm lớp mới</h4>
 </div>
 <div>
   <form method="POST" action="/lophoc/create">
@@ -37,3 +37,5 @@
     </div>
   </form>
 </div>
+
+@endsection

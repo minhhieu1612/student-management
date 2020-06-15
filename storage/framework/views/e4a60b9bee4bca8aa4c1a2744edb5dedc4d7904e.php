@@ -13,3 +13,4 @@
     </a>
   </div>
 </div>
+<?php /**PATH C:\Users\hieupc\Desktop\student-management\resources\views/components/profileShortcut.blade.php ENDPATH**/ ?>

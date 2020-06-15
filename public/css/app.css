@@ -2,14 +2,82 @@ body {
   background-color: #fafafa;
 }
 
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
+}
+
+.bg-linear,
+.login-box,
+.header .header-dropdown-menu .header-dropdown-item:hover {
+  background: linear-gradient(-45deg, #2196f3, #e60a0a);
+}
+
+.bg-linear-reverse {
+  background: linear-gradient(-45deg, #e60a0a, #2196f3);
+}
+
+.text-linear,
+.header .header-dropdown-menu .header-dropdown-item i.fa,
+.header .header-dropdown-menu .header-dropdown-item {
+  background: linear-gradient(-45deg, #2196f3, #e60a0a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-linear::-webkit-input-placeholder, .header .header-dropdown-menu .header-dropdown-item i.fa::-webkit-input-placeholder, .header .header-dropdown-menu .header-dropdown-item::-webkit-input-placeholder {
+  background: linear-gradient(-45deg, #2196f3, #e60a0a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-linear::-moz-placeholder, .header .header-dropdown-menu .header-dropdown-item i.fa::-moz-placeholder, .header .header-dropdown-menu .header-dropdown-item::-moz-placeholder {
+  background: linear-gradient(-45deg, #2196f3, #e60a0a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-linear:-ms-input-placeholder, .header .header-dropdown-menu .header-dropdown-item i.fa:-ms-input-placeholder, .header .header-dropdown-menu .header-dropdown-item:-ms-input-placeholder {
+  background: linear-gradient(-45deg, #2196f3, #e60a0a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-linear::-ms-input-placeholder, .header .header-dropdown-menu .header-dropdown-item i.fa::-ms-input-placeholder, .header .header-dropdown-menu .header-dropdown-item::-ms-input-placeholder {
+  background: linear-gradient(-45deg, #2196f3, #e60a0a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-linear::placeholder,
+.header .header-dropdown-menu .header-dropdown-item i.fa::placeholder,
+.header .header-dropdown-menu .header-dropdown-item::placeholder {
+  background: linear-gradient(-45deg, #2196f3, #e60a0a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header .header-dropdown-menu .header-dropdown-item:hover {
+  color: white !important;
+  -webkit-text-fill-color: white;
+}
+
+.header .header-dropdown-menu .header-dropdown-item:hover i.fa {
+  color: white !important;
+  -webkit-text-fill-color: white;
+}
+
+.fix-drop-bottom {
+  top: 2.9em !important;
+  left: -5.9em !important;
+}
+
 .login-box {
   max-width: 600px;
   margin: 7em auto;
   /* text-align: center; */
-  background: linear-gradient(-45deg, lightblue, transparent);
   padding: 3em;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
   box-shadow: -14px 14px 10px -4px rgba(0, 0, 0, 0.5);
 }
 
@@ -20,5 +88,10 @@ body {
 .login-box .body .text-forgot:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.footer {
+  padding: 1em 0;
+  margin-top: 15em;
 }
 

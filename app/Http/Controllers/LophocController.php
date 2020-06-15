@@ -26,7 +26,7 @@ class LophocController extends Controller
         $MaHocSinhs = explode(',', $request->input('MaHocSinh'));
         $siso = count($MaHocSinhs);
         $solop = Lophoc::find($request->input('Khoi'))->count();
-        
+
         if ($siso <= $max_siso && $solop <= $max_solop)
         {
             $id = DB::table('lophocs')->insertGetID([
@@ -35,7 +35,7 @@ class LophocController extends Controller
                 'TenLop' => $request->input('TenLop'),
                 'SiSo' => $siso,
             ]);
-            foreach ($MaHocSinhs as $ma) 
+            foreach ($MaHocSinhs as $ma)
             {
                DB::table('hocsinh_lophoc')->insert([
                     'MaLopHoc' => $id,
@@ -43,7 +43,7 @@ class LophocController extends Controller
                 ]);
             }
         }
-        
+
         return redirect(route('lophocs.index'));
     }
 
@@ -55,7 +55,7 @@ class LophocController extends Controller
         $siso = Lophoc::find($request->input('MaLopHoc'))->value('SiSo');
         if ($siso + $soma <= $max_siso)
         {
-            foreach ($MaHocSinhs as $ma) 
+            foreach ($MaHocSinhs as $ma)
             {
                 DB::table('hocsinh_lophoc')->insert([
                     'MaLopHoc' => $request->input('MaLopHoc'),
@@ -66,10 +66,5 @@ class LophocController extends Controller
         }
 
         return redirect(route('lophocs.index'));
-    }
-
-    public function add()
-    {
-        return view('lophocs.add');
     }
 }

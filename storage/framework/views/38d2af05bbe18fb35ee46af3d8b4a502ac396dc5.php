@@ -15,6 +15,7 @@
       type="text/css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="<?php echo e(asset('css/app.css')); ?>" type="text/css" rel="stylesheet" />
   </head>
 
@@ -26,10 +27,18 @@
 <?php endif; ?>
 <?php echo $__env->renderComponent(); ?>
 
-    <div class="container">
+    <div class="container my-5">
       <?php $__env->startSection('content'); ?>
       <?php echo $__env->yieldSection(); ?>
     </div>
+
+    <?php $__env->startComponent('components.footer'); ?>
+    <?php if (isset($__componentOriginal2d1e7c5cf9e06da7dcbfcd38aa098b349a88533b)): ?>
+<?php $component = $__componentOriginal2d1e7c5cf9e06da7dcbfcd38aa098b349a88533b; ?>
+<?php unset($__componentOriginal2d1e7c5cf9e06da7dcbfcd38aa098b349a88533b); ?>
+<?php endif; ?>
+<?php echo $__env->renderComponent(); ?>
+
     <script
       type="text/javascript"
       src="<?php echo e(asset('js/jquery.min.js')); ?>"

@@ -1,8 +1,8 @@
-<?php $__env->startSection('title','###'); ?>
+<?php $__env->startSection('title','Thêm lớp mới'); ?>
 <?php $__env->startSection('content'); ?>
 
 <div class="page-header">
-  <h4>###</h4>
+  <h4>Thêm lớp mới</h4>
 </div>
 <div>
   <form method="POST" action="/lophoc/create">
@@ -36,4 +36,7 @@
     </div>
   </form>
 </div>
+
+<?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\hieupc\Desktop\student-management\resources\views/lophocs/create.blade.php ENDPATH**/ ?>

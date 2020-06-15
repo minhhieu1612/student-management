@@ -31,13 +31,13 @@
     <div class="container">
       <div class="login-box">
         <div class="header">
-          <h3 class="text-center">Đăng nhập</h3>
+          <h3 class="text-center text-white">Đăng nhập</h3>
         </div>
         <div class="body">
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text">
-                <i class="fa fa-user"></i>
+                <i class="fa fa-user text-linear"></i>
               </span>
             </div>
             <input type="text" class="form-control" placeholder="Tên đăng nhập">
@@ -45,16 +45,16 @@
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text">
-                <i class="fa fa-lock"></i>
+                <i class="fa fa-lock text-linear"></i>
               </span>
             </div>
             <input type="text" class="form-control" placeholder="Mật khẩu">
           </div>
           <div class="input-group mb-3">
-            <button class="btn btn-primary">Đăng nhập</button>
+            <button class="btn btn-warning">Đăng nhập</button>
           </div>
           <div class="input-group mb-3">
-            <small id="helpId" class="text-forgot">Quên mật khẩu</small>
+            <small id="helpId" class="text-forgot text-white">Quên mật khẩu</small>
           </div>
         </div>
       </div>

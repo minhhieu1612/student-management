@@ -6,8 +6,8 @@
   <h4>Xóa hồ sơ học sinh</h4>
 </div>
 <div>
-  <form method="POST" action="/hosohocsinh">
-
+  <form method="POST" action="/hosohocsinh/delete">
+    @csrf
     <div class="field">
       <label class="label" for="MaHocSinh">Mã Học Sinh</label>
       <input type="text" name="MaHocSinh">

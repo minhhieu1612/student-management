@@ -27,7 +27,7 @@
                         id="NgaySinh"
                         value="">
                 </div>
-            </div> 
+            </div>
             <div class="field">
                 <label class="label" for="GioiTinh">Giới Tính</label>
                 <div class="control">
@@ -36,7 +36,7 @@
                         <option value="0">Nữ</option>
                     </select>
                 </div>
-            </div> 
+            </div>
             <div class="field">
                 <label class="label" for="DiaChi">Địa Chỉ</label>
                 <div class="control">
@@ -47,7 +47,7 @@
                         id="DiaChi"
                         value="">
                 </div>
-            </div> 
+            </div>
             <div class="field">
                 <label class="label" for="QueQuan">Quê quán</label>
                 <div class="control">
@@ -58,10 +58,10 @@
                         id="QueQuan"
                         value="">
                 </div>
-            </div> 
+            </div>
             <div>
                 <button type="submit">Tạo Hồ Sơ</button>
-            </div>   
+            </div>
         </form>
     </div>
 

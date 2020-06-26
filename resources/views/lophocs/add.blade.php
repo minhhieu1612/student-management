@@ -1,6 +1,13 @@
 @extends('templates.master')
-@section('title','Thêm lớp học')
+@section('title','Thêm mới lớp học')
 @section('content')
+
+
+@component('components.pageTitle')
+ @slot('title')
+      Thêm mới lớp học
+  @endslot
+@endcomponent
 
 <div>
   <div class="page-header">

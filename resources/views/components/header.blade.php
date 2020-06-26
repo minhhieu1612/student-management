@@ -38,6 +38,7 @@
           aria-expanded="false"
           >Lớp học</a>
         <div class="dropdown-menu header-dropdown-menu" aria-labelledby="lophocDropdownId">
+          <a class="dropdown-item header-dropdown-item" href="/lophoc">Danh sách lớp học</a>
           <a class="dropdown-item header-dropdown-item" href="/lophoc/create">Thêm mới</a>
           <a class="dropdown-item header-dropdown-item" href="/lophoc/edit">Chỉnh sửa</a>
           <a class="dropdown-item header-dropdown-item" href="/lophoc/delete">Xóa lớp</a>

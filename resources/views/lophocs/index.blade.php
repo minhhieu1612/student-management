@@ -1,14 +1,16 @@
 @extends('templates.master')
-@section('title','Lop hoc')
+@section('title','Danh sách lớp học')
 @section('content')
 
-<div class="page-header">
-  <h4>Lop hoc</h4>
-</div>
+@component('components.pageTitle')
+ @slot('title')
+      Danh sách lớp học
+  @endslot
+@endcomponent
 
 <p><a href="/lophoc/create"><button>Xep lop moi</button></a></p>
 <p><a href="/lophoc/add"><button>Xep hoc sinh</button></a></p>
-<table id="DataList" class="table table-bordered table-hover table-responsive" style="width: 100%;">
+<table id="DataList" class="table table-bordered table-responsive-md table-hover" style="width: 100%;">
   <thead>
     <tr>
       <th>Ma Lop Hoc</th>

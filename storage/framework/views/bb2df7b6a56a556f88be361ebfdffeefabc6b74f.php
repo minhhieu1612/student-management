@@ -1,13 +1,19 @@
-<?php $__env->startSection('title','Lop hoc'); ?>
+<?php $__env->startSection('title','Danh sách lớp học'); ?>
 <?php $__env->startSection('content'); ?>
 
-<div class="page-header">
-  <h4>Lop hoc</h4>
-</div>
+<?php $__env->startComponent('components.pageTitle'); ?>
+ <?php $__env->slot('title'); ?>
+      Danh sách lớp học
+  <?php $__env->endSlot(); ?>
+<?php if (isset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55)): ?>
+<?php $component = $__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55; ?>
+<?php unset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55); ?>
+<?php endif; ?>
+<?php echo $__env->renderComponent(); ?>
 
 <p><a href="/lophoc/create"><button>Xep lop moi</button></a></p>
 <p><a href="/lophoc/add"><button>Xep hoc sinh</button></a></p>
-<table id="DataList" class="table table-bordered table-hover table-responsive" style="width: 100%;">
+<table id="DataList" class="table table-bordered table-responsive-md table-hover" style="width: 100%;">
   <thead>
     <tr>
       <th>Ma Lop Hoc</th>

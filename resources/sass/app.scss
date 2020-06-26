@@ -1,30 +1,70 @@
 @import "./variables";
+
 $enable-rounded: false;
 body {
   background-color: #fafafa;
+  color: $text-color;
+  font-family: "Open Sans", sans-serif;
 }
 
 *,
 *::before,
 *::after {
-  border-radius: 0 !important;
+  box-sizing: border-box;
+}
+
+td,
+th {
+  text-align: center;
+  vertical-align: middle;
 }
 
 .bg-linear {
-  background: linear-gradient(-45deg, #2196f3, #e60a0a);
+  // background: linear-gradient(-45deg, #2196f3, #e60a0a);
+  background: $primary;
   &-reverse {
     background: linear-gradient(-45deg, #e60a0a, #2196f3);
   }
 }
 
 .text-linear {
-  background: linear-gradient(-45deg, #2196f3, #e60a0a);
+  // background: linear-gradient(-45deg, #2196f3, #e60a0a);
+  background: $primary;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &::placeholder {
-    background: linear-gradient(-45deg, #2196f3, #e60a0a);
+    // background: linear-gradient(-45deg, #2196f3, #e60a0a);
+    background: $primary;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+button:focus {
+  outline: 1px dotted;
+  /* outline: 5px auto -webkit-focus-ring-color; */
+}
+
+.btn-create {
+  border: 1px solid #58a1fd;
+  color: #58a1fd;
+  padding: 4px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: white;
+
+  &::before {
+    content: "+ ";
+    font-weight: bold;
+    position: relative;
+  }
+  &:hover {
+    background-color: #58a1fd;
+    color: white;
   }
 }
 
@@ -51,6 +91,41 @@ body {
 .fix-drop-bottom {
   top: 2.9em !important;
   left: -5.9em !important;
+}
+
+.wrap-page-title {
+  border-bottom: 1px solid $primary;
+  margin-bottom: 1em;
+  .wrap-content {
+    margin-left: 1em;
+    display: flex;
+    .content {
+      position: relative;
+      font-size: 18px;
+      overflow: hidden;
+      color: white;
+      padding: 4px 22px;
+      text-transform: uppercase;
+      font-weight: 500;
+      &::before {
+        content: "";
+        top: -50px;
+        left: 8px;
+        position: absolute;
+        width: 90%;
+        height: 150px;
+        background: $primary;
+        z-index: -1;
+        transform: rotate(15deg);
+      }
+    }
+  }
+}
+
+table.dataTable thead > tr > th {
+  background-color: $primary;
+
+  color: white;
 }
 
 .login-box {

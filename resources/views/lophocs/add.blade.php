@@ -13,7 +13,7 @@
   <div class="page-header">
     <h4>Thêm lớp học</h4>
   </div>
-  <form method="POST" action="/lophoc/add">
+  <form method="POST" action="/lophoc/them">
     @csrf
     <div class="field">
       <label class="label" for="MaLopHoc">Ma Lop Hoc</label>

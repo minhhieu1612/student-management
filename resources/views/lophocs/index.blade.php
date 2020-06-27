@@ -6,7 +6,7 @@
 @endcomponent
 
 <div class="mb-4">
-  <a href="/lophoc/create"><button class="btn-create mr-2">Thêm mới</button></a>
+  <a href="/lophoc/taomoi"><button class="btn-create mr-2">Thêm mới</button></a>
   <button
     type="button"
     class="btn-create"
@@ -98,7 +98,7 @@
             Thao tác
           </button>
           <div class="dropdown-menu" aria-labelledby="action-{{ $lophoc->MaLopHoc }}">
-            <a class="dropdown-item" href="/lophoc/edit/{{ $lophoc->MaLopHoc }}">Chỉnh sửa</a>
+            <a class="dropdown-item" href="/lophoc/sua/{{ $lophoc->MaLopHoc }}">Chỉnh sửa</a>
             <button class="dropdown-item" data-toggle="modal" data-target="#delStudent{{ $lophoc->MaLopHoc }}">
               Xóa
             </button>

@@ -8,7 +8,7 @@
 @endcomponent
 
 <div>
-  <form method="POST" action="/lophoc">
+  <form method="POST" action="/lophoc/taomoi">
     @csrf
     <div class="card">
       <div class="card-header">

@@ -10,7 +10,7 @@
 <?php echo $__env->renderComponent(); ?>
 
 <div class="mb-4">
-  <a href="/lophoc/create"><button class="btn-create mr-2">Thêm mới</button></a>
+  <a href="/lophoc/taomoi"><button class="btn-create mr-2">Thêm mới</button></a>
   <button
     type="button"
     class="btn-create"

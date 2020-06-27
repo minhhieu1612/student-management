@@ -13,7 +13,7 @@
 
 <?php //Hiển thị danh sách học sinh?>
 
-<a href="/hosohocsinh/create"><button class="btn-create mb-4">Thêm mới</button></a>
+<a href="/hosohocsinh/taomoi"><button class="btn-create mb-4">Thêm mới</button></a>
 <table id="DataList" class="table table-bordered table-responsive-md table-hover">
   <thead>
     <tr>
@@ -31,7 +31,7 @@
     <?php $__currentLoopData = $hocsinhs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $hocsinh): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
     <tr>
       <td><?php echo e($hocsinh->MaHocSinh); ?></td>
-      <td><a href="/hosohocsinh/xem"><?php echo e($hocsinh->HoVaTen); ?></a></td>
+      <td><a href="/hosohocsinh/xem/<?php echo e($hocsinh->MaHocSinh); ?>"><?php echo e($hocsinh->HoVaTen); ?></a></td>
       <td><?php echo e($hocsinh->GioiTinh ? "Nam" : "Nữ"); ?></td>
       <td><?php echo e($hocsinh->NgaySinh); ?></td>
       <td><?php echo e($hocsinh->DiaChi); ?></td>
@@ -44,7 +44,7 @@
                 Thao tác
               </button>
           <div class="dropdown-menu" aria-labelledby="action-<?php echo e($hocsinh->MaHocSinh); ?>">
-          <a class="dropdown-item" href="/hosohocsinh/edit/<?php echo e($hocsinh->MaHocSinh); ?>">Chỉnh sửa</a>
+          <a class="dropdown-item" href="/hosohocsinh/sua/<?php echo e($hocsinh->MaHocSinh); ?>">Chỉnh sửa</a>
           <button class="dropdown-item" data-toggle="modal" data-target="#delStudent<?php echo e($hocsinh->MaHocSinh); ?>">
             Xóa
           </button>

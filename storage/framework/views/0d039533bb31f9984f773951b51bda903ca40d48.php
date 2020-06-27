@@ -11,7 +11,7 @@
 <?php echo $__env->renderComponent(); ?>
 
 <div>
-  <form method="POST" action="/lophoc">
+  <form method="POST" action="/lophoc/taomoi">
     <?php echo csrf_field(); ?>
     <div class="card">
       <div class="card-header">

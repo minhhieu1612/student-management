@@ -10,7 +10,7 @@
 
 <?php //Hiển thị danh sách học sinh?>
 
-<a href="/hosohocsinh/create"><button class="btn-create mb-4">Thêm mới</button></a>
+<a href="/hosohocsinh/taomoi"><button class="btn-create mb-4">Thêm mới</button></a>
 <table id="DataList" class="table table-bordered table-responsive-md table-hover">
   <thead>
     <tr>
@@ -28,7 +28,7 @@
     @foreach($hocsinhs as $hocsinh)
     <tr>
       <td>{{ $hocsinh->MaHocSinh }}</td>
-      <td><a href="/hosohocsinh/xem">{{ $hocsinh->HoVaTen }}</a></td>
+      <td><a href="/hosohocsinh/xem/{{ $hocsinh->MaHocSinh }}">{{ $hocsinh->HoVaTen }}</a></td>
       <td>{{ $hocsinh->GioiTinh ? "Nam" : "Nữ" }}</td>
       <td>{{ $hocsinh->NgaySinh }}</td>
       <td>{{ $hocsinh->DiaChi }}</td>
@@ -41,7 +41,7 @@
                 Thao tác
               </button>
           <div class="dropdown-menu" aria-labelledby="action-{{ $hocsinh->MaHocSinh }}">
-          <a class="dropdown-item" href="/hosohocsinh/edit/{{ $hocsinh->MaHocSinh }}">Chỉnh sửa</a>
+          <a class="dropdown-item" href="/hosohocsinh/sua/{{ $hocsinh->MaHocSinh }}">Chỉnh sửa</a>
           <button class="dropdown-item" data-toggle="modal" data-target="#delStudent{{ $hocsinh->MaHocSinh }}">
             Xóa
           </button>

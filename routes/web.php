@@ -20,30 +20,32 @@ Route::get('/', function () {
 Route::prefix('hosohocsinh')->group(function () {
     Route::get('/', 'HocsinhController@index')->name('hocsinhs.index');
     Route::post('/', 'HocsinhController@store');
-    Route::get('/create', 'HocsinhController@create');
-    Route::get('/delete', 'HocsinhController@delete');
-    Route::post('/delete', 'HocsinhController@destroy');
+    Route::get('/taomoi', 'HocsinhController@create');
+    Route::get('/xem/{MaHocSinh}', 'HocsinhController@show');
+    Route::get('/sua/{MaHocSinh}', 'HocsinhController@edit');
+    Route::get('/xoa', 'HocsinhController@delete');
+    Route::post('/xoa', 'HocsinhController@destroy');
 });
 
 Route::prefix('lophoc')->group(function () {
     Route::get('/', 'LophocController@index')->name('lophocs.index');
-    Route::get('/create', 'LophocController@create');
-    Route::post('/create', 'LophocController@store1');
-    Route::get('/add', 'LophocController@add');
-    Route::post('/add', 'LophocController@store2');
+    Route::get('/taomoi', 'LophocController@create');
+    Route::post('/taomoi', 'LophocController@store1');
+    Route::get('/them', 'LophocController@add');
+    Route::post('/them', 'LophocController@store2');
 });
 
 Route::prefix('monhoc')->group(function () {
     Route::get('/', 'MonhocController@index')->name('monhocs.index');
-    Route::get('/create', 'MonhocController@create');
-    Route::post('/create', 'MonhocController@store');
-    Route::get('/delete', 'MonhocController@delete');
+    Route::get('/taomoi', 'MonhocController@create');
+    Route::post('/taomoi', 'MonhocController@store');
+    Route::get('xoa', 'MonhocController@delete');
     Route::delete('/', 'MonhocController@destroy');
 });
 
 Route::prefix('diem')->group(function() {
     Route::get('/', 'DiemmonhocController@index')->name('diemmonhocs.index');
-    Route::get('/add', 'DiemmonhocController@add');
-    Route::get('/edit', 'DiemmonhocController@edit');
+    Route::get('/them', 'DiemmonhocController@add');
+    Route::get('/sua', 'DiemmonhocController@edit');
     Route::post('/', 'DiemmonhocController@store');
 });

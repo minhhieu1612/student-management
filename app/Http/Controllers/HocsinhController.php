@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Hocsinh;
 use Illuminate\Support\Facades\DB;
+use Datetime;
 
 class HocsinhController extends Controller
 {
@@ -19,8 +20,9 @@ class HocsinhController extends Controller
     }
     public function store(Request $request)
     {
-        $today = new Datetime(date('m.d.y'));
-        $diff = $today->diff($request->input('NgaySinh'));
+        $today = new Datetime(date('y.m.d'));
+        $birthday = new Datetime($request->input('NgaySinh'));
+        $diff = $today->diff($birthday);
         $min_age = DB::table('thamsos')->value('TuoiToiThieu');
         if ($diff->y >= $min_age)
         {

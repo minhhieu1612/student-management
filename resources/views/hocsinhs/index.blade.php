@@ -10,7 +10,7 @@
 
 <?php //Hiển thị danh sách học sinh?>
 
-<a href="/hosohocsinh/create"><button class="btn-create mb-4">Thêm mới</button></a>
+<a href="/hosohocsinh/taomoi"><button class="btn-create mb-4">Thêm mới</button></a>
 <table id="DataList" class="table table-bordered table-responsive-md table-hover">
   <thead>
     <tr>
@@ -41,7 +41,7 @@
                 Thao tác
               </button>
           <div class="dropdown-menu" aria-labelledby="action-{{ $hocsinh->MaHocSinh }}">
-          <button class="dropdown-item" href="/hocsinh/edit/{{ $hocsinh->MaHocSinh }}">Chỉnh sửa</button>
+          <button class="dropdown-item" href="/hocsinh/sua/{{ $hocsinh->MaHocSinh }}">Chỉnh sửa</button>
           <button class="dropdown-item">Xóa</button>
            <!-- Button trigger modal -->
            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">

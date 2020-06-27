@@ -6,7 +6,7 @@
   <h4>Thêm lớp mới</h4>
 </div>
 <div>
-  <form method="POST" action="/lophoc/create">
+  <form method="POST" action="/lophoc/taomoi">
     @csrf
     <div class="field">
       <label class="label" for="NamHoc">Nam Hoc</label>

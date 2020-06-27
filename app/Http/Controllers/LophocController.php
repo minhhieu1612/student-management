@@ -25,7 +25,7 @@ class LophocController extends Controller
         $max_solop = DB::table('thamsos')->value('SoLopToiDa');
         $MaHocSinhs = explode(',', $request->input('MaHocSinh'));
         $siso = count($MaHocSinhs);
-        $solop = Lophoc::find($request->input('Khoi'))->count();
+        $solop = Lophoc::where('Khoi', $request->input('Khoi'))->get()->count();
 
         if ($siso <= $max_siso && $solop <= $max_solop)
         {
@@ -47,12 +47,17 @@ class LophocController extends Controller
         return redirect(route('lophocs.index'));
     }
 
+    public function add()
+    {
+        return view('lophocs.add');
+    }
+
     public function store2(Request $request)
     {
         $MaHocSinhs = explode(',', $request->input('MaHocSinh'));
         $soma = count($MaHocSinhs);
         $max_siso = DB::table('thamsos')->value('SiSoToiDa');
-        $siso = Lophoc::find($request->input('MaLopHoc'))->value('SiSo');
+        $siso = Lophoc::find($request->input('MaLopHoc'))->SiSo;
         if ($siso + $soma <= $max_siso)
         {
             foreach ($MaHocSinhs as $ma)

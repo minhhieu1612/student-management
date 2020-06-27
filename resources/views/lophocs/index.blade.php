@@ -8,8 +8,8 @@
   @endslot
 @endcomponent
 
-<p><a href="/lophoc/create"><button>Xep lop moi</button></a></p>
-<p><a href="/lophoc/add"><button>Xep hoc sinh</button></a></p>
+<p><a href="/lophoc/taomoi"><button>Xep lop moi</button></a></p>
+<p><a href="/lophoc/them"><button>Xep hoc sinh</button></a></p>
 <table id="DataList" class="table table-bordered table-responsive-md table-hover" style="width: 100%;">
   <thead>
     <tr>

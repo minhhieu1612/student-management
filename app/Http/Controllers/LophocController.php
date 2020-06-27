@@ -19,6 +19,10 @@ class LophocController extends Controller
         return view('lophocs.create');
     }
 
+    public function detail() {
+      return view('lophocs.detail');
+    }
+
     public function store1(Request $request)
     {
         $max_siso = DB::table('thamsos')->value('SiSoToiDa');

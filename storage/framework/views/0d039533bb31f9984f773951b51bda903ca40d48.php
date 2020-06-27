@@ -1,38 +1,73 @@
-<?php $__env->startSection('title','Thêm lớp mới'); ?>
+<?php $__env->startSection('title','Thêm mới lớp học'); ?>
 <?php $__env->startSection('content'); ?>
 
-<div class="page-header">
-  <h4>Thêm lớp mới</h4>
-</div>
+<?php $__env->startComponent('components.pageTitle'); ?>
+  <?php $__env->slot('title'); ?> Thêm mới lớp học
+  <?php $__env->endSlot(); ?>
+<?php if (isset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55)): ?>
+<?php $component = $__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55; ?>
+<?php unset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55); ?>
+<?php endif; ?>
+<?php echo $__env->renderComponent(); ?>
+
 <div>
-  <form method="POST" action="/lophoc/create">
+  <form method="POST" action="/lophoc">
     <?php echo csrf_field(); ?>
-    <div class="field">
-      <label class="label" for="NamHoc">Nam Hoc</label>
-      <div class="control">
-        <input class="input" type="number" name="NamHoc" id="NamHoc" value="" required>
+    <div class="card">
+      <div class="card-header">
+        Thông tin lớp học
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="label col-md-4" for="TenLop"
+                >Tên lớp học <span class="text-danger">*</span></label
+              >
+              <div class="col-md-8">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="TenLop"
+                  id="TenLop"
+                  value=""
+                  placeholder=""
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="label col-md-4" for="Khoi"
+                >Khối <span class="text-danger">*</span></label
+              >
+              <div class="col-md-8">
+                <select class="form-control custom-select" name="Khoi" id="Khoi" value="Chọn khối">
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="label col-md-4" for="NamHoc"
+                >Năm học <span class="text-danger">*</span></label
+              >
+              <div class="col-md-8">
+                <select class="form-control custom-select" name="NamHoc" id="NamHoc" value="Chọn khối">
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="field">
-      <label class="label" for="Khoi">Khoi</label>
-      <div class="control">
-        <input class="input" type="number" name="Khoi" id="Khoi" value="" required>
-      </div>
-    </div>
-    <div class="field">
-      <label class="label" for="TenLop">Ten Lop</label>
-      <div class="control">
-        <input class="input" type="text" name="TenLop" id="TenLop" value="" required>
-      </div>
-    </div>
-    <div class="field">
-      <label class="label" for="MaHocSinh">Ma Hoc Sinh</label>
-      <div class="control">
-        <input class="input" type="textarea" name="MaHocSinh" id="MaHocSinh" value="" required>
-      </div>
-    </div>
-    <div>
-      <button type="submit">Xep lop</button>
+    <div class="text-center mt-5">
+      <button type="submit" class="btn-confirm mr-3">Lưu lại</button>
+      <button type="button" class="btn-cancel">Hủy bỏ</button>
     </div>
   </form>
 </div>

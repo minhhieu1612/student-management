@@ -21,6 +21,7 @@ Route::prefix('hosohocsinh')->group(function () {
     Route::get('/', 'HocsinhController@index')->name('hocsinhs.index');
     Route::post('/', 'HocsinhController@store');
     Route::get('/create', 'HocsinhController@create');
+    Route::get('/xem', 'HocsinhController@detail');
     Route::get('/delete', 'HocsinhController@delete');
     Route::post('/delete', 'HocsinhController@destroy');
 });
@@ -29,6 +30,7 @@ Route::prefix('lophoc')->group(function () {
     Route::get('/', 'LophocController@index')->name('lophocs.index');
     Route::get('/create', 'LophocController@create');
     Route::post('/create', 'LophocController@store1');
+    Route::get('/xem', 'LophocController@detail');
     Route::get('/add', 'LophocController@add');
     Route::post('/add', 'LophocController@store2');
 });

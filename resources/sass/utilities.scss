@@ -1,0 +1,167 @@
+.bg-linear {
+  // background: linear-gradient(-45deg, #2196f3, #e60a0a);
+  background: $primary;
+  &-reverse {
+    background: linear-gradient(-45deg, #e60a0a, #2196f3);
+  }
+}
+
+.text-linear {
+  // background: linear-gradient(-45deg, #2196f3, #e60a0a);
+  background: $primary;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &::placeholder {
+    // background: linear-gradient(-45deg, #2196f3, #e60a0a);
+    background: $primary;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+button:focus {
+  outline: 1px dotted;
+  /* outline: 5px auto -webkit-focus-ring-color; */
+}
+
+.btn-pill {
+  padding: 4px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 1px solid $primary;
+  color: $primary;
+  background-color: white;
+
+  &:hover {
+    background-color: $primary;
+    color: white;
+    border: 1px solid $primary;
+  }
+}
+
+.btn-create {
+  @extend .btn-pill;
+
+  &::before {
+    content: "+ ";
+    font-weight: bold;
+    position: relative;
+  }
+}
+
+.btn {
+  @extend .btn-pill;
+}
+
+.btn-confirm {
+  @extend .btn-pill;
+  border: 1px solid $success;
+  color: $success;
+  background-color: white;
+
+  &:hover {
+    background-color: $success;
+    color: white;
+    border: 1px solid $success;
+  }
+}
+
+.btn-cancel {
+  @extend .btn-pill;
+  border: 1px solid $danger;
+  color: $danger;
+  background-color: white;
+
+  &:hover {
+    background-color: $danger;
+    color: white;
+    border: 1px solid $danger;
+  }
+}
+
+.dropdown-menu {
+  .dropdown-item {
+    @extend .text-linear;
+    i.fa {
+      @extend .text-linear;
+    }
+    &:hover {
+      @extend .bg-linear;
+      color: white !important;
+      -webkit-text-fill-color: white;
+      i.fa {
+        color: white !important;
+        -webkit-text-fill-color: white;
+      }
+    }
+  }
+}
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  border-radius: 0.75rem;
+  .card-header {
+    position: relative;
+    background-color: transparent;
+    border-bottom: 0;
+    padding: 8px 16px;
+    font-size: 20px;
+    &::before {
+      content: "";
+      width: calc(100% - 32px);
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.2);
+      bottom: 0px;
+      position: absolute;
+    }
+  }
+  .card-body {
+    padding: 1em;
+  }
+  .card-footer {
+    background-color: transparent;
+  }
+}
+
+.form-control {
+  border-radius: 20px;
+  padding: 8px 16px;
+  line-height: 1;
+  height: 32px;
+  font-size: 14px;
+  width: 80%;
+}
+
+label {
+  font-size: 14px;
+}
+
+select.form-control {
+  -webkit-appearance: unset;
+  position: relative;
+}
+
+.arrow-select-form {
+  position: absolute;
+  bottom: 0px;
+  right: 23%;
+  font-weight: 700;
+  font-size: 14px;
+  transform: translate(-13px, -24%) rotate(90deg);
+}
+
+.p-relative {
+  position: relative;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.text-highlight {
+  color: $primary;
+}

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>@yield('title')</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link href="{{ asset('css/bootstrap.min.css') }}" type="text/css" rel="stylesheet" />
+  {{-- <link href="{{ asset('css/bootstrap.min.css') }}" type="text/css" rel="stylesheet" /> --}}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="{{ asset('css/dataTables.bootstrap4.min.css') }}" type="text/css" rel="stylesheet" />
   {{-- <link href="{{ asset('css/semantic.min.css') }}" type="text/css" rel="stylesheet" /> --}}
@@ -30,6 +30,8 @@
   <script type="text/javascript" src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/dataTables.bootstrap4.min.js') }}"></script>
   {{-- <script type="text/javascript" src="{{ asset('js/semantic.min.js') }}"></script> --}}
+  <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+
   <script type="text/javascript">
     $(document).ready(function () {
       $("#DataList").DataTable({

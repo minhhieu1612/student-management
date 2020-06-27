@@ -1,0 +1,21 @@
+body {
+  background-color: #fdfdfd;
+  color: $text-color;
+  font-family: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+td,
+th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+p {
+  margin-bottom: 0.5em;
+}

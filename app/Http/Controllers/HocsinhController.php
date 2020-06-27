@@ -32,13 +32,18 @@ class HocsinhController extends Controller
                 $hocsinh->QueQuan = $request->input('QueQuan');
                 $hocsinh->save();
         }
-        
+
         return redirect(route('hocsinhs.index'));
     }
 
     public function delete()
     {
         return view('hocsinhs.delete');
+    }
+
+    public function detail()
+    {
+      return view('hocsinhs.detail');
     }
 
     public function destroy($MaHocSinh)
@@ -49,7 +54,7 @@ class HocsinhController extends Controller
         {
             $hocsinh->delete();
         }
-        
+
         return redirect(route('hocsinhs.index'));
     }
 }

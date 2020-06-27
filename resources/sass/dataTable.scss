@@ -1,0 +1,29 @@
+.dataTables_wrapper div.dataTables_filter input,
+div.dataTables_wrapper div.dataTables_length select {
+  padding: 4px 16px;
+  border-radius: 20px;
+}
+
+.page-item:last-child .page-link {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-right: 16px;
+}
+
+.page-item:first-child .page-link {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  padding-left: 16px;
+}
+
+table.dataTable thead > tr > th {
+  background-color: $primary;
+  color: white;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+  font-size: 12px;
+  margin-top: 1em;
+}

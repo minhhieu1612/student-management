@@ -15,7 +15,11 @@ class MonhocController extends Controller
     }
     public function create()
     {
-        return view('monhocs.create');
+      return view('monhocs.create');
+    }
+    public function show()
+    {
+      return view('monhocs.detail');
     }
     public function store(Request $request)
     {

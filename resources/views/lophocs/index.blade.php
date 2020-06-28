@@ -115,7 +115,9 @@
                 </button>
               </div>
               <div class="modal-body">
-                <p>Bạn có chắc muốn xóa lớp "{{ $lophoc->TenLop }}"?</p>
+                <p>Bạn có chắc muốn xóa lớp</p>
+                <p class="text-highlight">{{ $lophoc->TenLop }}</p>
+                <p>khỏi hệ thống?</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-confirm mr-2">Xác nhận</button>

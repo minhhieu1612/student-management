@@ -1,6 +1,9 @@
-@extends('templates.master') @section('title','Thông tin học sinh')
-@section('content') @component('components.pageTitle') @slot('title') Thông tin
-học sinh @endslot @endcomponent
+@extends('templates.master') @section('title','Thông tin lớp học')
+@section('content')
+@component('components.pageTitle')
+  @slot('title') Thông tin lớp học
+  @endslot
+@endcomponent
 
 <div>
   <div class="card mt-3">
@@ -55,7 +58,52 @@ học sinh @endslot @endcomponent
     <div class="card-body">
       <div class="mb-4">
         <button class="btn-create mr-2">Thêm học sinh</button>
-        <button class="btn"><i class="fa fa-close mr-1"></i>Xóa tất cả</button>
+        <button class="btn" data-toggle="modal" data-target="#delAllStudent">
+          <i class="fa fa-close mr-1"></i>Xóa tất cả
+        </button>
+        <div
+          class="modal fade"
+          id="delAllStudent"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="modelTitleId"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Xóa học sinh ra khỏi lớp học</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                <p>
+                  Bạn có chắc muốn xóa toàn bộ học sinh trong lớp
+                </p>
+                <p class="text-highlight">10A1</p>
+                <p>khỏi lớp học?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-confirm mr-2">
+                  Xác nhận
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-cancel"
+                  data-dismiss="modal"
+                >
+                  Hủy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <table
         id="DataList"
@@ -116,7 +164,7 @@ học sinh @endslot @endcomponent
                         Bạn có chắc muốn xóa học sinh
                       </p>
                       <p class="text-highlight">Đặng Quan Hồng</p>
-                      <p>khỏi hệ thống?</p>
+                      <p>khỏi lớp học?</p>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-confirm mr-2">
@@ -140,7 +188,7 @@ học sinh @endslot @endcomponent
     </div>
   </div>
   <div class="text-center mt-5">
-    <a href="/hosohocsinh/edit/1" class="btn-confirm mr-3">Sửa</a>
+    <a href="/lophoc/sua/1"><button class="btn-confirm mr-3">Sửa</button></a>
   </div>
 </div>
 

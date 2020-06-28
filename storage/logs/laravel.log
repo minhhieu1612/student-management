@@ -324,7 +324,8 @@ Did you mean one of these?
 #4 D:\\xampp\\htdocs\\quanlyhocsinh\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #5 {main}
 "} 
-[2020-05-26 11:23:16] local.ERROR: syntax error, unexpected end of file, expecting ')' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected end of file, expecting ')' at D:\\xampp\\htdocs\\quanlyhocsinh\outes\\web.php:29)
+[2020-05-26 11:23:16] local.ERROR: syntax error, unexpected end of file, expecting ')' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected end of file, expecting ')' at D:\\xampp\\htdocs\\quanlyhocsinh\
+outes\\web.php:29)
 [stacktrace]
 #0 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(417): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\xampp\\\\htdocs...')
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('D:\\\\xampp\\\\htdocs...')
@@ -357,7 +358,8 @@ Did you mean one of these?
 #28 D:\\xampp\\htdocs\\quanlyhocsinh\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #29 {main}
 "} 
-[2020-05-26 11:23:22] local.ERROR: syntax error, unexpected end of file, expecting ')' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected end of file, expecting ')' at D:\\xampp\\htdocs\\quanlyhocsinh\outes\\web.php:29)
+[2020-05-26 11:23:22] local.ERROR: syntax error, unexpected end of file, expecting ')' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected end of file, expecting ')' at D:\\xampp\\htdocs\\quanlyhocsinh\
+outes\\web.php:29)
 [stacktrace]
 #0 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(417): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\xampp\\\\htdocs...')
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('D:\\\\xampp\\\\htdocs...')
@@ -1142,9 +1144,12 @@ Did you mean one of these?
 #45 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #46 {main}
 "} 
-[2020-05-26 12:47:54] local.ERROR: Use of undefined constant Nam - assumed 'Nam' (this will throw an Error in a future version of PHP) (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Use of undefined constant Nam - assumed 'Nam' (this will throw an Error in a future version of PHP) (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\index.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/index.blade.php:31)
+[2020-05-26 12:47:54] local.ERROR: Use of undefined constant Nam - assumed 'Nam' (this will throw an Error in a future version of PHP) (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Use of undefined constant Nam - assumed 'Nam' (this will throw an Error in a future version of PHP) (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\index.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/index.blade.php:31)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/index.blade.php(31): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'D:\\\\xampp\\\\htdocs...', 31, Array)
+#0 D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/index.blade.php(31): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'D:\\\\xampp\\\\htdocs...', 31, Array)
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #3 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -1250,7 +1255,9 @@ Did you mean one of these?
 #49 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #50 {main}
 "} 
-[2020-05-26 12:49:01] local.ERROR: syntax error, unexpected '}' (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '}' (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\index.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/index.blade.php:31)
+[2020-05-26 12:49:01] local.ERROR: syntax error, unexpected '}' (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '}' (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\index.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/index.blade.php:31)
 [stacktrace]
 #0 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -1354,7 +1361,9 @@ Did you mean one of these?
 #47 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #48 {main}
 "} 
-[2020-05-26 12:51:57] local.ERROR: syntax error, unexpected '}' (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '}' (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\index.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/index.blade.php:31)
+[2020-05-26 12:51:57] local.ERROR: syntax error, unexpected '}' (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '}' (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\index.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/index.blade.php:31)
 [stacktrace]
 #0 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -1458,7 +1467,9 @@ Did you mean one of these?
 #47 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #48 {main}
 "} 
-[2020-05-26 12:53:08] local.ERROR: syntax error, unexpected '}' (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '}' (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\index.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/index.blade.php:31)
+[2020-05-26 12:53:08] local.ERROR: syntax error, unexpected '}' (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '}' (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\index.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/index.blade.php:31)
 [stacktrace]
 #0 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -1562,9 +1573,12 @@ Did you mean one of these?
 #47 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #48 {main}
 "} 
-[2020-05-26 12:54:03] local.ERROR: Use of undefined constant Nam - assumed 'Nam' (this will throw an Error in a future version of PHP) (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Use of undefined constant Nam - assumed 'Nam' (this will throw an Error in a future version of PHP) (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\index.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/index.blade.php:31)
+[2020-05-26 12:54:03] local.ERROR: Use of undefined constant Nam - assumed 'Nam' (this will throw an Error in a future version of PHP) (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Use of undefined constant Nam - assumed 'Nam' (this will throw an Error in a future version of PHP) (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\index.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/index.blade.php:31)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/index.blade.php(31): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'D:\\\\xampp\\\\htdocs...', 31, Array)
+#0 D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/index.blade.php(31): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'D:\\\\xampp\\\\htdocs...', 31, Array)
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #3 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -1778,9 +1792,11 @@ Did you mean one of these?
 #50 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #51 {main}
 "} 
-[2020-05-26 13:41:48] local.ERROR: Property [MaHocSinh] does not exist on this collection instance. (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Property [MaHocSinh] does not exist on this collection instance. (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\EnumeratesValues.php:860)
+[2020-05-26 13:41:48] local.ERROR: Property [MaHocSinh] does not exist on this collection instance. (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Property [MaHocSinh] does not exist on this collection instance. (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\EnumeratesValues.php:860)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Support\\Collection->__get('MaHocSinh')
+#0 D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Support\\Collection->__get('MaHocSinh')
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #3 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -1937,9 +1953,11 @@ Did you mean one of these?
 #46 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #47 {main}
 "} 
-[2020-05-26 13:57:19] local.ERROR: Property [MaHocSinh] does not exist on this collection instance. (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Property [MaHocSinh] does not exist on this collection instance. (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\EnumeratesValues.php:860)
+[2020-05-26 13:57:19] local.ERROR: Property [MaHocSinh] does not exist on this collection instance. (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Property [MaHocSinh] does not exist on this collection instance. (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\EnumeratesValues.php:860)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Support\\Collection->__get('MaHocSinh')
+#0 D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Support\\Collection->__get('MaHocSinh')
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #3 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -2144,9 +2162,11 @@ Did you mean one of these?
 #44 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #45 {main}
 "} 
-[2020-05-26 14:03:41] local.ERROR: Property [MaHocSinh] does not exist on this collection instance. (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Property [MaHocSinh] does not exist on this collection instance. (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\EnumeratesValues.php:860)
+[2020-05-26 14:03:41] local.ERROR: Property [MaHocSinh] does not exist on this collection instance. (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Property [MaHocSinh] does not exist on this collection instance. (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\EnumeratesValues.php:860)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Support\\Collection->__get('MaHocSinh')
+#0 D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Support\\Collection->__get('MaHocSinh')
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #3 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -2252,9 +2272,11 @@ Did you mean one of these?
 #49 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #50 {main}
 "} 
-[2020-05-26 14:05:27] local.ERROR: Property [MaHocSinh] does not exist on this collection instance. (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Property [MaHocSinh] does not exist on this collection instance. (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\EnumeratesValues.php:860)
+[2020-05-26 14:05:27] local.ERROR: Property [MaHocSinh] does not exist on this collection instance. (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Property [MaHocSinh] does not exist on this collection instance. (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\EnumeratesValues.php:860)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Support\\Collection->__get('MaHocSinh')
+#0 D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Support\\Collection->__get('MaHocSinh')
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #3 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -2360,9 +2382,12 @@ Did you mean one of these?
 #49 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #50 {main}
 "} 
-[2020-05-26 14:05:51] local.ERROR: Trying to get property 'MaHocSinh' of non-object (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Trying to get property 'MaHocSinh' of non-object (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php:7)
+[2020-05-26 14:05:51] local.ERROR: Trying to get property 'MaHocSinh' of non-object (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Trying to get property 'MaHocSinh' of non-object (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php:7)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to get p...', 'D:\\\\xampp\\\\htdocs...', 7, Array)
+#0 D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to get p...', 'D:\\\\xampp\\\\htdocs...', 7, Array)
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #3 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -2468,9 +2493,12 @@ Did you mean one of these?
 #49 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #50 {main}
 "} 
-[2020-05-26 14:12:31] local.ERROR: Undefined variable: MaHocSinh (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: MaHocSinh (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php:7)
+[2020-05-26 14:12:31] local.ERROR: Undefined variable: MaHocSinh (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: MaHocSinh (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php:7)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 7, Array)
+#0 D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 7, Array)
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #3 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -2576,9 +2604,12 @@ Did you mean one of these?
 #49 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #50 {main}
 "} 
-[2020-05-26 14:13:11] local.ERROR: Trying to get property 'MaHocSinh' of non-object (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Trying to get property 'MaHocSinh' of non-object (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php:7)
+[2020-05-26 14:13:11] local.ERROR: Trying to get property 'MaHocSinh' of non-object (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Trying to get property 'MaHocSinh' of non-object (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php:7)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to get p...', 'D:\\\\xampp\\\\htdocs...', 7, Array)
+#0 D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to get p...', 'D:\\\\xampp\\\\htdocs...', 7, Array)
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #3 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -2684,9 +2715,12 @@ Did you mean one of these?
 #49 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #50 {main}
 "} 
-[2020-05-26 14:13:29] local.ERROR: Trying to get property 'MaHocSinh' of non-object (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Trying to get property 'MaHocSinh' of non-object (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php:7)
+[2020-05-26 14:13:29] local.ERROR: Trying to get property 'MaHocSinh' of non-object (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Trying to get property 'MaHocSinh' of non-object (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php:7)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to get p...', 'D:\\\\xampp\\\\htdocs...', 7, Array)
+#0 D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to get p...', 'D:\\\\xampp\\\\htdocs...', 7, Array)
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #3 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -2792,9 +2826,12 @@ Did you mean one of these?
 #49 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #50 {main}
 "} 
-[2020-05-26 14:13:42] local.ERROR: Trying to get property 'MaHocSinh' of non-object (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Trying to get property 'MaHocSinh' of non-object (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php:7)
+[2020-05-26 14:13:42] local.ERROR: Trying to get property 'MaHocSinh' of non-object (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Trying to get property 'MaHocSinh' of non-object (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php:7)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to get p...', 'D:\\\\xampp\\\\htdocs...', 7, Array)
+#0 D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to get p...', 'D:\\\\xampp\\\\htdocs...', 7, Array)
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #3 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -2900,9 +2937,12 @@ Did you mean one of these?
 #49 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #50 {main}
 "} 
-[2020-05-26 14:16:23] local.ERROR: Undefined index: MaHocSinh (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined index: MaHocSinh (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php:7)
+[2020-05-26 14:16:23] local.ERROR: Undefined index: MaHocSinh (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\hocsinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined index: MaHocSinh (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\hocsinhs\\edit.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php:7)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined index...', 'D:\\\\xampp\\\\htdocs...', 7, Array)
+#0 D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/hocsinhs/edit.blade.php(7): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined index...', 'D:\\\\xampp\\\\htdocs...', 7, Array)
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #3 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -3854,9 +3894,12 @@ Did you mean one of these?
 #50 D:\\xampp\\htdocs\\quanlyhocsinh\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #51 {main}
 "} 
-[2020-06-01 19:55:39] local.ERROR: Undefined variable: lophoch (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\lophocs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: lophoch (View: D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views\\lophocs\\index.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/lophocs/index.blade.php:28)
+[2020-06-01 19:55:39] local.ERROR: Undefined variable: lophoch (View: D:\xampp\htdocs\quanlyhocsinh\resources\views\lophocs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: lophoch (View: D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views\\lophocs\\index.blade.php) at D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/lophocs/index.blade.php:28)
 [stacktrace]
-#0 D:\\xampp\\htdocs\\quanlyhocsinh\esources\\views/lophocs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 28, Array)
+#0 D:\\xampp\\htdocs\\quanlyhocsinh\
+esources\\views/lophocs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'D:\\\\xampp\\\\htdocs...', 28, Array)
 #1 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('D:\\\\xampp\\\\htdocs...')
 #2 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
 #3 D:\\xampp\\htdocs\\quanlyhocsinh\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
@@ -4664,7 +4707,8 @@ Did you mean one of these?
 #44 D:\\xampp\\htdocs\\student-management\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #45 {main}
 "} 
-[2020-06-11 11:48:04] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (ParseError(code: 0): syntax error, unexpected end of file at D:\\xampp\\htdocs\\student-management\outes\\web.php:50)
+[2020-06-11 11:48:04] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (ParseError(code: 0): syntax error, unexpected end of file at D:\\xampp\\htdocs\\student-management\
+outes\\web.php:50)
 [stacktrace]
 #0 D:\\xampp\\htdocs\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(417): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\xampp\\\\htdocs...')
 #1 D:\\xampp\\htdocs\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('D:\\\\xampp\\\\htdocs...')
@@ -6687,9 +6731,12 @@ Did you mean one of these?
 #43 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #44 {main}
 "} 
-[2020-06-25 10:38:30] local.ERROR: A non-numeric value encountered (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): A non-numeric value encountered (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php:44)
+[2020-06-25 10:38:30] local.ERROR: A non-numeric value encountered (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): A non-numeric value encountered (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php:44)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php(44): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'A non-numeric v...', 'C:\\\\Users\\\\hieupc...', 47, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php(44): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'A non-numeric v...', 'C:\\\\Users\\\\hieupc...', 47, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -6795,9 +6842,12 @@ Did you mean one of these?
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
 "} 
-[2020-06-25 10:46:44] local.ERROR: Use of undefined constant MaHocSinh - assumed 'MaHocSinh' (this will throw an Error in a future version of PHP) (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Use of undefined constant MaHocSinh - assumed 'MaHocSinh' (this will throw an Error in a future version of PHP) (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php:39)
+[2020-06-25 10:46:44] local.ERROR: Use of undefined constant MaHocSinh - assumed 'MaHocSinh' (this will throw an Error in a future version of PHP) (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Use of undefined constant MaHocSinh - assumed 'MaHocSinh' (this will throw an Error in a future version of PHP) (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php:39)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php(39): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'C:\\\\Users\\\\hieupc...', 42, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php(39): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'C:\\\\Users\\\\hieupc...', 42, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -6903,9 +6953,12 @@ Did you mean one of these?
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
 "} 
-[2020-06-25 10:47:45] local.ERROR: Use of undefined constant MaHocSinh - assumed 'MaHocSinh' (this will throw an Error in a future version of PHP) (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Use of undefined constant MaHocSinh - assumed 'MaHocSinh' (this will throw an Error in a future version of PHP) (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php:39)
+[2020-06-25 10:47:45] local.ERROR: Use of undefined constant MaHocSinh - assumed 'MaHocSinh' (this will throw an Error in a future version of PHP) (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Use of undefined constant MaHocSinh - assumed 'MaHocSinh' (this will throw an Error in a future version of PHP) (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php:39)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php(39): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'C:\\\\Users\\\\hieupc...', 42, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php(39): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'C:\\\\Users\\\\hieupc...', 42, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -7012,7 +7065,8 @@ Did you mean one of these?
 #50 {main}
 "} 
 <<<<<<< HEAD
-[2020-06-27 03:38:12] local.ERROR: syntax error, unexpected 'Route' (T_STRING) {"exception":"[object] (ParseError(code: 0): syntax error, unexpected 'Route' (T_STRING) at C:\\Users\\hieupc\\Desktop\\student-management\outes\\web.php:25)
+[2020-06-27 03:38:12] local.ERROR: syntax error, unexpected 'Route' (T_STRING) {"exception":"[object] (ParseError(code: 0): syntax error, unexpected 'Route' (T_STRING) at C:\\Users\\hieupc\\Desktop\\student-management\
+outes\\web.php:25)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(417): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\hieupc...')
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\hieupc...')
@@ -7047,7 +7101,8 @@ Did you mean one of these?
 #30 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #31 {main}
 "} 
-[2020-06-27 07:07:34] local.ERROR: syntax error, unexpected 'Route' (T_STRING) {"exception":"[object] (ParseError(code: 0): syntax error, unexpected 'Route' (T_STRING) at C:\\Users\\hieupc\\Desktop\\student-management\outes\\web.php:25)
+[2020-06-27 07:07:34] local.ERROR: syntax error, unexpected 'Route' (T_STRING) {"exception":"[object] (ParseError(code: 0): syntax error, unexpected 'Route' (T_STRING) at C:\\Users\\hieupc\\Desktop\\student-management\
+outes\\web.php:25)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(417): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\hieupc...')
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\hieupc...')
@@ -7080,7 +7135,8 @@ Did you mean one of these?
 #28 C:\\Users\\hieupc\\Desktop\\student-management\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #29 {main}
 "} 
-[2020-06-27 07:08:10] local.ERROR: syntax error, unexpected 'Route' (T_STRING) {"exception":"[object] (ParseError(code: 0): syntax error, unexpected 'Route' (T_STRING) at C:\\Users\\hieupc\\Desktop\\student-management\outes\\web.php:25)
+[2020-06-27 07:08:10] local.ERROR: syntax error, unexpected 'Route' (T_STRING) {"exception":"[object] (ParseError(code: 0): syntax error, unexpected 'Route' (T_STRING) at C:\\Users\\hieupc\\Desktop\\student-management\
+outes\\web.php:25)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(417): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\hieupc...')
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(374): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\hieupc...')
@@ -7527,9 +7583,12 @@ Did you mean one of these?
 #43 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #44 {main}
 "} 
-[2020-06-27 09:04:11] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\lophocs\detail.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\lophocs\\detail.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/lophocs/detail.blade.php:56)
+[2020-06-27 09:04:11] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\lophocs\detail.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\lophocs\\detail.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/lophocs/detail.blade.php:56)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/lophocs/detail.blade.php(56): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 60, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/lophocs/detail.blade.php(56): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 60, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -9378,9 +9437,12 @@ esbot\\carbon\\src\\Carbon\\Traits\\Creator.php(214): Carbon\\Carbon::rawParse('
 #43 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #44 {main}
 "} 
-[2020-06-27 14:28:31] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php:28)
+[2020-06-27 14:28:31] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php:28)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -9486,9 +9548,12 @@ esbot\\carbon\\src\\Carbon\\Traits\\Creator.php(214): Carbon\\Carbon::rawParse('
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
 "} 
-[2020-06-27 14:29:21] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php:28)
+[2020-06-27 14:29:21] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php:28)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -9594,9 +9659,12 @@ esbot\\carbon\\src\\Carbon\\Traits\\Creator.php(214): Carbon\\Carbon::rawParse('
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
 "} 
-[2020-06-27 14:29:23] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php:28)
+[2020-06-27 14:29:23] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php:28)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -9702,9 +9770,12 @@ esbot\\carbon\\src\\Carbon\\Traits\\Creator.php(214): Carbon\\Carbon::rawParse('
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
 "} 
-[2020-06-27 14:29:24] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php:28)
+[2020-06-27 14:29:24] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php:28)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -9810,9 +9881,12 @@ esbot\\carbon\\src\\Carbon\\Traits\\Creator.php(214): Carbon\\Carbon::rawParse('
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
 "} 
-[2020-06-27 14:29:25] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php:28)
+[2020-06-27 14:29:25] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php:28)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -9918,9 +9992,12 @@ esbot\\carbon\\src\\Carbon\\Traits\\Creator.php(214): Carbon\\Carbon::rawParse('
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
 "} 
-[2020-06-27 14:29:26] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php:28)
+[2020-06-27 14:29:26] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php:28)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -10026,9 +10103,12 @@ esbot\\carbon\\src\\Carbon\\Traits\\Creator.php(214): Carbon\\Carbon::rawParse('
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
 "} 
-[2020-06-27 14:29:30] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php:28)
+[2020-06-27 14:29:30] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php:28)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -10134,9 +10214,12 @@ esbot\\carbon\\src\\Carbon\\Traits\\Creator.php(214): Carbon\\Carbon::rawParse('
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
 "} 
-[2020-06-27 14:29:31] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php:28)
+[2020-06-27 14:29:31] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\hocsinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php:28)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/hocsinhs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -10242,9 +10325,12 @@ esbot\\carbon\\src\\Carbon\\Traits\\Creator.php(214): Carbon\\Carbon::rawParse('
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
 "} 
-[2020-06-27 14:34:44] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\monhocs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\monhocs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/monhocs/index.blade.php:28)
+[2020-06-27 14:34:44] local.ERROR: Undefined variable: hocsinhs (View: C:\Users\hieupc\Desktop\student-management\resources\views\monhocs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\monhocs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/monhocs/index.blade.php:28)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/monhocs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/monhocs/index.blade.php(28): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\Users\\\\hieupc...', 31, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)

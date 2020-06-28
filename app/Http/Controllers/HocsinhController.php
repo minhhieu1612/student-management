@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Hocsinh;
+use App\LopHoc;
 use Illuminate\Support\Facades\DB;
-use Datetime;
+use Carbon\Carbon;
 
 class HocsinhController extends Controller
 {
@@ -20,8 +21,8 @@ class HocsinhController extends Controller
     }
     public function store(Request $request)
     {
-        $today = new Datetime(date('y.m.d'));
-        $birthday = new Datetime($request->input('NgaySinh'));
+        $today = new Carbon(date('y.m.d'));
+        $birthday = new Carbon($request->input('NgaySinh'));
         $diff = $today->diff($birthday);
         $min_age = DB::table('thamsos')->value('TuoiToiThieu');
         if ($diff->y >= $min_age)
@@ -43,9 +44,14 @@ class HocsinhController extends Controller
         return view('hocsinhs.delete');
     }
 
-    public function show()
+    public function show($MaHocSinh)
     {
-      return view('hocsinhs.detail');
+        $hocsinh = Hocsinh::find($MaHocSinh);
+        $birthday = Carbon::createFromFormat('Y-m-d', $hocsinh->NgaySinh);
+        $hocsinh->NgaySinh = $birthday->format('d-m-Y');
+        $malop = DB::table('hocsinh_lophoc')->where('MaHocSinh', $MaHocSinh)->get()[0]->MaLopHoc;
+        $lop = Lophoc::find($malop);
+        return view('hocsinhs.detail', compact('hocsinh', 'lop'));
     }
 
     public function destroy($MaHocSinh)

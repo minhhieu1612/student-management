@@ -23,9 +23,8 @@
           aria-expanded="false"
           >Học sinh</a>
         <div class="dropdown-menu header-dropdown-menu" aria-labelledby="hosohocsinhDropdownId">
+          <a class="dropdown-item header-dropdown-item" href="/hosohocsinh/taomoi">Thêm mới</a>
           <a class="dropdown-item header-dropdown-item" href="/hosohocsinh">Danh sách học sinh</a>
-          <a class="dropdown-item header-dropdown-item" href="/hosohocsinh/create">Thêm mới</a>
-          <a class="dropdown-item header-dropdown-item" href="/hosohocsinh/update">Chỉnh sửa</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -38,10 +37,22 @@
           aria-expanded="false"
           >Lớp học</a>
         <div class="dropdown-menu header-dropdown-menu" aria-labelledby="lophocDropdownId">
+          <a class="dropdown-item header-dropdown-item" href="/lophoc/taomoi">Thêm mới</a>
           <a class="dropdown-item header-dropdown-item" href="/lophoc">Danh sách lớp học</a>
-          <a class="dropdown-item header-dropdown-item" href="/lophoc/create">Thêm mới</a>
-          <a class="dropdown-item header-dropdown-item" href="/lophoc/edit">Chỉnh sửa</a>
-          <a class="dropdown-item header-dropdown-item" href="/lophoc/delete">Xóa lớp</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle text-white"
+          href="/monhoc"
+          id="monhocDropdownId"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Môn học</a>
+        <div class="dropdown-menu header-dropdown-menu" aria-labelledby="monhocDropdownId">
+          <a class="dropdown-item header-dropdown-item" href="/monhoc/taomoi">Thêm mới</a>
+          <a class="dropdown-item header-dropdown-item" href="/monhoc">Danh sách môn học</a>
         </div>
       </li>
       <li class="nav-item ml-auto">

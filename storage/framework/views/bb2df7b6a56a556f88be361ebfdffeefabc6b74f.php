@@ -102,7 +102,7 @@
             Thao tác
           </button>
           <div class="dropdown-menu" aria-labelledby="action-<?php echo e($lophoc->MaLopHoc); ?>">
-            <a class="dropdown-item" href="/lophoc/edit/<?php echo e($lophoc->MaLopHoc); ?>">Chỉnh sửa</a>
+            <a class="dropdown-item" href="/lophoc/sua/<?php echo e($lophoc->MaLopHoc); ?>">Chỉnh sửa</a>
             <button class="dropdown-item" data-toggle="modal" data-target="#delStudent<?php echo e($lophoc->MaLopHoc); ?>">
               Xóa
             </button>
@@ -119,7 +119,9 @@
                 </button>
               </div>
               <div class="modal-body">
-                <p>Bạn có chắc muốn xóa lớp "<?php echo e($lophoc->TenLop); ?>"?</p>
+                <p>Bạn có chắc muốn xóa lớp</p>
+                <p class="text-highlight"><?php echo e($lophoc->TenLop); ?></p>
+                <p>khỏi hệ thống?</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-confirm mr-2">Xác nhận</button>

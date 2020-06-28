@@ -57,7 +57,9 @@
                   </button>
               </div>
               <div class="modal-body">
-                <p>Bạn có chắc muốn xóa học sinh "{{ $hocsinh->HoVaTen }}"?</p>
+                <p>Bạn có chắc muốn xóa học sinh</p>
+                <p class="text-highlight">{{ $hocsinh->HoVaTen }}</p>
+                <p>khỏi hệ thống?</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-confirm mr-2">Xác nhận</button>

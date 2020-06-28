@@ -1,5 +1,5 @@
 <div class="dropdown">
-  <a class="btn" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+  <a class="avatar-icon" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
       aria-expanded="false">
     <i class="fa fa-user-circle text-white" style="font-size: 1.5em;"></i>
   </a>

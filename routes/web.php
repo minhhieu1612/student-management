@@ -40,6 +40,7 @@ Route::prefix('monhoc')->group(function () {
     Route::get('/', 'MonhocController@index')->name('monhocs.index');
     Route::get('/taomoi', 'MonhocController@create');
     Route::post('/taomoi', 'MonhocController@store');
+    Route::get('/xem/{MaMonHoc}', 'MonhocController@show');
     Route::get('xoa', 'MonhocController@delete');
     Route::delete('/', 'MonhocController@destroy');
 });

@@ -1,7 +1,7 @@
- <?php $__env->startSection('title','Thông tin học sinh'); ?>
+ <?php $__env->startSection('title','Thông tin lớp học'); ?>
 <?php $__env->startSection('content'); ?>
 <?php $__env->startComponent('components.pageTitle'); ?>
-  <?php $__env->slot('title'); ?> Thông tin học sinh
+  <?php $__env->slot('title'); ?> Thông tin lớp học
   <?php $__env->endSlot(); ?>
 <?php if (isset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55)): ?>
 <?php $component = $__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55; ?>

@@ -127,6 +127,10 @@ button:focus {
   }
 }
 
+.nav-link {
+  margin-right: 0.5em;
+}
+
 .form-control {
   border-radius: 20px;
   padding: 8px 16px;
@@ -164,4 +168,8 @@ select.form-control {
 
 .text-highlight {
   color: $primary;
+}
+
+.text-passed {
+  color: $success;
 }

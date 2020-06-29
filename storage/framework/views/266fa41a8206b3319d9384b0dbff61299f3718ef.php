@@ -1,6 +1,10 @@
-@extends('templates.master') @section('title','Quản lý điểm số')
-@section('content') @component('components.pageTitle') @slot('title') Quản lý
-điểm số @endslot @endcomponent
+ <?php $__env->startSection('title','Quản lý điểm số'); ?>
+<?php $__env->startSection('content'); ?> <?php $__env->startComponent('components.pageTitle'); ?> <?php $__env->slot('title'); ?> Quản lý
+điểm số <?php $__env->endSlot(); ?> <?php if (isset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55)): ?>
+<?php $component = $__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55; ?>
+<?php unset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55); ?>
+<?php endif; ?>
+<?php echo $__env->renderComponent(); ?>
 
 <div>
   <div class="card mt-3">
@@ -134,4 +138,6 @@
   </div>
 </div>
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\hieupc\Desktop\student-management\resources\views/diemmons/index.blade.php ENDPATH**/ ?>

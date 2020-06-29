@@ -11137,6 +11137,10 @@ button:focus {
   background-color: transparent;
 }
 
+.nav-link {
+  margin-right: 0.5em;
+}
+
 .form-control {
   border-radius: 20px;
   padding: 8px 16px;
@@ -11174,6 +11178,10 @@ select.form-control {
 
 .text-highlight {
   color: #58a1fd;
+}
+
+.text-passed {
+  color: #50d968;
 }
 
 .avatar-icon {

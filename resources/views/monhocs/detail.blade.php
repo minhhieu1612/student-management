@@ -42,7 +42,7 @@
     </div>
   </div>
   <div class="text-center mt-5">
-    <a href="/lophoc/sua/1"><button class="btn-confirm mr-3">Sửa</button></a>
+    <a href="/monhoc/sua/1"><button class="btn-confirm mr-3">Sửa</button></a>
   </div>
 </div>
 

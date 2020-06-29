@@ -13,12 +13,16 @@ class DiemmonhocController extends Controller
     public function index()
     {
         $diemmh = Diemmonhoc::all();
-        return view('diemmonhocs.index',compact('diemmh'));
+        return view('diemmons.index',compact('diemmh'));
     }
 
     public function add()
     {
-        return view('diemmonhocs.add');
+        return view('diemmons.add');
+    }
+
+    public function viewEdit() {
+      return view('diemmons.edit');
     }
 
     public function edit(Request $request)
@@ -34,9 +38,9 @@ class DiemmonhocController extends Controller
         //             ->where('NamHoc',$request->input('NamHoc'))
         //             ->get());
         // }
-        
-        
-        return view('diemmonhocs.edit', compact('hocsinhs'));
+
+
+        return view('diemmons.edit', compact('hocsinhs'));
     }
 
     public function store(Request $req)

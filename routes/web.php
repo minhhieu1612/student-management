@@ -48,6 +48,17 @@ Route::prefix('monhoc')->group(function () {
 Route::prefix('diem')->group(function() {
     Route::get('/', 'DiemmonhocController@index')->name('diemmonhocs.index');
     Route::get('/them', 'DiemmonhocController@add');
-    Route::get('/sua', 'DiemmonhocController@edit');
+    Route::get('/sua', 'DiemmonhocController@viewEdit');
+    Route::post('/sua', 'DiemmonhocController@edit');
     Route::post('/', 'DiemmonhocController@store');
+});
+
+Route::prefix('baocao')->group(function() {
+    Route::get('/theomon', 'BaocaoController@bySubject')->name('baocaos.bySubject');
+    Route::get('/theohocky', 'BaocaoController@bySemester');
+});
+
+Route::prefix('cauhinh')->group(function() {
+    Route::get('/', 'CauhinhController@index')->name('cauhinhs.index');
+    Route::get('/sua', 'CauhinhController@edit');
 });

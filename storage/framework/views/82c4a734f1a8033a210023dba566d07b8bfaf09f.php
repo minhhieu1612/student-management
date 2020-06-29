@@ -1,5 +1,9 @@
-@extends('templates.master') @section('title','Báo cáo tổng kết theo học kỳ')
-@section('content') @component('components.pageTitle') @slot('title') Báo cáo tổng kết theo học kỳ @endslot @endcomponent
+ <?php $__env->startSection('title','Báo cáo tổng kết theo môn'); ?>
+<?php $__env->startSection('content'); ?> <?php $__env->startComponent('components.pageTitle'); ?> <?php $__env->slot('title'); ?> Báo cáo tổng kết theo môn <?php $__env->endSlot(); ?> <?php if (isset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55)): ?>
+<?php $component = $__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55; ?>
+<?php unset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55); ?>
+<?php endif; ?>
+<?php echo $__env->renderComponent(); ?>
 
 <div>
   <div class="card mt-3">
@@ -20,6 +24,23 @@
               >
                 <option value="1">Học kỳ I</option>
                 <option value="2">Học kỳ II</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="label col-md-4" for="MonHoc"
+              >Môn học <span class="text-danger">*</span></label
+            >
+            <div class="col-md-8">
+              <select
+                class="form-control custom-select"
+                name="MonHoc"
+                id="MonHoc"
+                value="Chọn môn"
+              >
+                <option value="Toán học">Toán học</option>
+                <option value="Vật lý">Vật Lý</option>
+                <option value="Hóa học">Hóa học</option>
               </select>
             </div>
           </div>
@@ -111,4 +132,6 @@
   </div>
 </div>
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\hieupc\Desktop\student-management\resources\views/baocaos/bySubject.blade.php ENDPATH**/ ?>

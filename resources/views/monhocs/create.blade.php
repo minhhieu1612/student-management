@@ -24,6 +24,7 @@ môn học @endslot @endcomponent
                   id="TenMonHoc"
                   value=""
                   placeholder=""
+                  required
                 />
               </div>
             </div>
@@ -35,7 +36,7 @@ môn học @endslot @endcomponent
 
     <div class="text-center mt-5 pt-5">
       <button type="submit" class="btn-confirm mr-3">Lưu lại</button>
-      <button type="button" class="btn-cancel">Hủy bỏ</button>
+      <a href="/monhoc"><button type="button" class="btn-cancel">Hủy bỏ</button></a>
     </div>
   </form>
 </div>

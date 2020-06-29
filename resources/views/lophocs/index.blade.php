@@ -7,59 +7,7 @@
 
 <div class="mb-4">
   <a href="/lophoc/taomoi"><button class="btn-create mr-2">Thêm mới</button></a>
-  <button
-    type="button"
-    class="btn-create"
-    data-toggle="modal"
-    data-target="#modelImport"
-  >
-    Import
-  </button>
-
-  <div
-    class="modal fade"
-    id="modelImport"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="modelTitleId"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog" role="document">
-      <form action="/lophoc/import" method="POST" class="modal-content">
-        @csrf
-        <div class="modal-header">
-          <h5 class="modal-title">Nhập dữ liệu học sinh</h5>
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="custom-file">
-            <input
-              type="file"
-              class="custom-file-input"
-              id="customFile"
-              accept=".csv"
-            />
-            <label class="custom-file-label" for="customFile"
-              >Nhập file từ máy tính</label
-            >
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn-confirm mr-2">Lưu lại</button>
-          <button type="button" class="btn-cancel" data-dismiss="modal">
-            Hủy bỏ
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
+  
 </div>
 
 <table

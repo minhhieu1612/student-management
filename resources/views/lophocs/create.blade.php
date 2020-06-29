@@ -29,6 +29,7 @@
                   id="TenLop"
                   value=""
                   placeholder=""
+                  required
                 />
               </div>
             </div>
@@ -64,7 +65,7 @@
     </div>
     <div class="text-center mt-5">
       <button type="submit" class="btn-confirm mr-3">Lưu lại</button>
-      <button type="button" class="btn-cancel">Hủy bỏ</button>
+      <a href="/lophoc"><button type="button" class="btn-cancel">Hủy bỏ</button></a>
     </div>
   </form>
 </div>

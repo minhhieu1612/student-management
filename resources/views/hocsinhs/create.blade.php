@@ -27,6 +27,7 @@
                   id="HoVaTen"
                   value=""
                   placeholder=""
+                  required
                 />
               </div>
             </div>
@@ -41,6 +42,7 @@
                   name="NgaySinh"
                   id="NgaySinh"
                   value=""
+                  required
                 />
               </div>
             </div>
@@ -68,6 +70,7 @@
                   name="DiaChi"
                   id="DiaChi"
                   value=""
+                  required
                 />
               </div>
             </div>
@@ -109,7 +112,7 @@
     </div>
     <div class="text-center mt-5">
       <button type="submit" class="btn-confirm mr-3">Lưu lại</button>
-      <button type="button" class="btn-cancel">Hủy bỏ</button>
+      <a href="/hosohocsinh"><button type="button" class="btn-cancel">Hủy bỏ</button></a>
     </div>
   </form>
 </div>

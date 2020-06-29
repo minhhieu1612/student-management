@@ -1,17 +1,13 @@
- <?php $__env->startSection('title','Thêm mới học sinh'); ?>
-<?php $__env->startSection('content'); ?>
-<?php $__env->startComponent('components.pageTitle'); ?>
-  <?php $__env->slot('title'); ?> Thêm mới học sinh
-  <?php $__env->endSlot(); ?>
-<?php if (isset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55)): ?>
-<?php $component = $__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55; ?>
-<?php unset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55); ?>
-<?php endif; ?>
-<?php echo $__env->renderComponent(); ?>
+@extends('templates.master') @section('title','Chỉnh sửa học sinh')
+@section('content')
+@component('components.pageTitle')
+  @slot('title') Chỉnh sửa học sinh
+  @endslot
+@endcomponent
 
 <div>
   <form method="POST" action="/hosohocsinh">
-    <?php echo csrf_field(); ?>
+    @csrf
     <div class="card">
       <div class="card-header">
         Thông tin học sinh
@@ -121,6 +117,4 @@
   </form>
 </div>
 
-<?php $__env->stopSection(); ?>
-
-<?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\hieupc\Desktop\student-management\resources\views/hocsinhs/create.blade.php ENDPATH**/ ?>
+@endsection

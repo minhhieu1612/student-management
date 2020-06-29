@@ -32,6 +32,7 @@ Route::prefix('lophoc')->group(function () {
     Route::get('/taomoi', 'LophocController@create');
     Route::post('/taomoi', 'LophocController@store1');
     Route::get('/xem', 'LophocController@show');
+    Route::get('/sua/{MaLopHoc}', 'LophocController@edit');
     Route::get('/them', 'LophocController@add');
     Route::post('/them', 'LophocController@store2');
 });
@@ -41,6 +42,7 @@ Route::prefix('monhoc')->group(function () {
     Route::get('/taomoi', 'MonhocController@create');
     Route::post('/taomoi', 'MonhocController@store');
     Route::get('/xem/{MaMonHoc}', 'MonhocController@show');
+    Route::get('/sua/{MaMonHoc}', 'MonhocController@edit');
     Route::get('xoa', 'MonhocController@delete');
     Route::delete('/', 'MonhocController@destroy');
 });

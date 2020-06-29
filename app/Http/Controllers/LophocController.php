@@ -23,6 +23,11 @@ class LophocController extends Controller
       return view('lophocs.detail');
     }
 
+    public function edit($MaLopHoc) {
+      $lophoc = LopHoc::find($MaLopHoc);
+      return view('lophocs.edit', compact('lophoc'));
+    }
+
     public function store1(Request $request)
     {
         $max_siso = DB::table('thamsos')->value('SiSoToiDa');

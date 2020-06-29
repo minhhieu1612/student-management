@@ -40,6 +40,11 @@ class HocsinhController extends Controller
         return redirect(route('hocsinhs.index'));
     }
 
+    public function edit($MaHocSinh) {
+      $hocsinh = Hocsinh::find($MaHocSinh);
+      return view('hocsinhs.edit',compact('hocsinh'));
+    }
+
     public function delete()
     {
         return view('hocsinhs.delete');
@@ -57,7 +62,7 @@ class HocsinhController extends Controller
         $diemmonhocs = Diemmonhoc::where([['MaHocSinh','=', $MaHocSinh],['NamHoc','=', $lop->NamHoc]])->get();
         $diemhk1 = $diemmonhocs->where('HocKy',1);
         $diemhk2 = $diemmonhocs->where('HocKy',2);
-        
+
         $tbhk1 = 0.0;
         $tbhk2 = 0.0;
         foreach ($diemhk1 as $diem)

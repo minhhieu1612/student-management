@@ -21,6 +21,12 @@ class MonhocController extends Controller
     {
       return view('monhocs.detail');
     }
+
+    public function edit($MaMonHoc) {
+      $monhoc = Monhoc::find($MaMonHoc);
+      return view('monhocs.edit', compact('lophoc'));
+    }
+
     public function store(Request $request)
     {
         //store procedure

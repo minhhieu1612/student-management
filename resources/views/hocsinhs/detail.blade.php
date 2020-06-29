@@ -335,7 +335,7 @@
     </div>
   </div>
   <div class="text-center mt-5">
-    <a href="/hosohocsinh/edit/1" class="btn-confirm mr-3">Sửa</a>
+    <a href="/hosohocsinh/sua/1" class="btn-confirm mr-3">Sửa</a>
   </div>
 </div>
 

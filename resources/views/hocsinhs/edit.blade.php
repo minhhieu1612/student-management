@@ -6,8 +6,9 @@
 @endcomponent
 
 <div>
-  <form method="POST" action="/hosohocsinh">
+  <form method="POST" action="/hosohocsinh/sua/{{ $hocsinh->MaHocSinh }}">
     @csrf
+    @method('PUT')
     <div class="card">
       <div class="card-header">
         Thông tin học sinh
@@ -25,7 +26,7 @@
                   type="text"
                   name="HoVaTen"
                   id="HoVaTen"
-                  value=""
+                  value="{{ $hocsinh->HoVaTen }}"
                   placeholder=""
                   required
                 />
@@ -41,7 +42,7 @@
                   type="date"
                   name="NgaySinh"
                   id="NgaySinh"
-                  value=""
+                  value="{{ $hocsinh->NgaySinh }}"
                   required
                 />
               </div>
@@ -52,8 +53,8 @@
               >
               <div class="col-md-8">
                 <select class="form-control custom-select" name="GioiTinh" id="GioiTinh">
-                  <option value="1">Nam</option>
-                  <option value="0">Nữ</option>
+                  <option value="1">{{ $hocsinh->GioiTinh ? "Nam" : "Nữ"}}</option>
+                  <option value="0">{{ $hocsinh->GioiTinh ? "Nữ" : "Nam"}}</option>
                 </select>
               </div>
             </div>
@@ -69,7 +70,7 @@
                   type="text"
                   name="DiaChi"
                   id="DiaChi"
-                  value=""
+                  value="{{ $hocsinh->DiaChi }}"
                   required
                 />
               </div>
@@ -82,7 +83,7 @@
                   type="text"
                   name="QueQuan"
                   id="QueQuan"
-                  value=""
+                  value="{{ $hocsinh->QueQUan }}"
                 />
               </div>
             </div>
@@ -90,7 +91,7 @@
         </div>
       </div>
     </div>
-    <div class="card mt-3">
+    {{-- <div class="card mt-3">
       <div class="card-header">Thông tin lớp học</div>
       <div class="card-body">
         <div class="form-group row">
@@ -109,7 +110,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
     <div class="text-center mt-5">
       <button type="submit" class="btn-confirm mr-3">Lưu lại</button>
       <a href="/hosohocsinh"><button type="button" class="btn-cancel">Hủy bỏ</button></a>

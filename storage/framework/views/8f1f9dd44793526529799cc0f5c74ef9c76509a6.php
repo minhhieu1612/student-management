@@ -32,7 +32,7 @@
     aria-hidden="true"
   >
     <div class="modal-dialog" role="document">
-      <form action="/lophoc/import" method="POST" class="modal-content">
+      <form action="/hosohocsinh/import" method="POST" class="modal-content">
         <?php echo csrf_field(); ?>
         <div class="modal-header">
           <h5 class="modal-title">Nhập dữ liệu học sinh</h5>
@@ -119,7 +119,7 @@
                 <p>khỏi hệ thống?</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-confirm mr-2">Xác nhận</button>
+              <a href="/hosohocsinh/xoa/<?php echo e($hocsinh->MaHocSinh); ?>"><button type="button" class="btn btn-confirm mr-2">Xác nhận</button></a>
                 <button type="button" class="btn btn-cancel" data-dismiss="modal">Hủy</button>
               </div>
             </div>

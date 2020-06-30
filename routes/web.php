@@ -25,8 +25,7 @@ Route::prefix('hosohocsinh')->group(function () {
     Route::get('/xem/{MaHocSinh}', 'HocsinhController@show');
     Route::get('/sua/{MaHocSinh}', 'HocsinhController@edit');
     Route::put('/sua/{MaHocSinh}', 'HocsinhController@update');
-    Route::get('/xoa', 'HocsinhController@delete');
-    Route::post('/xoa', 'HocsinhController@destroy');
+    Route::delete('/xoa/{MaHocSinh}', 'HocsinhController@destroy');
 });
 
 Route::prefix('lophoc')->group(function () {

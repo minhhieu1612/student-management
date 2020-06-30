@@ -118,7 +118,11 @@
                 <p>khỏi hệ thống?</p>
               </div>
               <div class="modal-footer">
-              <a href="/hosohocsinh/xoa/{{ $hocsinh->MaHocSinh }}"><button type="button" class="btn btn-confirm mr-2">Xác nhận</button></a>
+                <form action="/hosohocsinh/xoa/{{ $hocsinh->MaHocSinh }}" method="POST">
+                  @csrf
+                  @method('delete')
+                  <button type="submit" class="btn btn-confirm mr-2">Xác nhận</button>
+                </form>
                 <button type="button" class="btn btn-cancel" data-dismiss="modal">Hủy</button>
               </div>
             </div>

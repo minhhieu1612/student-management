@@ -91,6 +91,7 @@
   <div class="card mt-3">
     <div class="card-header">Thông tin điểm học sinh</div>
     <div class="card-body">
+      <button class="btn mb-3"><span><i class="fa fa-download mr-2"></i></span>Export</button>
       <h4 class="text-center">Lớp 10A1</h4>
       <table
         id="DataList"

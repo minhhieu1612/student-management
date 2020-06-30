@@ -55,13 +55,13 @@ môn học @endslot @endcomponent
             <a class="dropdown-item" href="/monhoc/sua/{{ $monhoc->MaMonHoc }}"
               >Chỉnh sửa</a
             >
-            <button
+            {{-- <button
               class="dropdown-item"
               data-toggle="modal"
               data-target="#del{{ $monhoc->MaMonHoc }}"
             >
               Xóa
-            </button>
+            </button> --}}
           </div>
         </div>
         <div

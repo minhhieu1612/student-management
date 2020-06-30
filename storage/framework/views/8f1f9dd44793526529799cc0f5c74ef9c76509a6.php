@@ -32,7 +32,7 @@
     aria-hidden="true"
   >
     <div class="modal-dialog" role="document">
-      <form action="/hosohocsinh/import" method="POST" class="modal-content">
+      <form action="/hosohocsinh/import" method="POST" class="modal-content" enctype="multipart/form-data">
         <?php echo csrf_field(); ?>
         <div class="modal-header">
           <h5 class="modal-title">Nhập dữ liệu học sinh</h5>
@@ -50,8 +50,10 @@
             <input
               type="file"
               class="custom-file-input"
-              id="customFile"
+              id="file"
+              name="file"
               accept=".csv"
+              required
             />
             <label class="custom-file-label" for="customFile"
               >Nhập file từ máy tính</label

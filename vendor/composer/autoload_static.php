@@ -568,6 +568,7 @@ class ComposerStaticInit2c91330c94bec96fc362db24dad7951c
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Imports\\HocsinhsImport' => __DIR__ . '/../..' . '/app/Imports/HocsinhsImport.php',
         'App\\Lophoc' => __DIR__ . '/../..' . '/app/Lophoc.php',
         'App\\Monhoc' => __DIR__ . '/../..' . '/app/Monhoc.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',

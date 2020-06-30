@@ -8,6 +8,8 @@ use App\LopHoc;
 use App\Diemmonhoc;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use App\Imports\HocsinhsImport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class HocsinhController extends Controller
 {
@@ -20,29 +22,43 @@ class HocsinhController extends Controller
     {
         return view('hocsinhs.create');
     }
-    public function store(Request $request)
+    public function store()
     {
         $today = new Carbon(date('y.m.d'));
-        $birthday = new Carbon($request->input('NgaySinh'));
+        $birthday = new Carbon(request('NgaySinh'));
         $diff = $today->diff($birthday);
         $min_age = DB::table('thamsos')->value('TuoiToiThieu');
         if ($diff->y >= $min_age)
         {
             $hocsinh = new Hocsinh();
-                $hocsinh->HoVaTen = $request->input('HoVaTen');
-                $hocsinh->NgaySinh = $request->input('NgaySinh');
-                $hocsinh->GioiTinh = $request->input('GioiTinh');
-                $hocsinh->DiaChi = $request->input('DiaChi');
-                $hocsinh->QueQuan = $request->input('QueQuan');
-                $hocsinh->save();
+            $hocsinh->HoVaTen = request('HoVaTen');
+            $hocsinh->NgaySinh = request('NgaySinh');
+            $hocsinh->GioiTinh = request('GioiTinh');
+            $hocsinh->DiaChi = request('DiaChi');
+            $hocsinh->QueQuan = request('QueQuan');
+            $hocsinh->save();
         }
 
         return redirect(route('hocsinhs.index'));
     }
 
-    public function edit($MaHocSinh) {
-      $hocsinh = Hocsinh::find($MaHocSinh);
-      return view('hocsinhs.edit',compact('hocsinh'));
+    public function edit($MaHocSinh) 
+    {
+        $hocsinh = Hocsinh::findOrFail($MaHocSinh);
+        return view('hocsinhs.edit',compact('hocsinh'));
+    }
+
+    public function update($MaHocSinh)
+    {
+        $hocsinh = Hocsinh::findOrFail($MaHocSinh);
+        $hocsinh->HoVaTen = request('HoVaTen');
+        $hocsinh->NgaySinh = request('NgaySinh');
+        $hocsinh->GioiTinh = request('GioiTinh');
+        $hocsinh->DiaChi = request('DiaChi');
+        $hocsinh->QueQuan = request('QueQuan');
+        $hocsinh->save();
+
+        return redirect(route('hocsinhs.index'));
     }
 
     public function delete()
@@ -52,7 +68,7 @@ class HocsinhController extends Controller
 
     public function show($MaHocSinh)
     {
-        $hocsinh = Hocsinh::find($MaHocSinh);
+        $hocsinh = Hocsinh::findOrFail($MaHocSinh);
         $birthday = Carbon::createFromFormat('Y-m-d', $hocsinh->NgaySinh);
         $hocsinh->NgaySinh = $birthday->format('d-m-Y');
 
@@ -83,7 +99,7 @@ class HocsinhController extends Controller
 
     public function destroy($MaHocSinh)
     {
-        $hocsinh = Hocsinh::find($MaHocSinh);
+        $hocsinh = Hocsinh::findOrFail($MaHocSinh);
         $isInClass = DB::table('hocsinh_lophoc')->where('MaHocSinh', $MaHocSinh)->get();
         if ($isInClass == [])
         {
@@ -91,5 +107,12 @@ class HocsinhController extends Controller
         }
 
         return redirect(route('hocsinhs.index'));
+    }
+
+    public function import(Request $request) 
+    {
+        Excel::import(new HocsinhsImport, $request->file('file'));
+           
+        return back();
     }
 }

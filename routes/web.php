@@ -19,10 +19,12 @@ Route::get('/', function () {
 
 Route::prefix('hosohocsinh')->group(function () {
     Route::get('/', 'HocsinhController@index')->name('hocsinhs.index');
-    Route::post('/', 'HocsinhController@store');
     Route::get('/taomoi', 'HocsinhController@create');
+    Route::post('/', 'HocsinhController@store');
+    Route::post('/import', 'HocsinhController@import');
     Route::get('/xem/{MaHocSinh}', 'HocsinhController@show');
     Route::get('/sua/{MaHocSinh}', 'HocsinhController@edit');
+    Route::put('/sua/{MaHocSinh}', 'HocsinhController@update');
     Route::get('/xoa', 'HocsinhController@delete');
     Route::post('/xoa', 'HocsinhController@destroy');
 });

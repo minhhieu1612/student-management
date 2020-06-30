@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Hocsinh extends Model
 {
-    protected $guarded = [];
+    protected $fillable = ['HoVaTen','NgaySinh','GioiTinh','DiaChi','QueQuan'];
     protected $primaryKey = 'MaHocSinh';
     public function diemmonhocs()
     {

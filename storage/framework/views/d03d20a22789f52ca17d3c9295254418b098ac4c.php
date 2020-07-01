@@ -70,9 +70,9 @@
           <div class="col-md-4">
             <select class="form-control custom-select" name="MaLopHoc" id="MaLopHoc">
               <?php if(count($lophocs) > 0): ?>
-              <?php $__currentLoopData = $lophocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $lophoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-              <option value="<?php echo e($lophoc->MaLopHoc); ?>" <?php echo e($malop == $lophoc->MaLopHoc? 'selected':null); ?>><?php echo e($lophoc->TenLop); ?></option>
-              <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                <?php $__currentLoopData = $lophocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $lophoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                  <option value="<?php echo e($lophoc->MaLopHoc); ?>" <?php echo e($malop == $lophoc->MaLopHoc? 'selected':null); ?>><?php echo e($lophoc->TenLop); ?></option>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
               <?php endif; ?>
             </select>
           </div>

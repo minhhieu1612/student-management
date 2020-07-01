@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Lophoc;
+use App\Hocsinh;
 use Illuminate\Support\Facades\DB;
 
 class LophocController extends Controller
@@ -21,7 +22,15 @@ class LophocController extends Controller
 
     public function show($id) {
       $lophoc = LopHoc::find($id);
-      return view('lophocs.detail', compact('lophoc'));
+      $hocsinhs = array();
+      $isInClass = DB::table('hocsinh_lophoc')->where('MaLopHoc', $id)->get();
+      if(count($isInClass)>0) {
+        foreach ($isInClass as $hslh) {
+          $hocsinh = Hocsinh::findOrFail($hslh->MaHocSinh);
+          array_push($hocsinhs,$hocsinh);
+        }
+      }
+      return view('lophocs.detail', compact('lophoc','hocsinhs'));
     }
 
     public function show_edit($id) {
@@ -39,7 +48,7 @@ class LophocController extends Controller
         return redirect(route('lophocs.index'));
     }
 
-     public function delete($id)
+    public function delete($id)
     {
       $lophoc = LopHoc::findOrFail($id);
       $isInClass = DB::table('hocsinh_lophoc')->where('MaLopHoc', $id)->get();
@@ -48,6 +57,20 @@ class LophocController extends Controller
         $lophoc->delete();
       }
       return redirect(route('lophocs.index'));
+    }
+
+    public function delete_student($MaLopHoc,$MaHocSinh)
+    {
+      // $lophoc = LopHoc::findOrFail($MaLopHoc);
+      $isInClass = DB::table('hocsinh_lophoc')->where('MaHocSinh',$MaHocSinh)->delete();
+      return back();
+    }
+
+    public function delete_students($MaLopHoc)
+    {
+      // $lophoc = LopHoc::findOrFail($MaLopHoc);
+      $isInClass = DB::table('hocsinh_lophoc')->where('MaLopHoc',$MaLopHoc)->delete();
+      return back();
     }
 
     public function store1(Request $request)

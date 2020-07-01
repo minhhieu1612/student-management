@@ -54,6 +54,7 @@ Route::prefix('diem')->group(function() {
     Route::get('/sua', 'DiemmonhocController@viewEdit');
     Route::post('/sua', 'DiemmonhocController@edit');
     Route::post('/', 'DiemmonhocController@store');
+    Route::post('/xem', 'DiemmonhocController@show');
 });
 
 Route::prefix('baocao')->group(function() {

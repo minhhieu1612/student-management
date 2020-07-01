@@ -18,13 +18,13 @@
           <div class="form-group row">
             <label class="label col-md-4">Mã môn học</label>
             <div class="col-md-8">
-              <p class="fs-14">MH111</p>
+            <p class="fs-14"><?php echo e($monhoc->MaMonHoc); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Tên môn học</label>
             <div class="col-md-8">
-              <p class="fs-14">Anh Văn</p>
+              <p class="fs-14"><?php echo e($monhoc->TenMonHoc); ?></p>
             </div>
           </div>
         </div>
@@ -32,13 +32,13 @@
           <div class="form-group row">
             <label class="label col-md-4">Ngày tạo</label>
             <div class="col-md-8">
-              <p class="fs-14">30/12/2019 9:00</p>
+              <p class="fs-14"><?php echo e($monhoc->created_at); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Ngày cập nhật</label>
             <div class="col-md-8">
-              <p class="fs-14">12/02/2020 15:00</p>
+              <p class="fs-14"><?php echo e($monhoc->updated_at); ?></p>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
     </div>
   </div>
   <div class="text-center mt-5">
-    <a href="/monhoc/sua/1"><button class="btn-confirm mr-3">Sửa</button></a>
+    <a href="/monhoc/sua/<?php echo e($monhoc->MaMonHoc); ?>"><button class="btn-confirm mr-3">Sửa</button></a>
   </div>
 </div>
 

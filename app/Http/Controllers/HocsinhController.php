@@ -11,6 +11,13 @@ use Carbon\Carbon;
 use App\Imports\HocsinhsImport;
 use Maatwebsite\Excel\Facades\Excel;
 
+function console_log($message)
+{
+    print($message);
+    flush();
+    ob_flush();
+}
+
 class HocsinhController extends Controller
 {
     public function index()
@@ -42,7 +49,7 @@ class HocsinhController extends Controller
         return redirect(route('hocsinhs.index'));
     }
 
-    public function edit($MaHocSinh) 
+    public function edit($MaHocSinh)
     {
         $hocsinh = Hocsinh::findOrFail($MaHocSinh);
         return view('hocsinhs.edit',compact('hocsinh'));
@@ -59,11 +66,6 @@ class HocsinhController extends Controller
         $hocsinh->save();
 
         return redirect(route('hocsinhs.index'));
-    }
-
-    public function delete()
-    {
-        return view('hocsinhs.delete');
     }
 
     public function show($MaHocSinh)
@@ -97,22 +99,21 @@ class HocsinhController extends Controller
         return view('hocsinhs.detail', compact('hocsinh', 'lop', 'diemhk1', 'diemhk2', 'tbhk1', 'tbhk2'));
     }
 
-    public function destroy($MaHocSinh)
+    public function delete($MaHocSinh)
     {
-        $hocsinh = Hocsinh::findOrFail($MaHocSinh);
-        $isInClass = DB::table('hocsinh_lophoc')->where('MaHocSinh', $MaHocSinh)->get();
-        if ($isInClass == [])
-        {
-            $hocsinh->delete();
-        }
-
-        return redirect(route('hocsinhs.index'));
+      $hocsinh = Hocsinh::findOrFail($MaHocSinh);
+      $isInClass = DB::table('hocsinh_lophoc')->where('MaHocSinh', $MaHocSinh)->get();
+      if (count($isInClass) == 0)
+      {
+        $hocsinh->delete();
+      }
+      return redirect(route('hocsinhs.index'));
     }
 
-    public function import(Request $request) 
+    public function import(Request $request)
     {
         Excel::import(new HocsinhsImport, $request->file('file'));
-           
+
         return back();
     }
 }

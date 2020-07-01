@@ -17,14 +17,24 @@ class MonhocController extends Controller
     {
       return view('monhocs.create');
     }
-    public function show()
+    public function show($id)
     {
-      return view('monhocs.detail');
+      $monhoc = Monhoc::find($id);
+      return view('monhocs.detail', compact('monhoc'));
     }
 
-    public function edit($MaMonHoc) {
-      $monhoc = Monhoc::find($MaMonHoc);
-      return view('monhocs.edit', compact('lophoc'));
+    public function show_edit($id) {
+      $monhoc = Monhoc::find($id);
+      return view('monhocs.edit', compact('monhoc'));
+    }
+
+    public function edit($id) {
+
+        $monhoc = Monhoc::findOrFail($id);
+        $monhoc->TenMonHoc = request('TenMonHoc');
+        $monhoc->save();
+
+        return redirect(route('monhocs.index'));
     }
 
     public function store(Request $request)

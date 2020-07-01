@@ -3,7 +3,7 @@
 môn học @endslot @endcomponent
 
 <div>
-  <form method="POST" action="/monhoc/taomoi">
+  <form method="POST" action="/monhoc/sua/{{ $monhoc->MaMonHoc }}">
     @csrf
     <div class="card">
       <div class="card-header">
@@ -13,19 +13,10 @@ môn học @endslot @endcomponent
         <div class="row">
           <div class="col-md-6 mb-3">
             <div class="form-group row">
-              <label class="label col-md-4" for="TenMonHoc"
-                >Tên môn học <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="TenMonHoc">Tên môn học <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="TenMonHoc"
-                  id="TenMonHoc"
-                  value=""
-                  placeholder=""
-                  required
-                />
+                <input class="form-control" type="text" name="TenMonHoc" id="TenMonHoc" value="{{ $monhoc->TenMonHoc }}" placeholder=""
+                  required />
               </div>
             </div>
           </div>

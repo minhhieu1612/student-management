@@ -2,8 +2,8 @@
 <?php $__env->startSection('content'); ?>
 
 <?php $__env->startComponent('components.pageTitle'); ?>
-  <?php $__env->slot('title'); ?> Thêm mới lớp học
-  <?php $__env->endSlot(); ?>
+<?php $__env->slot('title'); ?> Thêm mới lớp học
+<?php $__env->endSlot(); ?>
 <?php if (isset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55)): ?>
 <?php $component = $__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55; ?>
 <?php unset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55); ?>
@@ -21,25 +21,13 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group row">
-              <label class="label col-md-4" for="TenLop"
-                >Tên lớp học <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="TenLop">Tên lớp học <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="TenLop"
-                  id="TenLop"
-                  value=""
-                  placeholder=""
-                  required
-                />
+                <input class="form-control" type="text" name="TenLop" id="TenLop" value="" placeholder="" required />
               </div>
             </div>
             <div class="form-group row">
-              <label class="label col-md-4" for="Khoi"
-                >Khối <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="Khoi">Khối <span class="text-danger">*</span></label>
               <div class="col-md-8">
                 <select class="form-control custom-select" name="Khoi" id="Khoi" value="Chọn khối">
                   <option value="10">10</option>
@@ -51,9 +39,7 @@
           </div>
           <div class="col-md-6">
             <div class="form-group row">
-              <label class="label col-md-4" for="NamHoc"
-                >Năm học <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="NamHoc">Năm học <span class="text-danger">*</span></label>
               <div class="col-md-8">
                 <select class="form-control custom-select" name="NamHoc" id="NamHoc" value="Chọn khối">
                   <option value="2018">2018</option>

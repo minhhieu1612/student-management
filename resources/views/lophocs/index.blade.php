@@ -1,20 +1,16 @@
 @extends('templates.master') @section('title','Danh sách lớp học')
 @section('content')
 @component('components.pageTitle')
-  @slot('title') Danh sách lớp học
-  @endslot
+@slot('title') Danh sách lớp học
+@endslot
 @endcomponent
 
 <div class="mb-4">
   <a href="/lophoc/taomoi"><button class="btn-create mr-2">Thêm mới</button></a>
-  
+
 </div>
 
-<table
-  id="DataList"
-  class="table table-bordered table-responsive-md table-hover"
-  style="width: 100%;"
->
+<table id="DataList" class="table table-bordered table-responsive-md table-hover" style="width: 100%;">
   <thead>
     <tr>
       <th>STT</th>
@@ -55,7 +51,7 @@
         <div class="modal fade" id="delStudent{{ $lophoc->MaLopHoc }}" tabindex="-1" role="dialog"
           aria-labelledby="modelTitleId" aria-hidden="true">
           <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <form action="/lophoc/xoa/{{ $lophoc->MaLopHoc }}" method="GET" class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title">Xóa Lớp học</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -68,10 +64,10 @@
                 <p>khỏi hệ thống?</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-confirm mr-2">Xác nhận</button>
+                <button type="submit" class="btn btn-confirm mr-2">Xác nhận</button>
                 <button type="button" class="btn btn-cancel" data-dismiss="modal">Hủy</button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </td>

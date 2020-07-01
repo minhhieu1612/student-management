@@ -3,8 +3,8 @@
 @section('content')
 
 @component('components.pageTitle')
-  @slot('title') Thêm mới lớp học
-  @endslot
+@slot('title') Thêm mới lớp học
+@endslot
 @endcomponent
 
 <div>
@@ -18,25 +18,13 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group row">
-              <label class="label col-md-4" for="TenLop"
-                >Tên lớp học <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="TenLop">Tên lớp học <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="TenLop"
-                  id="TenLop"
-                  value=""
-                  placeholder=""
-                  required
-                />
+                <input class="form-control" type="text" name="TenLop" id="TenLop" value="" placeholder="" required />
               </div>
             </div>
             <div class="form-group row">
-              <label class="label col-md-4" for="Khoi"
-                >Khối <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="Khoi">Khối <span class="text-danger">*</span></label>
               <div class="col-md-8">
                 <select class="form-control custom-select" name="Khoi" id="Khoi" value="Chọn khối">
                   <option value="10">10</option>
@@ -48,9 +36,7 @@
           </div>
           <div class="col-md-6">
             <div class="form-group row">
-              <label class="label col-md-4" for="NamHoc"
-                >Năm học <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="NamHoc">Năm học <span class="text-danger">*</span></label>
               <div class="col-md-8">
                 <select class="form-control custom-select" name="NamHoc" id="NamHoc" value="Chọn khối">
                   <option value="2018">2018</option>

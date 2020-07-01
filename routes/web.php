@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HocsinhController@index')->name('hocsinhs.index');
 
 Route::prefix('hosohocsinh')->group(function () {
     Route::get('/', 'HocsinhController@index')->name('hocsinhs.index');
@@ -24,9 +22,8 @@ Route::prefix('hosohocsinh')->group(function () {
     Route::post('/import', 'HocsinhController@import');
     Route::get('/xem/{MaHocSinh}', 'HocsinhController@show');
     Route::get('/sua/{MaHocSinh}', 'HocsinhController@edit');
-    Route::put('/sua/{MaHocSinh}', 'HocsinhController@update');
-    Route::get('/xoa', 'HocsinhController@delete');
-    Route::post('/xoa', 'HocsinhController@destroy');
+    Route::get('/xoa/{MaHocSinh}', 'HocsinhController@delete');
+    Route::post('/xoa/{MaHocSinh}', 'HocsinhController@destroy');
 });
 
 Route::prefix('lophoc')->group(function () {
@@ -34,7 +31,9 @@ Route::prefix('lophoc')->group(function () {
     Route::get('/taomoi', 'LophocController@create');
     Route::post('/taomoi', 'LophocController@store1');
     Route::get('/xem', 'LophocController@show');
-    Route::get('/sua/{MaLopHoc}', 'LophocController@edit');
+    Route::get('/sua/{id}', 'LophocController@show_edit');
+    Route::post('/sua/{id}', 'LophocController@edit');
+    Route::get('/xoa/{id}', 'LophocController@delete');
     Route::get('/them', 'LophocController@add');
     Route::post('/them', 'LophocController@store2');
 });
@@ -43,8 +42,9 @@ Route::prefix('monhoc')->group(function () {
     Route::get('/', 'MonhocController@index')->name('monhocs.index');
     Route::get('/taomoi', 'MonhocController@create');
     Route::post('/taomoi', 'MonhocController@store');
-    Route::get('/xem/{MaMonHoc}', 'MonhocController@show');
-    Route::get('/sua/{MaMonHoc}', 'MonhocController@edit');
+    Route::get('/xem/{id}', 'MonhocController@show');
+    Route::get('/sua/{id}', 'MonhocController@show_edit');
+    Route::post('/sua/{id}', 'MonhocController@edit');
     Route::get('xoa', 'MonhocController@delete');
     Route::delete('/', 'MonhocController@destroy');
 });

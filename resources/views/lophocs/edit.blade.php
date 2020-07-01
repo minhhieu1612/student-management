@@ -3,12 +3,12 @@
 @section('content')
 
 @component('components.pageTitle')
-  @slot('title') Chỉnh sửa lớp học
-  @endslot
+@slot('title') Chỉnh sửa lớp học
+@endslot
 @endcomponent
 
 <div>
-  <form method="POST" action="/lophoc/taomoi">
+  <form method="POST" action="/lophoc/sua/{{ $lophoc->MaLopHoc }}">
     @csrf
     <div class="card">
       <div class="card-header">
@@ -18,44 +18,31 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group row">
-              <label class="label col-md-4" for="TenLop"
-                >Tên lớp học <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="TenLop">Tên lớp học <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="TenLop"
-                  id="TenLop"
-                  value=""
-                  placeholder=""
-                  required
-                />
+                <input class="form-control" type="text" name="TenLop" id="TenLop" value="{{ $lophoc->TenLop }}"
+                  placeholder="" required />
               </div>
             </div>
             <div class="form-group row">
-              <label class="label col-md-4" for="Khoi"
-                >Khối <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="Khoi">Khối <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <select class="form-control custom-select" name="Khoi" id="Khoi" value="Chọn khối">
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
+                <select class="form-control custom-select" name="Khoi" id="Khoi">
+                  <option value="10" {{ $lophoc->Khoi==10? 'selected': null }}>10</option>
+                  <option value="11" {{ $lophoc->Khoi==11? 'selected': null }}>11</option>
+                  <option value="12" {{ $lophoc->Khoi==12? 'selected': null }}>12</option>
                 </select>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group row">
-              <label class="label col-md-4" for="NamHoc"
-                >Năm học <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="NamHoc">Năm học <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <select class="form-control custom-select" name="NamHoc" id="NamHoc" value="Chọn khối">
-                  <option value="2018">2018</option>
-                  <option value="2019">2019</option>
-                  <option value="2020">2020</option>
+                <select class="form-control custom-select" name="NamHoc" id="NamHoc">
+                  <option value="2018" {{ $lophoc->NamHoc==2018? 'selected': null }}>2018</option>
+                  <option value="2019" {{ $lophoc->NamHoc==2019? 'selected': null }}>2019</option>
+                  <option value="2020" {{ $lophoc->NamHoc==2020? 'selected': null }}>2020</option>
                 </select>
               </div>
             </div>

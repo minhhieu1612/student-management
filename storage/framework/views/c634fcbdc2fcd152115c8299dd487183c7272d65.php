@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('title','Hồ sơ học sinh'); ?>
 <?php $__env->startSection('content'); ?>
 
@@ -5,8 +6,8 @@
   <h4>Xóa hồ sơ học sinh</h4>
 </div>
 <div>
-  <form method="POST" action="/hosohocsinh">
-
+  <form method="POST" action="/hosohocsinh/delete">
+    <?php echo csrf_field(); ?>
     <div class="field">
       <label class="label" for="MaHocSinh">Mã Học Sinh</label>
       <input type="text" name="MaHocSinh">

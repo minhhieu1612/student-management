@@ -1,8 +1,8 @@
 @extends('templates.master') @section('title','Chỉnh sửa học sinh')
 @section('content')
 @component('components.pageTitle')
-  @slot('title') Chỉnh sửa học sinh
-  @endslot
+@slot('title') Chỉnh sửa học sinh
+@endslot
 @endcomponent
 
 <div>
@@ -17,40 +17,21 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group row">
-              <label class="label col-md-4" for="HoVaTen"
-                >Họ Và Tên <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="HoVaTen">Họ Và Tên <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="HoVaTen"
-                  id="HoVaTen"
-                  value="{{ $hocsinh->HoVaTen }}"
-                  placeholder=""
-                  required
-                />
+                <input class="form-control" type="text" name="HoVaTen" id="HoVaTen" value="{{ $hocsinh->HoVaTen }}"
+                  placeholder="" required />
               </div>
             </div>
             <div class="form-group row">
-              <label class="label col-md-4" for="NgaySinh"
-                >Ngày Sinh <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="NgaySinh">Ngày Sinh <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="date"
-                  name="NgaySinh"
-                  id="NgaySinh"
-                  value="{{ $hocsinh->NgaySinh }}"
-                  required
-                />
+                <input class="form-control" type="date" name="NgaySinh" id="NgaySinh" value="{{ $hocsinh->NgaySinh }}"
+                  required />
               </div>
             </div>
             <div class="form-group row">
-              <label class="label col-md-4" for="GioiTinh"
-                >Giới Tính <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="GioiTinh">Giới Tính <span class="text-danger">*</span></label>
               <div class="col-md-8">
                 <select class="form-control custom-select" name="GioiTinh" id="GioiTinh">
                   <option value="1">{{ $hocsinh->GioiTinh ? "Nam" : "Nữ"}}</option>
@@ -61,30 +42,16 @@
           </div>
           <div class="col-md-6">
             <div class="form-group row">
-              <label class="label col-md-4" for="DiaChi"
-                >Địa Chỉ <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="DiaChi">Địa Chỉ <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="DiaChi"
-                  id="DiaChi"
-                  value="{{ $hocsinh->DiaChi }}"
-                  required
-                />
+                <input class="form-control" type="text" name="DiaChi" id="DiaChi" value="{{ $hocsinh->DiaChi }}"
+                  required />
               </div>
             </div>
             <div class="form-group row">
               <label class="label col-md-4" for="QueQuan">Quê quán</label>
               <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="QueQuan"
-                  id="QueQuan"
-                  value="{{ $hocsinh->QueQUan }}"
-                />
+                <input class="form-control" type="text" name="QueQuan" id="QueQuan" value="{{ $hocsinh->QueQUan }}" />
               </div>
             </div>
           </div>

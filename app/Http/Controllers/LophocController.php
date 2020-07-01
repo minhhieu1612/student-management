@@ -23,9 +23,30 @@ class LophocController extends Controller
       return view('lophocs.detail');
     }
 
-    public function edit($MaLopHoc) {
-      $lophoc = LopHoc::find($MaLopHoc);
+    public function show_edit($id) {
+      $lophoc = LopHoc::find($id);
       return view('lophocs.edit', compact('lophoc'));
+    }
+
+    public function edit($id) {
+        $lophoc = LopHoc::findOrFail($id);
+        $lophoc->TenLop = request('TenLop');
+        $lophoc->Khoi = request('Khoi');
+        $lophoc->NamHoc = request('NamHoc');
+        $lophoc->save();
+
+        return redirect(route('lophocs.index'));
+    }
+
+     public function delete($id)
+    {
+      $lophoc = LopHoc::findOrFail($id);
+      $isInClass = DB::table('hocsinh_lophoc')->where('MaLopHoc', $id)->get();
+      if (count($isInClass) == 0)
+      {
+        $lophoc->delete();
+      }
+      return redirect(route('lophocs.index'));
     }
 
     public function store1(Request $request)

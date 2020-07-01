@@ -22,7 +22,7 @@
                 class="form-control custom-select"
                 name="TenLop"
                 id="TenLop"
-                value="Chọn lớp"
+                value=""
               >
                 <?php $__currentLoopData = $lops; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $lop): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                   <option value="<?php echo e($lop->TenLop); ?>"><?php echo e($lop->TenLop); ?></option>
@@ -39,7 +39,7 @@
                 class="form-control custom-select"
                 name="MonHoc"
                 id="MonHoc"
-                value="Chọn môn"
+                value=""
               >
                 <?php $__currentLoopData = $monhocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $monhoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <option value="<?php echo e($monhoc->MaMonHoc); ?>"><?php echo e($monhoc->TenMonHoc); ?></option>
@@ -61,7 +61,7 @@
                 class="form-control custom-select"
                 name="NamHoc"
                 id="NamHoc"
-                value="Chọn khối"
+                value=""
               >
                 <?php $__currentLoopData = $namhocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $namhoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                   <option value="<?php echo e($namhoc->NamHoc); ?>"><?php echo e($namhoc->NamHoc); ?></option>
@@ -78,7 +78,7 @@
                 class="form-control custom-select"
                 name="HocKy"
                 id="HocKy"
-                value="Chọn khối"
+                value=""
               >
                 <option value="1">Học kỳ I</option>
                 <option value="2">Học kỳ II</option>
@@ -112,17 +112,16 @@
           </tr>
         </thead>
         <tbody>
-          <?php $__currentLoopData = $hocsinhs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $hocsinh): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-          <?php $diem = $hocsinh->diemmonhocs->where([['MaMonHoc', request('MonHoc')],['HocKy', request('HocKy')],['NamHoc', request('NamHoc')]])->first()?>
+          <?php $__currentLoopData = $hocsinhs ?? []; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $hocsinh): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           <tr>
             <td><?php echo e($loop->index + 1); ?></td>
             <td><?php echo e($hocsinh->MaHocSinh); ?></td>
             <td><?php echo e($hocsinh->HoVaTen); ?></td>
-            <td><?php echo e($diem->DiemMieng); ?></td>
-            <td><?php echo e($diem->Diem15P); ?></td>
-            <td><?php echo e($diem->Diem1Tiet); ?></td>
-            <td><?php echo e($diem->DiemHK); ?></td>
-            <td><?php echo e($diem->DiemTongHK); ?></td>
+            <td><?php echo e($hocsinh->DiemMieng); ?></td>
+            <td><?php echo e($hocsinh->Diem15P); ?></td>
+            <td><?php echo e($hocsinh->Diem1Tiet); ?></td>
+            <td><?php echo e($hocsinh->DiemHK); ?></td>
+            <td><?php echo e($hocsinh->DiemTongHK); ?></td>
           </tr>
           <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </tbody>

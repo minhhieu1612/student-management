@@ -1,8 +1,8 @@
  <?php $__env->startSection('title','Thông tin học sinh'); ?>
 <?php $__env->startSection('content'); ?>
 <?php $__env->startComponent('components.pageTitle'); ?>
-  <?php $__env->slot('title'); ?> Thông tin học sinh
-  <?php $__env->endSlot(); ?>
+<?php $__env->slot('title'); ?> Thông tin học sinh
+<?php $__env->endSlot(); ?>
 <?php if (isset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55)): ?>
 <?php $component = $__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55; ?>
 <?php unset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55); ?>
@@ -58,13 +58,13 @@
           <div class="form-group row">
             <label class="label col-md-4">Ngày tạo</label>
             <div class="col-md-8">
-              <p class="fs-14"><?php echo e($hocsinh->created_at->format('d-m-Y H:i')); ?></p>
+              <p class="fs-14"><?php echo e($hocsinh->created_at ? $hocsinh->created_at->format('d/m/Y H:i'):''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Ngày cập nhật</label>
             <div class="col-md-8">
-              <p class="fs-14"><?php echo e($hocsinh->updated_at->format('d-m-Y H:i')); ?></p>
+              <p class="fs-14"><?php echo e($hocsinh->updated_at ? $hocsinh->updated_at->format('d/m/Y H:i'):''); ?></p>
             </div>
           </div>
         </div>
@@ -339,7 +339,7 @@
     </div>
   </div>
   <div class="text-center mt-5">
-    <a href="/hosohocsinh/sua/1" class="btn-confirm mr-3">Sửa</a>
+    <a href="/hosohocsinh/sua/1"><button class="btn-confirm mr-3">Sửa</button></a>
   </div>
 </div>
 

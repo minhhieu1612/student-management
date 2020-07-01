@@ -18,7 +18,7 @@
                 class="form-control custom-select"
                 name="TenLop"
                 id="TenLop"
-                value="Chọn lớp"
+                value=""
               >
                 @foreach($lops as $lop)
                   <option value="{{ $lop->TenLop }}">{{ $lop->TenLop }}</option>
@@ -35,7 +35,7 @@
                 class="form-control custom-select"
                 name="MonHoc"
                 id="MonHoc"
-                value="Chọn môn"
+                value=""
               >
                 @foreach($monhocs as $monhoc)
                 <option value="{{ $monhoc->MaMonHoc }}">{{ $monhoc->TenMonHoc }}</option>
@@ -57,7 +57,7 @@
                 class="form-control custom-select"
                 name="NamHoc"
                 id="NamHoc"
-                value="Chọn khối"
+                value=""
               >
                 @foreach($namhocs as $namhoc)
                   <option value="{{ $namhoc->NamHoc }}">{{ $namhoc->NamHoc }}</option>
@@ -74,7 +74,7 @@
                 class="form-control custom-select"
                 name="HocKy"
                 id="HocKy"
-                value="Chọn khối"
+                value=""
               >
                 <option value="1">Học kỳ I</option>
                 <option value="2">Học kỳ II</option>
@@ -108,17 +108,16 @@
           </tr>
         </thead>
         <tbody>
-          @foreach($hocsinhs as $hocsinh)
-          <?php $diem = $hocsinh->diemmonhocs->where([['MaMonHoc', request('MonHoc')],['HocKy', request('HocKy')],['NamHoc', request('NamHoc')]])->first()?>
+          @foreach($hocsinhs ?? [] as $hocsinh)
           <tr>
             <td>{{ $loop->index + 1 }}</td>
             <td>{{ $hocsinh->MaHocSinh }}</td>
             <td>{{ $hocsinh->HoVaTen }}</td>
-            <td>{{ $diem->DiemMieng }}</td>
-            <td>{{ $diem->Diem15P }}</td>
-            <td>{{ $diem->Diem1Tiet }}</td>
-            <td>{{ $diem->DiemHK }}</td>
-            <td>{{ $diem->DiemTongHK }}</td>
+            <td>{{ $hocsinh->DiemMieng }}</td>
+            <td>{{ $hocsinh->Diem15P }}</td>
+            <td>{{ $hocsinh->Diem1Tiet }}</td>
+            <td>{{ $hocsinh->DiemHK }}</td>
+            <td>{{ $hocsinh->DiemTongHK }}</td>
           </tr>
           @endforeach
         </tbody>

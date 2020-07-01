@@ -5,7 +5,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavId">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-1 ml-lg-2 d-flex w-100">
+    <ul class="navbar-nav mr-auto ml-lg-2 d-flex w-100">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-white" href="/hocsinh" id="hocsinhDropdownId" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">Học sinh</a>
@@ -44,13 +44,13 @@
       <li class="nav-item">
         <a class="nav-link text-white" href="/cauhinh">Cấu hình</a>
       </li>
-      <li class="nav-item ml-auto">
+      <!-- <li class="nav-item ml-auto">
         <?php $__env->startComponent('components.profileShortcut'); ?> <?php if (isset($__componentOriginal790a03f00290887564695e54f1c9dc7cfbc62446)): ?>
 <?php $component = $__componentOriginal790a03f00290887564695e54f1c9dc7cfbc62446; ?>
 <?php unset($__componentOriginal790a03f00290887564695e54f1c9dc7cfbc62446); ?>
 <?php endif; ?>
 <?php echo $__env->renderComponent(); ?>
-      </li>
+      </li> -->
     </ul>
   </div>
 </nav>

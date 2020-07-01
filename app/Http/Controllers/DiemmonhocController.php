@@ -17,16 +17,26 @@ class DiemmonhocController extends Controller
         $namhocs = Lophoc::select('NamHoc')->groupBy('NamHoc')->get();
         $monhocs = Monhoc::all();
 
-        return view('diemmons.index',compact('lops', 'namhocs', 'monhocs'));
+        return view('diemmons.index', compact('lops', 'namhocs', 'monhocs'));
     }
 
     public function show()
     {
-        $lop = Lophoc::where([['TenLop', request('TenLop')],['Namhoc', request('NamHoc')]])->first()->MaLopHoc;
+        $lops = Lophoc::select('TenLop')->groupBy('TenLop')->get();
+        $namhocs = Lophoc::select('NamHoc')->groupBy('NamHoc')->get();
+        $monhocs = Monhoc::all();
+        //$lop = Lophoc::where([['TenLop', request('TenLop')],['Namhoc', request('NamHoc')]])->first();
+        //$hocsinhs = $lop->hocsinhs;
 
-        $hocsinhs = $lop->hocsinhs;
-
-        return back()->with(compact('hocsinhs'));
+        $hocsinhs = DB::table('hocsinhs')
+            ->join('hocsinh_lophoc','hocsinhs.MaHocSinh','hocsinh_lophoc.MaHocSinh')
+            ->join('lophocs','hocsinh_lophoc.MaLopHoc','lophocs.MaLopHoc')
+            ->join('diemmonhocs','hocsinhs.MaHocSinh','diemmonhocs.MaHocSinh')
+            ->select('hocsinhs.MaHocSinh AS MaHocSinh','HoVaTen','MaMonHoc','HocKy','lophocs.NamHoc AS NamHoc','DiemMieng','Diem15P','Diem1Tiet','DiemHK','DiemTongHK')
+            ->where([['MaMonHoc', 1],['HocKy', 1],['lophocs.NamHoc', 2020]])
+            ->get();
+        //return request('TenLop');
+        return view('diemmons.index', compact('lops', 'namhocs', 'monhocs', 'hocsinhs'));
     }
 
     public function add()

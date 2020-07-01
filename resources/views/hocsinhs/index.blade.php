@@ -82,6 +82,7 @@ Hồ sơ học sinh
           aria-labelledby="modelTitleId" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <form action="/hosohocsinh/xoa/{{ $hocsinh->MaHocSinh }}" method="GET" class="modal-content">
+              @csrf
               <div class="modal-header">
                 <h5 class="modal-title">Xóa Học Sinh</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">

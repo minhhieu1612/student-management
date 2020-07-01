@@ -1,13 +1,17 @@
-@extends('templates.master') @section('title','Quản lý điểm số')
-@section('content') @component('components.pageTitle') @slot('title') Quản lý
-điểm số @endslot @endcomponent
+ <?php $__env->startSection('title','Quản lý điểm số'); ?>
+<?php $__env->startSection('content'); ?> <?php $__env->startComponent('components.pageTitle'); ?> <?php $__env->slot('title'); ?> Quản lý
+điểm số <?php $__env->endSlot(); ?> <?php if (isset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55)): ?>
+<?php $component = $__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55; ?>
+<?php unset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55); ?>
+<?php endif; ?>
+<?php echo $__env->renderComponent(); ?>
 
 <div>
   <div class="card mt-3">
     <div class="card-header">Thông tin chung</div>
     <div class="card-body">
       <form action="/diem/xem" method="POST" class="row">
-        @csrf
+        <?php echo csrf_field(); ?>
         <div class="col-md-6">
           <div class="form-group row">
             <label class="label col-md-4" for="TenLopHoc"
@@ -20,9 +24,9 @@
                 id="TenLop"
                 value="Chọn lớp"
               >
-                @foreach($lops as $lop)
-                  <option value="{{ $lop->TenLop }}">{{ $lop->TenLop }}</option>
-                @endforeach
+                <?php $__currentLoopData = $lops; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $lop): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                  <option value="<?php echo e($lop->TenLop); ?>"><?php echo e($lop->TenLop); ?></option>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
               </select>
             </div>
           </div>
@@ -37,9 +41,9 @@
                 id="MonHoc"
                 value="Chọn môn"
               >
-                @foreach($monhocs as $monhoc)
-                <option value="{{ $monhoc->MaMonHoc }}">{{ $monhoc->TenMonHoc }}</option>
-                @endforeach
+                <?php $__currentLoopData = $monhocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $monhoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <option value="<?php echo e($monhoc->MaMonHoc); ?>"><?php echo e($monhoc->TenMonHoc); ?></option>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
               </select>
             </div>
           </div>
@@ -59,9 +63,9 @@
                 id="NamHoc"
                 value="Chọn khối"
               >
-                @foreach($namhocs as $namhoc)
-                  <option value="{{ $namhoc->NamHoc }}">{{ $namhoc->NamHoc }}</option>
-                @endforeach
+                <?php $__currentLoopData = $namhocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $namhoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                  <option value="<?php echo e($namhoc->NamHoc); ?>"><?php echo e($namhoc->NamHoc); ?></option>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
               </select>
             </div>
           </div>
@@ -89,7 +93,7 @@
     <div class="card-header">Thông tin điểm học sinh</div>
     <div class="card-body">
       <button class="btn mb-3"><span><i class="fa fa-download mr-2"></i></span>Export</button>
-      <h4 class="text-center">{{ request('TenLop') }}</h4>
+      <h4 class="text-center"><?php echo e(request('TenLop')); ?></h4>
       <table
         id="DataList"
         class="table table-bordered table-responsive-md table-hover"
@@ -108,19 +112,19 @@
           </tr>
         </thead>
         <tbody>
-          @foreach($hocsinhs as $hocsinh)
+          <?php $__currentLoopData = $hocsinhs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $hocsinh): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           <?php $diem = $hocsinh->diemmonhocs->where([['MaMonHoc', request('MonHoc')],['HocKy', request('HocKy')],['NamHoc', request('NamHoc')]])->first()?>
           <tr>
-            <td>{{ $loop->index + 1 }}</td>
-            <td>{{ $hocsinh->MaHocSinh }}</td>
-            <td>{{ $hocsinh->HoVaTen }}</td>
-            <td>{{ $diem->DiemMieng }}</td>
-            <td>{{ $diem->Diem15P }}</td>
-            <td>{{ $diem->Diem1Tiet }}</td>
-            <td>{{ $diem->DiemHK }}</td>
-            <td>{{ $diem->DiemTongHK }}</td>
+            <td><?php echo e($loop->index + 1); ?></td>
+            <td><?php echo e($hocsinh->MaHocSinh); ?></td>
+            <td><?php echo e($hocsinh->HoVaTen); ?></td>
+            <td><?php echo e($diem->DiemMieng); ?></td>
+            <td><?php echo e($diem->Diem15P); ?></td>
+            <td><?php echo e($diem->Diem1Tiet); ?></td>
+            <td><?php echo e($diem->DiemHK); ?></td>
+            <td><?php echo e($diem->DiemTongHK); ?></td>
           </tr>
-          @endforeach
+          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </tbody>
       </table>
     </div>
@@ -130,4 +134,6 @@
   </div>
 </div>
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\student-management\resources\views/diemmons/index.blade.php ENDPATH**/ ?>

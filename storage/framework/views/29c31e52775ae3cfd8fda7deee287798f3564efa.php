@@ -122,7 +122,11 @@
                 <p>khỏi hệ thống?</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-confirm mr-2">Xác nhận</button>
+                <form action="/hosohocsinh/xoa/<?php echo e($hocsinh->MaHocSinh); ?>" method="POST">
+                  <?php echo csrf_field(); ?>
+                  <?php echo method_field('delete'); ?>
+                  <button type="submit" class="btn btn-confirm mr-2">Xác nhận</button>
+                </form>
                 <button type="button" class="btn btn-cancel" data-dismiss="modal">Hủy</button>
               </div>
             </div>

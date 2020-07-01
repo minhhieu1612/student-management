@@ -75,13 +75,13 @@
           <div class="form-group row">
             <label class="label col-md-4">Tên lớp học</label>
             <div class="col-md-8">
-              <p class="fs-14">{{ $lop->TenLop }}</p>
+              <p class="fs-14">{{ $lop->TenLop ?? "" }}</p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Khối</label>
             <div class="col-md-8">
-              <p class="fs-14">{{ $lop->Khoi }}</p>
+              <p class="fs-14">{{ $lop->Khoi ?? "" }}</p>
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@
           <div class="form-group row">
             <label class="label col-md-4">Năm học</label>
             <div class="col-md-8">
-              <p class="fs-14">{{ $lop->NamHoc }}</p>
+              <p class="fs-14">{{ $lop->NamHoc ?? "" }}</p>
             </div>
           </div>
         </div>

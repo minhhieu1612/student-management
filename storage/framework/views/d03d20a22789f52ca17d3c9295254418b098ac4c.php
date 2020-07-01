@@ -62,7 +62,26 @@
         </div>
       </div>
     </div>
-    
+    <div class="card mt-3">
+      <div class="card-header">Thông tin lớp học</div>
+      <div class="card-body">
+        <div class="form-group row">
+          <label class="label col-md-3" for="MaLopHoc"
+            >Mã lớp học</label
+          >
+          <div class="col-md-4">
+            <input
+              class="form-control"
+              type="text"
+              name="MaLopHoc"
+              id="MaLopHoc"
+              value="<?php echo e($malop); ?>"
+              placeholder=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="text-center mt-5">
       <button type="submit" class="btn-confirm mr-3">Lưu lại</button>
       <a href="/hosohocsinh"><button type="button" class="btn-cancel">Hủy bỏ</button></a>

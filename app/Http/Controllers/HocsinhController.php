@@ -44,6 +44,12 @@ class HocsinhController extends Controller
             $hocsinh->DiaChi = request('DiaChi');
             $hocsinh->QueQuan = request('QueQuan');
             $hocsinh->save();
+
+            if(!is_null(request('MaLopHoc')))
+            {
+                DB::table('hocsinh_lophoc')->insert(['MaHocSinh' => $hocsinh->MaHocSinh, 'MaLopHoc' => request('MaLopHoc')]);
+            }
+
         }
 
         return redirect(route('hocsinhs.index'));
@@ -52,7 +58,11 @@ class HocsinhController extends Controller
     public function edit($MaHocSinh)
     {
         $hocsinh = Hocsinh::findOrFail($MaHocSinh);
-        return view('hocsinhs.edit',compact('hocsinh'));
+
+        $lop_belong = DB::table('hocsinh_lophoc')->where('MaHocSinh', $MaHocSinh)->first();
+        $malop = is_null($lop_belong) ? "" : $lop_belong->MaLopHoc;
+
+        return view('hocsinhs.edit',compact('hocsinh', 'malop'));
     }
 
     public function update($MaHocSinh)
@@ -65,6 +75,16 @@ class HocsinhController extends Controller
         $hocsinh->QueQuan = request('QueQuan');
         $hocsinh->save();
 
+        if (!is_null(request('MaLopHoc')))
+        {
+           DB::table('hocsinh_lophoc')
+            ->updateOrInsert([
+                'MaHocSinh' => $MaHocSinh,
+                'MaLopHoc' => request('MaLopHoc')
+            ]);
+        }
+
+
         return redirect(route('hocsinhs.index'));
     }
 
@@ -74,27 +94,39 @@ class HocsinhController extends Controller
         $birthday = Carbon::createFromFormat('Y-m-d', $hocsinh->NgaySinh);
         $hocsinh->NgaySinh = $birthday->format('d-m-Y');
 
-        $malop = DB::table('hocsinh_lophoc')->where('MaHocSinh', $MaHocSinh)->get()[0]->MaLopHoc;
-        $lop = Lophoc::find($malop);
+        $lop_belong = DB::table('hocsinh_lophoc')->where('MaHocSinh', $MaHocSinh)->first();
+        $malop = is_null($lop_belong) ? 0 : $lop_belong->MaLopHoc;
 
-        $diemmonhocs = Diemmonhoc::where([['MaHocSinh','=', $MaHocSinh],['NamHoc','=', $lop->NamHoc]])->get();
-        $diemhk1 = $diemmonhocs->where('HocKy',1);
-        $diemhk2 = $diemmonhocs->where('HocKy',2);
+        if ($malop != null)
+        {
+            $lop = Lophoc::find($malop);
 
-        $tbhk1 = 0.0;
-        $tbhk2 = 0.0;
-        foreach ($diemhk1 as $diem)
-        {
-            is_null($diem->DiemTongHK) ? 0.0 : $diem->DiemTongHK;
-            $tbhk1 += $diem->DiemTongHK;
+            $diemmonhocs = Diemmonhoc::where([['MaHocSinh','=', $MaHocSinh],['NamHoc','=', $lop->NamHoc]])->get();
+            $diemhk1 = $diemmonhocs->where('HocKy',1);
+            $diemhk2 = $diemmonhocs->where('HocKy',2);
+
+            $tbhk1 = 0.0;
+            $tbhk2 = 0.0;
+            foreach ($diemhk1 as $diem)
+            {
+                $m = is_null($diem->DiemTongHK) ? 0.0 : $diem->DiemTongHK;
+                $tbhk1 += $m;
+            }
+            foreach ($diemhk2 as $diem)
+            {
+                $m = is_null($diem->DiemTongHK) ? 0.0 : $diem->DiemTongHK;
+                $tbhk2 += $m;
+            }
+            $tbhk1 /= 10;
+            $tbhk2 /= 10;
         }
-        foreach ($diemhk2 as $diem)
+        else
         {
-            is_null($diem->DiemTongHK) ? 0.0 : $diem->DiemTongHK;
-            $tbhk2 += $diem->DiemTongHK;
+            $lop = null;
+            $diemhk1 = $diemhk2 = null;
+            $tbhk1 = $tbhk2 = 0;
         }
-        $tbhk1 /= 10;
-        $tbhk2 /= 10;
+
 
         return view('hocsinhs.detail', compact('hocsinh', 'lop', 'diemhk1', 'diemhk2', 'tbhk1', 'tbhk2'));
     }

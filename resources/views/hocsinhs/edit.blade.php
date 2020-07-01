@@ -58,7 +58,7 @@
         </div>
       </div>
     </div>
-    {{-- <div class="card mt-3">
+    <div class="card mt-3">
       <div class="card-header">Thông tin lớp học</div>
       <div class="card-body">
         <div class="form-group row">
@@ -71,13 +71,13 @@
               type="text"
               name="MaLopHoc"
               id="MaLopHoc"
-              value=""
+              value="{{ $malop }}"
               placeholder=""
             />
           </div>
         </div>
       </div>
-    </div> --}}
+    </div>
     <div class="text-center mt-5">
       <button type="submit" class="btn-confirm mr-3">Lưu lại</button>
       <a href="/hosohocsinh"><button type="button" class="btn-cancel">Hủy bỏ</button></a>

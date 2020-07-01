@@ -20,25 +20,25 @@
           <div class="form-group row">
             <label class="label col-md-4">Mã học sinh</label>
             <div class="col-md-8">
-              <p class="fs-14">HS019</p>
+              <p class="fs-14"><?php echo e($hocsinh->MaHocSinh); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Họ Và Tên</label>
             <div class="col-md-8">
-              <p class="fs-14">Nguyễn Đình Thuân</p>
+              <p class="fs-14"><?php echo e($hocsinh->HoVaTen); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Ngày Sinh</label>
             <div class="col-md-8">
-              <p class="fs-14">27-02-2004</p>
+              <p class="fs-14"><?php echo e($hocsinh->NgaySinh); ?></p>
             </div>
           </div>
           <div class="form-group row p-relative">
             <label class="label col-md-4">Giới Tính</label>
             <div class="col-md-8">
-              <p class="fs-14">Nam</p>
+              <p class="fs-14"><?php echo e($hocsinh->GioiTinh ? "Nam" : "Nữ"); ?></p>
             </div>
           </div>
         </div>
@@ -46,25 +46,25 @@
           <div class="form-group row">
             <label class="label col-md-4">Địa Chỉ</label>
             <div class="col-md-8">
-              <p class="fs-14">02 Hàn Thuyên, Quận 1, TP Hồ Chí Minh</p>
+              <p class="fs-14"><?php echo e($hocsinh->DiaChi); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Quê quán</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e($hocsinh->QueQuan); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Ngày tạo</label>
             <div class="col-md-8">
-              <p class="fs-14">25/12/2019 7:00</p>
+              <p class="fs-14"><?php echo e($hocsinh->created_at->format('d-m-Y H:i')); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Ngày cập nhật</label>
             <div class="col-md-8">
-              <p class="fs-14">14/02/2020 15:00</p>
+              <p class="fs-14"><?php echo e($hocsinh->updated_at->format('d-m-Y H:i')); ?></p>
             </div>
           </div>
         </div>
@@ -79,13 +79,13 @@
           <div class="form-group row">
             <label class="label col-md-4">Tên lớp học</label>
             <div class="col-md-8">
-              <p class="fs-14">10A2</p>
+              <p class="fs-14"><?php echo e($lop->TenLop ?? ""); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Khối</label>
             <div class="col-md-8">
-              <p class="fs-14">10</p>
+              <p class="fs-14"><?php echo e($lop->Khoi ?? ""); ?></p>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@
           <div class="form-group row">
             <label class="label col-md-4">Năm học</label>
             <div class="col-md-8">
-              <p class="fs-14">2020</p>
+              <p class="fs-14"><?php echo e($lop->NamHoc ?? ""); ?></p>
             </div>
           </div>
         </div>
@@ -115,31 +115,31 @@
           <div class="form-group row">
             <label class="label col-md-4">Toán học</label>
             <div class="col-md-8">
-              <p class="fs-14">8</p>
+              <p class="fs-14"><?php echo e($diemhk1[0]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Ngữ Văn</label>
             <div class="col-md-8">
-              <p class="fs-14">5</p>
+              <p class="fs-14"><?php echo e($diemhk1[1]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Anh Văn</label>
             <div class="col-md-8">
-              <p class="fs-14">7</p>
+              <p class="fs-14"><?php echo e($diemhk1[2]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Vật Lý</label>
             <div class="col-md-8">
-              <p class="fs-14">9</p>
+              <p class="fs-14"><?php echo e($diemhk1[3]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Hóa Học</label>
             <div class="col-md-8">
-              <p class="fs-14">9</p>
+              <p class="fs-14"><?php echo e($diemhk1[4]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
         </div>
@@ -147,31 +147,31 @@
           <div class="form-group row">
             <label class="label col-md-4">Sinh học</label>
             <div class="col-md-8">
-              <p class="fs-14">8.5</p>
+              <p class="fs-14"><?php echo e($diemhk1[5]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Lịch Sử</label>
             <div class="col-md-8">
-              <p class="fs-14">7.5</p>
+              <p class="fs-14"><?php echo e($diemhk1[6]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Địa Lý</label>
             <div class="col-md-8">
-              <p class="fs-14">7</p>
+              <p class="fs-14"><?php echo e($diemhk1[7]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Giáo Dục Công Dân</label>
             <div class="col-md-8">
-              <p class="fs-14">9</p>
+              <p class="fs-14"><?php echo e($diemhk1[8]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Thể Dục</label>
             <div class="col-md-8">
-              <p class="fs-14">9</p>
+              <p class="fs-14"><?php echo e($diemhk1[9]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
         </div>
@@ -181,31 +181,31 @@
           <div class="form-group row">
             <label class="label col-md-4">Toán học</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e($diemhk2[0]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Ngữ Văn</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e($diemhk2[1]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Anh Văn</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e($diemhk2[2]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Vật Lý</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e($diemhk2[3]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Hóa Học</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e($diemhk2[4]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
         </div>
@@ -213,31 +213,31 @@
           <div class="form-group row">
             <label class="label col-md-4">Sinh học</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e($diemhk2[5]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Lịch Sử</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e($diemhk2[6]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Địa Lý</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e($diemhk2[7]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Giáo Dục Công Dân</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e($diemhk2[8]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Thể Dục</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e($diemhk2[9]->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
         </div>
@@ -247,31 +247,31 @@
           <div class="form-group row">
             <label class="label col-md-4">Toán học</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e((($diemhk1[0]->DiemTongHK ?? 0.0) + ($diemhk2[0]->DiemTongHK ?? 0.0)) / 2); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Ngữ Văn</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e((($diemhk1[1]->DiemTongHK ?? 0.0) + ($diemhk2[1]->DiemTongHK ?? 0.0)) / 2); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Anh Văn</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e((($diemhk1[2]->DiemTongHK ?? 0.0) + ($diemhk2[2]->DiemTongHK ?? 0.0)) / 2); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Vật Lý</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e((($diemhk1[3]->DiemTongHK ?? 0.0) + ($diemhk2[3]->DiemTongHK ?? 0.0)) / 2); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Hóa Học</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e((($diemhk1[4]->DiemTongHK ?? 0.0) + ($diemhk2[4]->DiemTongHK ?? 0.0)) / 2); ?></p>
             </div>
           </div>
         </div>
@@ -279,31 +279,31 @@
           <div class="form-group row">
             <label class="label col-md-4">Sinh học</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e((($diemhk1[5]->DiemTongHK ?? 0.0) + ($diemhk2[5]->DiemTongHK ?? 0.0)) / 2); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Lịch Sử</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e((($diemhk1[6]->DiemTongHK ?? 0.0) + ($diemhk2[6]->DiemTongHK ?? 0.0)) / 2); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Địa Lý</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e((($diemhk1[7]->DiemTongHK ?? 0.0) + ($diemhk2[7]->DiemTongHK ?? 0.0)) / 2); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Giáo Dục Công Dân</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e((($diemhk1[8]->DiemTongHK ?? 0.0) + ($diemhk2[8]->DiemTongHK ?? 0.0)) / 2); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Thể Dục</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e((($diemhk1[9]->DiemTongHK ?? 0.0) + ($diemhk2[9]->DiemTongHK ?? 0.0)) / 2); ?></p>
             </div>
           </div>
         </div>
@@ -318,19 +318,19 @@
           <div class="form-group row">
             <label class="label col-md-4">Học kì I</label>
             <div class="col-md-8">
-              <p class="fs-14">8.15</p>
+              <p class="fs-14"><?php echo e($tbhk1); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Học kì II</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e($tbhk2); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">cả năm</label>
             <div class="col-md-8">
-              <p class="fs-14"></p>
+              <p class="fs-14"><?php echo e(($tbhk1 + $tbhk2) / 2); ?></p>
             </div>
           </div>
         </div>
@@ -339,7 +339,7 @@
     </div>
   </div>
   <div class="text-center mt-5">
-    <a href="/hosohocsinh/edit/1" class="btn-confirm mr-3">Sửa</a>
+    <a href="/hosohocsinh/sua/1" class="btn-confirm mr-3">Sửa</a>
   </div>
 </div>
 

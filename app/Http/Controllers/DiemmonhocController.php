@@ -6,14 +6,27 @@ use Illuminate\Http\Request;
 use App\Diemmonhoc;
 use App\Lophoc;
 use App\Hocsinh;
+use App\Monhoc;
 use Illuminate\Support\Facades\DB;
 
 class DiemmonhocController extends Controller
 {
     public function index()
     {
-        $diemmh = Diemmonhoc::all();
-        return view('diemmons.index',compact('diemmh'));
+        $lops = Lophoc::select('TenLop')->groupBy('TenLop')->get();
+        $namhocs = Lophoc::select('NamHoc')->groupBy('NamHoc')->get();
+        $monhocs = Monhoc::all();
+
+        return view('diemmons.index',compact('lops', 'namhocs', 'monhocs'));
+    }
+
+    public function show()
+    {
+        $lop = Lophoc::where([['TenLop', request('TenLop')],['Namhoc', request('NamHoc')]])->first()->MaLopHoc;
+
+        $hocsinhs = $lop->hocsinhs;
+
+        return back()->with(compact('hocsinhs'));
     }
 
     public function add()

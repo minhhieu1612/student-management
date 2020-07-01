@@ -23,7 +23,7 @@ Route::prefix('hosohocsinh')->group(function () {
     Route::get('/xem/{MaHocSinh}', 'HocsinhController@show');
     Route::get('/sua/{MaHocSinh}', 'HocsinhController@edit');
     Route::get('/xoa/{MaHocSinh}', 'HocsinhController@delete');
-    Route::post('/xoa/{MaHocSinh}', 'HocsinhController@destroy');
+    Route::put('/sua/{MaHocSinh}', 'HocsinhController@update');
 });
 
 Route::prefix('lophoc')->group(function () {
@@ -55,6 +55,7 @@ Route::prefix('diem')->group(function() {
     Route::get('/sua', 'DiemmonhocController@viewEdit');
     Route::post('/sua', 'DiemmonhocController@edit');
     Route::post('/', 'DiemmonhocController@store');
+    Route::post('/xem', 'DiemmonhocController@show');
 });
 
 Route::prefix('baocao')->group(function() {

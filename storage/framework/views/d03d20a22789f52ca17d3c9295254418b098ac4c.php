@@ -55,7 +55,7 @@
             <div class="form-group row">
               <label class="label col-md-4" for="QueQuan">Quê quán</label>
               <div class="col-md-8">
-                <input class="form-control" type="text" name="QueQuan" id="QueQuan" value="<?php echo e($hocsinh->QueQUan); ?>" />
+                <input class="form-control" type="text" name="QueQuan" id="QueQuan" value="<?php echo e($hocsinh->QueQuan); ?>" />
               </div>
             </div>
           </div>
@@ -70,9 +70,10 @@
           <div class="col-md-4">
             <select class="form-control custom-select" name="MaLopHoc" id="MaLopHoc">
               <?php if(count($lophocs) > 0): ?>
-                <?php $__currentLoopData = $lophocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $lophoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                  <option value="<?php echo e($lophoc->MaLopHoc); ?>" <?php echo e($malop == $lophoc->MaLopHoc? 'selected':null); ?>><?php echo e($lophoc->TenLop); ?></option>
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+              <?php $__currentLoopData = $lophocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $lophoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+              <option value="<?php echo e($lophoc->MaLopHoc); ?>" <?php echo e($malop == $lophoc->MaLopHoc? 'selected':null); ?>>
+                <?php echo e($lophoc->TenLop); ?></option>
+              <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
               <?php endif; ?>
             </select>
           </div>
@@ -87,5 +88,4 @@
 </div>
 
 <?php $__env->stopSection(); ?>
-
 <?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\hieupc\Desktop\student-management\resources\views/hocsinhs/edit.blade.php ENDPATH**/ ?>

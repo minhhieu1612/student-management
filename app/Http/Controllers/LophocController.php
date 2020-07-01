@@ -23,6 +23,7 @@ class LophocController extends Controller
     public function show($id) {
       $lophoc = LopHoc::find($id);
       $hocsinhs = array();
+      $hocsinhschuaxeplop = DB::select('SELECT * from hocsinhs as hs WHERE hs.MaHocSinh NOT IN (SELECT MaHocSinh FROM hocsinh_lophoc)');
       $isInClass = DB::table('hocsinh_lophoc')->where('MaLopHoc', $id)->get();
       if(count($isInClass)>0) {
         foreach ($isInClass as $hslh) {
@@ -30,8 +31,22 @@ class LophocController extends Controller
           array_push($hocsinhs,$hocsinh);
         }
       }
-      return view('lophocs.detail', compact('lophoc','hocsinhs'));
+      return view('lophocs.detail', compact('lophoc','hocsinhs', 'hocsinhschuaxeplop'));
     }
+
+    public function add_students($id) {
+      $SoHocSinh = request('SoHocSinhChuaXepLop');
+      for($i=0;$i<$SoHocSinh; $i++) {
+        $MaHocSinh = request('MaHocSinh'.$i);
+        if(!is_null($MaHocSinh))
+        {
+            DB::table('hocsinh_lophoc')->insert(['MaHocSinh' => $MaHocSinh, 'MaLopHoc' => $id]);
+        }
+      }
+      return back();
+    }
+
+
 
     public function show_edit($id) {
       $lophoc = LopHoc::find($id);

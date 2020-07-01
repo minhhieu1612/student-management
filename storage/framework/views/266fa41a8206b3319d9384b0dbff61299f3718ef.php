@@ -11,6 +11,7 @@
     <div class="card-header">Thông tin chung</div>
     <div class="card-body">
       <form action="/diem/xem" method="POST" class="row">
+        <?php echo csrf_field(); ?>
         <div class="col-md-6">
           <div class="form-group row">
             <label class="label col-md-4" for="TenLopHoc"
@@ -19,13 +20,13 @@
             <div class="col-md-8">
               <select
                 class="form-control custom-select"
-                name="TenLopHoc"
-                id="TenLopHoc"
-                value="Chọn lớp"
+                name="TenLop"
+                id="TenLop"
+                value=""
               >
-                <option value="2018">10A1</option>
-                <option value="2019">10A2</option>
-                <option value="2020">10A3</option>
+                <?php $__currentLoopData = $lops; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $lop): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                  <option value="<?php echo e($lop->TenLop); ?>"><?php echo e($lop->TenLop); ?></option>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
               </select>
             </div>
           </div>
@@ -38,11 +39,11 @@
                 class="form-control custom-select"
                 name="MonHoc"
                 id="MonHoc"
-                value="Chọn môn"
+                value=""
               >
-                <option value="Toán học">Toán học</option>
-                <option value="Vật lý">Vật Lý</option>
-                <option value="Hóa học">Hóa học</option>
+                <?php $__currentLoopData = $monhocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $monhoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <option value="<?php echo e($monhoc->MaMonHoc); ?>"><?php echo e($monhoc->TenMonHoc); ?></option>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
               </select>
             </div>
           </div>
@@ -60,11 +61,11 @@
                 class="form-control custom-select"
                 name="NamHoc"
                 id="NamHoc"
-                value="Chọn khối"
+                value=""
               >
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
+                <?php $__currentLoopData = $namhocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $namhoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                  <option value="<?php echo e($namhoc->NamHoc); ?>"><?php echo e($namhoc->NamHoc); ?></option>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
               </select>
             </div>
           </div>
@@ -77,7 +78,7 @@
                 class="form-control custom-select"
                 name="HocKy"
                 id="HocKy"
-                value="Chọn khối"
+                value=""
               >
                 <option value="1">Học kỳ I</option>
                 <option value="2">Học kỳ II</option>
@@ -92,11 +93,12 @@
     <div class="card-header">Thông tin điểm học sinh</div>
     <div class="card-body">
       <button class="btn mb-3"><span><i class="fa fa-download mr-2"></i></span>Export</button>
-      <h4 class="text-center">Lớp 10A1</h4>
+      <h4 class="text-center"><?php echo e(request('TenLop')); ?></h4>
       <table
         id="DataList"
         class="table table-bordered table-responsive-md table-hover"
       >
+
         <thead>
           <tr>
             <th>STT</th>
@@ -110,26 +112,18 @@
           </tr>
         </thead>
         <tbody>
+          <?php $__currentLoopData = $hocsinhs ?? []; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $hocsinh): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           <tr>
-            <td>1</td>
-            <td>HS001</td>
-            <td>Đặng Quan Hồng</td>
-            <td>7</td>
-            <td>6.5</td>
-            <td>8.5</td>
-            <td>8</td>
-            <td>7.6</td>
+            <td><?php echo e($loop->index + 1); ?></td>
+            <td><?php echo e($hocsinh->MaHocSinh); ?></td>
+            <td><?php echo e($hocsinh->HoVaTen); ?></td>
+            <td><?php echo e($hocsinh->DiemMieng); ?></td>
+            <td><?php echo e($hocsinh->Diem15P); ?></td>
+            <td><?php echo e($hocsinh->Diem1Tiet); ?></td>
+            <td><?php echo e($hocsinh->DiemHK); ?></td>
+            <td><?php echo e($hocsinh->DiemTongHK); ?></td>
           </tr>
-          <tr>
-            <td>2</td>
-            <td>HS002</td>
-            <td>Đặng Thùy Nhi</td>
-            <td>8</td>
-            <td>7.5</td>
-            <td>8.5</td>
-            <td>9</td>
-            <td>8.9</td>
-          </tr>
+          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </tbody>
       </table>
     </div>

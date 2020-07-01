@@ -339,10 +339,9 @@
     </div>
   </div>
   <div class="text-center mt-5">
-    <a href="/hosohocsinh/sua/1"><button class="btn-confirm mr-3">Sửa</button></a>
+    <a href="/hosohocsinh/sua/<?php echo e($hocsinh->MaHocSinh); ?>"><button class="btn-confirm mr-3">Sửa</button></a>
   </div>
 </div>
 
 <?php $__env->stopSection(); ?>
-
 <?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\hieupc\Desktop\student-management\resources\views/hocsinhs/detail.blade.php ENDPATH**/ ?>

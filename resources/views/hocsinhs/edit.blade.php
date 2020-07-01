@@ -51,7 +51,7 @@
             <div class="form-group row">
               <label class="label col-md-4" for="QueQuan">Quê quán</label>
               <div class="col-md-8">
-                <input class="form-control" type="text" name="QueQuan" id="QueQuan" value="{{ $hocsinh->QueQUan }}" />
+                <input class="form-control" type="text" name="QueQuan" id="QueQuan" value="{{ $hocsinh->QueQuan }}" />
               </div>
             </div>
           </div>
@@ -66,9 +66,10 @@
           <div class="col-md-4">
             <select class="form-control custom-select" name="MaLopHoc" id="MaLopHoc">
               @if (count($lophocs) > 0)
-                @foreach($lophocs as $lophoc)
-                  <option value="{{ $lophoc->MaLopHoc }}" {{ $malop == $lophoc->MaLopHoc? 'selected':null }}>{{ $lophoc->TenLop }}</option>
-                @endforeach
+              @foreach($lophocs as $lophoc)
+              <option value="{{ $lophoc->MaLopHoc }}" {{ $malop == $lophoc->MaLopHoc? 'selected':null }}>
+                {{ $lophoc->TenLop }}</option>
+              @endforeach
               @endif
             </select>
           </div>

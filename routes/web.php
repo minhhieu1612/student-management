@@ -36,6 +36,8 @@ Route::prefix('lophoc')->group(function () {
     Route::get('/xoa/{id}', 'LophocController@delete');
     Route::get('/xem/{MaLopHoc}/xoahocsinh/{MaHocSinh}', 'LophocController@delete_student');
     Route::get('/xem/{MaLopHoc}/xoahocsinh', 'LophocController@delete_students');
+    // Route::get('/xem/{id}/themhocsinh', function() { return back(); });
+    Route::post('/xem/{id}/themhocsinh', 'LophocController@add_students');
     Route::get('/them', 'LophocController@add');
     Route::post('/them', 'LophocController@store2');
 });

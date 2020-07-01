@@ -64,7 +64,7 @@
         <div class="modal fade" id="delAllStudent" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
           aria-hidden="true">
           <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <form method="GET" action="/lophoc/xem/{{ $lophoc->MaLopHoc }}/xoahocsinh" class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title">Xóa học sinh ra khỏi lớp học</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -79,14 +79,14 @@
                 <p>khỏi lớp học?</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-confirm mr-2">
+                <button type="submit" class="btn btn-confirm mr-2">
                   Xác nhận
                 </button>
                 <button type="button" class="btn btn-cancel" data-dismiss="modal">
                   Hủy
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -103,15 +103,16 @@
           </tr>
         </thead>
         <tbody>
+          @foreach($hocsinhs as $hs)
           <tr>
-            <td>1</td>
-            <td>HS001</td>
+          <td>{{ $loop->index + 1 }}</td>
+          <td>HS{{ $hs->MaHocSinh }}</td>
             <td>
-              <a href="/hosohocsinh/xem">Đặng Quan Hồng</a>
+              <a href="/hosohocsinh/xem/{{ $hs->MaHocSinh }}">{{ $hs->HoVaTen }}</a>
             </td>
-            <td>Nam</td>
-            <td>30/04/2004</td>
-            <td>137 Nguyễn Thị Minh Khai, Quận 1, TP Hồ Chí Minh</td>
+            <td>{{ $hs->GioiTinh ? "Nam" : "Nữ" }}</td>
+            <td>{{ $hs->NgaySinh }}</td>
+            <td>{{ $hs->DiaChi }}</td>
             <td>
               <button class="btn mt-n1" data-toggle="modal" data-target="#delStudent">
                 Xóa
@@ -119,7 +120,7 @@
               <div class="modal fade" id="delStudent" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
                 aria-hidden="true">
                 <div class="modal-dialog" role="document">
-                  <div class="modal-content">
+                  <form method="GET" action="/lophoc/xem/{{ $lophoc->MaLopHoc }}/xoahocsinh/{{ $hs->MaHocSinh }}" class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title">Xóa học sinh ra khỏi lớp học</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -134,24 +135,25 @@
                       <p>khỏi lớp học?</p>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-confirm mr-2">
+                      <button type="submit" class="btn btn-confirm mr-2">
                         Xác nhận
                       </button>
                       <button type="button" class="btn btn-cancel" data-dismiss="modal">
                         Hủy
                       </button>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </td>
           </tr>
+          @endforeach
         </tbody>
       </table>
     </div>
   </div>
   <div class="text-center mt-5">
-    <a href="/lophoc/sua/1"><button class="btn-confirm mr-3">Sửa</button></a>
+  <a href="/lophoc/sua/{{ $lophoc->MaLopHoc }}"><button class="btn-confirm mr-3">Sửa</button></a>
   </div>
 </div>
 

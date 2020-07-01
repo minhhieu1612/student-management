@@ -66,18 +66,15 @@
       <div class="card-header">Thông tin lớp học</div>
       <div class="card-body">
         <div class="form-group row">
-          <label class="label col-md-3" for="MaLopHoc"
-            >Mã lớp học</label
-          >
+          <label class="label col-md-3" for="MaLopHoc">Chọn lớp</label>
           <div class="col-md-4">
-            <input
-              class="form-control"
-              type="text"
-              name="MaLopHoc"
-              id="MaLopHoc"
-              value="<?php echo e($malop); ?>"
-              placeholder=""
-            />
+            <select class="form-control custom-select" name="MaLopHoc" id="MaLopHoc">
+              <?php if(count($lophocs) > 0): ?>
+              <?php $__currentLoopData = $lophocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $lophoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+              <option value="<?php echo e($lophoc->MaLopHoc); ?>" <?php echo e($malop == $lophoc->MaLopHoc? 'selected':null); ?>><?php echo e($lophoc->TenLop); ?></option>
+              <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+              <?php endif; ?>
+            </select>
           </div>
         </div>
       </div>
@@ -90,4 +87,5 @@
 </div>
 
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\hieupc\Desktop\student-management\resources\views/hocsinhs/edit.blade.php ENDPATH**/ ?>

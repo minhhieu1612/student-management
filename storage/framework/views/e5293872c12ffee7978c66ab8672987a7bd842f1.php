@@ -1,8 +1,8 @@
  <?php $__env->startSection('title','Thông tin lớp học'); ?>
 <?php $__env->startSection('content'); ?>
 <?php $__env->startComponent('components.pageTitle'); ?>
-  <?php $__env->slot('title'); ?> Thông tin lớp học
-  <?php $__env->endSlot(); ?>
+<?php $__env->slot('title'); ?> Thông tin lớp học
+<?php $__env->endSlot(); ?>
 <?php if (isset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55)): ?>
 <?php $component = $__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55; ?>
 <?php unset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55); ?>
@@ -18,19 +18,19 @@
           <div class="form-group row">
             <label class="label col-md-4">Mã lớp học</label>
             <div class="col-md-8">
-              <p class="fs-14">LH111</p>
+              <p class="fs-14">LH<?php echo e($lophoc->MaLopHoc); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Tên lớp học</label>
             <div class="col-md-8">
-              <p class="fs-14">10A2</p>
+              <p class="fs-14"><?php echo e($lophoc->TenLop); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Khối</label>
             <div class="col-md-8">
-              <p class="fs-14">10</p>
+              <p class="fs-14"><?php echo e($lophoc->Khoi); ?></p>
             </div>
           </div>
         </div>
@@ -38,19 +38,19 @@
           <div class="form-group row">
             <label class="label col-md-4">Năm học</label>
             <div class="col-md-8">
-              <p class="fs-14">2020</p>
+              <p class="fs-14"><?php echo e($lophoc->NamHoc); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Ngày tạo</label>
             <div class="col-md-8">
-              <p class="fs-14">30/12/2019 9:00</p>
+              <p class="fs-14"><?php echo e($lophoc->created_at ? $lophoc->created_at->format('d/m/Y H:i'):''); ?></p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Ngày cập nhật</label>
             <div class="col-md-8">
-              <p class="fs-14">12/02/2020 15:00</p>
+              <p class="fs-14"><?php echo e($lophoc->updated_at ? $lophoc->updated_at->format('d/m/Y H:i'):''); ?></p>
             </div>
           </div>
         </div>
@@ -65,24 +65,13 @@
         <button class="btn" data-toggle="modal" data-target="#delAllStudent">
           <i class="fa fa-close mr-1"></i>Xóa tất cả
         </button>
-        <div
-          class="modal fade"
-          id="delAllStudent"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="modelTitleId"
-          aria-hidden="true"
-        >
+        <div class="modal fade" id="delAllStudent" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+          aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title">Xóa học sinh ra khỏi lớp học</h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
@@ -97,11 +86,7 @@
                 <button type="button" class="btn btn-confirm mr-2">
                   Xác nhận
                 </button>
-                <button
-                  type="button"
-                  class="btn btn-cancel"
-                  data-dismiss="modal"
-                >
+                <button type="button" class="btn btn-cancel" data-dismiss="modal">
                   Hủy
                 </button>
               </div>
@@ -109,10 +94,7 @@
           </div>
         </div>
       </div>
-      <table
-        id="DataList"
-        class="table table-bordered table-responsive-md table-hover"
-      >
+      <table id="DataList" class="table table-bordered table-responsive-md table-hover">
         <thead>
           <tr>
             <th>STT</th>
@@ -135,31 +117,16 @@
             <td>30/04/2004</td>
             <td>137 Nguyễn Thị Minh Khai, Quận 1, TP Hồ Chí Minh</td>
             <td>
-              <button
-                class="btn mt-n1"
-                data-toggle="modal"
-                data-target="#delStudent"
-              >
+              <button class="btn mt-n1" data-toggle="modal" data-target="#delStudent">
                 Xóa
               </button>
-              <div
-                class="modal fade"
-                id="delStudent"
-                tabindex="-1"
-                role="dialog"
-                aria-labelledby="modelTitleId"
-                aria-hidden="true"
-              >
+              <div class="modal fade" id="delStudent" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                aria-hidden="true">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
                       <h5 class="modal-title">Xóa học sinh ra khỏi lớp học</h5>
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
@@ -174,11 +141,7 @@
                       <button type="button" class="btn btn-confirm mr-2">
                         Xác nhận
                       </button>
-                      <button
-                        type="button"
-                        class="btn btn-cancel"
-                        data-dismiss="modal"
-                      >
+                      <button type="button" class="btn btn-cancel" data-dismiss="modal">
                         Hủy
                       </button>
                     </div>

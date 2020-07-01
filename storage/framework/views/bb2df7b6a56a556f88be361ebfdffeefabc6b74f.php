@@ -19,8 +19,8 @@
     <tr>
       <th>STT</th>
       <th>Ma LH</>
-      <th>Khoi</th>
-      <th>Ten lớp học</th>
+      <th>Khối</th>
+      <th>Tên lớp học</th>
       <th>Nam Hoc</th>
       <th>Sĩ Số</th>
       <th>Ngày tạo</th>
@@ -34,11 +34,11 @@
       <td><?php echo e($loop->index + 1); ?></td>
       <td>LH<?php echo e($lophoc->MaLopHoc); ?></td>
       <td><?php echo e($lophoc->Khoi); ?></td>
-      <td><a href="/lophoc/xem"><?php echo e($lophoc->TenLop); ?></a></td>
+      <td><a href="/lophoc/xem/<?php echo e($lophoc->MaLopHoc); ?>"><?php echo e($lophoc->TenLop); ?></a></td>
       <td><?php echo e($lophoc->NamHoc); ?></td>
       <td><?php echo e($lophoc->SiSo); ?></td>
-      <td><?php echo e($lophoc->created_at); ?></td>
-      <td><?php echo e($lophoc->updated_at); ?></td>
+      <td><?php echo e($lophoc->created_at ? $lophoc->created_at->format('d/m/Y H:i'):''); ?></td>
+      <td><?php echo e($lophoc->updated_at ? $lophoc->updated_at->format('d/m/Y H:i'):''); ?></td>
       <td>
         <div class="dropdown">
           <button class="btn btn-primary mt-n1 dropdown-toggle" type="button" id="action-<?php echo e($lophoc->MaLopHoc); ?>"
@@ -80,4 +80,5 @@
   </tbody>
 </table>
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\hieupc\Desktop\student-management\resources\views/lophocs/index.blade.php ENDPATH**/ ?>

@@ -30,7 +30,7 @@ Route::prefix('lophoc')->group(function () {
     Route::get('/', 'LophocController@index')->name('lophocs.index');
     Route::get('/taomoi', 'LophocController@create');
     Route::post('/taomoi', 'LophocController@store1');
-    Route::get('/xem', 'LophocController@show');
+    Route::get('/xem/{id}', 'LophocController@show');
     Route::get('/sua/{id}', 'LophocController@show_edit');
     Route::post('/sua/{id}', 'LophocController@edit');
     Route::get('/xoa/{id}', 'LophocController@delete');

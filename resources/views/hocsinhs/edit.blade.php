@@ -62,18 +62,15 @@
       <div class="card-header">Thông tin lớp học</div>
       <div class="card-body">
         <div class="form-group row">
-          <label class="label col-md-3" for="MaLopHoc"
-            >Mã lớp học</label
-          >
+          <label class="label col-md-3" for="MaLopHoc">Chọn lớp</label>
           <div class="col-md-4">
-            <input
-              class="form-control"
-              type="text"
-              name="MaLopHoc"
-              id="MaLopHoc"
-              value="{{ $malop }}"
-              placeholder=""
-            />
+            <select class="form-control custom-select" name="MaLopHoc" id="MaLopHoc">
+              @if (count($lophocs) > 0)
+                @foreach($lophocs as $lophoc)
+                  <option value="{{ $lophoc->MaLopHoc }}" {{ $malop == $lophoc->MaLopHoc? 'selected':null }}>{{ $lophoc->TenLop }}</option>
+                @endforeach
+              @endif
+            </select>
           </div>
         </div>
       </div>

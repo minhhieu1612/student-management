@@ -19,8 +19,9 @@ class LophocController extends Controller
         return view('lophocs.create');
     }
 
-    public function show() {
-      return view('lophocs.detail');
+    public function show($id) {
+      $lophoc = LopHoc::find($id);
+      return view('lophocs.detail', compact('lophoc'));
     }
 
     public function show_edit($id) {

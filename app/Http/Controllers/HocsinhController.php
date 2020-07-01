@@ -27,7 +27,8 @@ class HocsinhController extends Controller
     }
     public function create()
     {
-        return view('hocsinhs.create');
+        $lophocs = LopHoc::all();
+        return view('hocsinhs.create',compact('lophocs'));
     }
     public function store()
     {
@@ -61,8 +62,9 @@ class HocsinhController extends Controller
 
         $lop_belong = DB::table('hocsinh_lophoc')->where('MaHocSinh', $MaHocSinh)->first();
         $malop = is_null($lop_belong) ? "" : $lop_belong->MaLopHoc;
+        $lophocs = LopHoc::all();
 
-        return view('hocsinhs.edit',compact('hocsinh', 'malop'));
+        return view('hocsinhs.edit',compact('hocsinh', 'malop','lophocs'));
     }
 
     public function update($MaHocSinh)

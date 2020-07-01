@@ -1,8 +1,8 @@
 @extends('templates.master') @section('title','Thông tin học sinh')
 @section('content')
 @component('components.pageTitle')
-  @slot('title') Thông tin học sinh
-  @endslot
+@slot('title') Thông tin học sinh
+@endslot
 @endcomponent
 
 <div>
@@ -54,13 +54,13 @@
           <div class="form-group row">
             <label class="label col-md-4">Ngày tạo</label>
             <div class="col-md-8">
-              <p class="fs-14">{{ $hocsinh->created_at->format('d-m-Y H:i') }}</p>
+              <p class="fs-14">{{ $hocsinh->created_at ? $hocsinh->created_at->format('d/m/Y H:i'):'' }}</p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Ngày cập nhật</label>
             <div class="col-md-8">
-              <p class="fs-14">{{ $hocsinh->updated_at->format('d-m-Y H:i') }}</p>
+              <p class="fs-14">{{ $hocsinh->updated_at ? $hocsinh->updated_at->format('d/m/Y H:i'):'' }}</p>
             </div>
           </div>
         </div>
@@ -335,7 +335,7 @@
     </div>
   </div>
   <div class="text-center mt-5">
-    <a href="/hosohocsinh/sua/1" class="btn-confirm mr-3">Sửa</a>
+    <a href="/hosohocsinh/sua/1"><button class="btn-confirm mr-3">Sửa</button></a>
   </div>
 </div>
 

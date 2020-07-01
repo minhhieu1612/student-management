@@ -15,8 +15,8 @@
     <tr>
       <th>STT</th>
       <th>Ma LH</>
-      <th>Khoi</th>
-      <th>Ten lớp học</th>
+      <th>Khối</th>
+      <th>Tên lớp học</th>
       <th>Nam Hoc</th>
       <th>Sĩ Số</th>
       <th>Ngày tạo</th>
@@ -30,11 +30,11 @@
       <td>{{ $loop->index + 1 }}</td>
       <td>LH{{ $lophoc->MaLopHoc }}</td>
       <td>{{ $lophoc->Khoi }}</td>
-      <td><a href="/lophoc/xem">{{ $lophoc->TenLop }}</a></td>
+      <td><a href="/lophoc/xem/{{ $lophoc->MaLopHoc }}">{{ $lophoc->TenLop }}</a></td>
       <td>{{ $lophoc->NamHoc }}</td>
       <td>{{ $lophoc->SiSo }}</td>
-      <td>{{ $lophoc->created_at }}</td>
-      <td>{{ $lophoc->updated_at }}</td>
+      <td>{{ $lophoc->created_at ? $lophoc->created_at->format('d/m/Y H:i'):'' }}</td>
+      <td>{{ $lophoc->updated_at ? $lophoc->updated_at->format('d/m/Y H:i'):'' }}</td>
       <td>
         <div class="dropdown">
           <button class="btn btn-primary mt-n1 dropdown-toggle" type="button" id="action-{{ $lophoc->MaLopHoc }}"

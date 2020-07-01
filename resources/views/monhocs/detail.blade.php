@@ -1,8 +1,8 @@
 @extends('templates.master') @section('title','Thông tin môn học')
 @section('content')
 @component('components.pageTitle')
-  @slot('title') Thông tin môn học
-  @endslot
+@slot('title') Thông tin môn học
+@endslot
 @endcomponent
 
 <div>
@@ -14,7 +14,7 @@
           <div class="form-group row">
             <label class="label col-md-4">Mã môn học</label>
             <div class="col-md-8">
-            <p class="fs-14">{{ $monhoc->MaMonHoc }}</p>
+              <p class="fs-14">{{ $monhoc->MaMonHoc }}</p>
             </div>
           </div>
           <div class="form-group row">
@@ -28,13 +28,15 @@
           <div class="form-group row">
             <label class="label col-md-4">Ngày tạo</label>
             <div class="col-md-8">
-              <p class="fs-14">{{ $monhoc->created_at }}</p>
+              <p class="fs-14">
+                {{ $$monhoc->created_at ? $$monhoc->created_at->format('d/m/Y H:i') :'' }}</p>
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Ngày cập nhật</label>
             <div class="col-md-8">
-              <p class="fs-14">{{ $monhoc->updated_at }}</p>
+              <p class="fs-14">
+                {{ $monhoc->updated_at ? $monhoc->updated_at->format('d/m/Y H:i') :'' }}</p>
             </div>
           </div>
         </div>
@@ -45,5 +47,7 @@
     <a href="/monhoc/sua/{{ $monhoc->MaMonHoc }}"><button class="btn-confirm mr-3">Sửa</button></a>
   </div>
 </div>
+
+
 
 @endsection

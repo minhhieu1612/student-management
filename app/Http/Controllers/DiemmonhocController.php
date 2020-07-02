@@ -25,15 +25,14 @@ class DiemmonhocController extends Controller
         $lops = Lophoc::select('TenLop')->groupBy('TenLop')->get();
         $namhocs = Lophoc::select('NamHoc')->groupBy('NamHoc')->get();
         $monhocs = Monhoc::all();
-        //$lop = Lophoc::where([['TenLop', request('TenLop')],['Namhoc', request('NamHoc')]])->first();
-        //$hocsinhs = $lop->hocsinhs;
+        $malop = Lophoc::where([['TenLop', request('TenLop')],['Namhoc', request('NamHoc')]])->first()->MaLopHoc;
 
         $hocsinhs = DB::table('hocsinhs')
             ->join('hocsinh_lophoc','hocsinhs.MaHocSinh','hocsinh_lophoc.MaHocSinh')
             ->join('lophocs','hocsinh_lophoc.MaLopHoc','lophocs.MaLopHoc')
             ->join('diemmonhocs','hocsinhs.MaHocSinh','diemmonhocs.MaHocSinh')
-            ->select('hocsinhs.MaHocSinh AS MaHocSinh','HoVaTen','MaMonHoc','HocKy','lophocs.NamHoc AS NamHoc','DiemMieng','Diem15P','Diem1Tiet','DiemHK','DiemTongHK')
-            ->where([['MaMonHoc', 1],['HocKy', 1],['lophocs.NamHoc', 2020]])
+            ->select('lophocs.MaLopHoc AS MaLopHoc', 'hocsinhs.MaHocSinh AS MaHocSinh','HoVaTen','MaMonHoc','HocKy','lophocs.NamHoc AS NamHoc','DiemMieng','Diem15P','Diem1Tiet','DiemHK','DiemTongHK')
+            ->where([['lophocs.MaLopHoc', $malop],['MaMonHoc', request('MonHoc')],['HocKy', request('HocKy')],['lophocs.NamHoc', request('NamHoc')]])
             ->get();
         //return request('TenLop');
         return view('diemmons.index', compact('lops', 'namhocs', 'monhocs', 'hocsinhs'));
@@ -44,26 +43,45 @@ class DiemmonhocController extends Controller
         return view('diemmons.add');
     }
 
-    public function viewEdit() {
-      return view('diemmons.edit');
+    public function viewEdit($lop, $mamonhoc, $namhoc, $hocky) 
+    {
+        $malop = Lophoc::where([['TenLop', $lop],['Namhoc', $namhoc]])->first()->MaLopHoc;
+        $hocsinhs = DB::table('hocsinhs')
+            ->join('hocsinh_lophoc','hocsinhs.MaHocSinh','hocsinh_lophoc.MaHocSinh')
+            ->join('lophocs','hocsinh_lophoc.MaLopHoc','lophocs.MaLopHoc')
+            ->join('diemmonhocs','hocsinhs.MaHocSinh','diemmonhocs.MaHocSinh')
+            ->select('lophocs.MaLopHoc AS MaLopHoc', 'hocsinhs.MaHocSinh AS MaHocSinh','HoVaTen','MaMonHoc','HocKy','lophocs.NamHoc AS NamHoc','DiemMieng','Diem15P','Diem1Tiet','DiemHK','DiemTongHK')
+            ->where([['lophocs.MaLopHoc', $malop],['MaMonHoc', $mamonhoc],['HocKy', $hocky],['lophocs.NamHoc', $namhoc]])
+            ->get();
+        $tenmonhoc = Monhoc::find($mamonhoc)->TenMonHoc;
+        $form = array($lop, $mamonhoc, $namhoc, $hocky);
+        return view('diemmons.edit', compact('form', 'hocsinhs', 'tenmonhoc'));
     }
 
-    public function edit(Request $request)
+    public function edit($lop, $mamonhoc, $namhoc, $hocky)
     {
-        $lophoc = Lophoc::findOrFail($request->input('MaLopHoc'));
-        $hocsinhs = $lophoc->hocsinhs();
-        // $diems = [];
-        // foreach ($hocsinhs as $hocsinh)
-        // {
-        //     array_push($diems, $hocsinh->diemmonhocs()
-        //             ->where('MaMonHoc',$request->input('MaMonHoc'))
-        //             ->where('HocKy',$request->input('HocKy'))
-        //             ->where('NamHoc',$request->input('NamHoc'))
-        //             ->get());
-        // }
-
-
-        return view('diemmons.edit', compact('hocsinhs'));
+        //return request('mieng' . 1);
+        $malop = Lophoc::where([['TenLop', $lop],['Namhoc', $namhoc]])->first()->MaLopHoc;
+        $hocsinhs = Lophoc::where([['TenLop', $lop],['Namhoc', $namhoc]])->first()->hocsinhs;
+        foreach ($hocsinhs as $hocsinh)
+        {
+            $diemtonghk = (request('mieng'.$hocsinh->MaHocSinh)+request('15p'.$hocsinh->MaHocSinh)+request('1tiet'.$hocsinh->MaHocSinh)+request('hocky'.$hocsinh->MaHocSinh)) / 4;
+            $madiem = Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $mamonhoc],['NamHoc', $namhoc],['HocKy', $hocky]])->first()->MaDiemMH ?? 0;
+            if ($madiem != 0)
+            {
+                $diem = Diemmonhoc::find($madiem);
+                $diem->DiemMieng = request('mieng' . $hocsinh->MaHocSinh);
+                $diem->Diem15P = request('15p' . $hocsinh->MaHocSinh);
+                $diem->Diem1Tiet = request('1tiet' . $hocsinh->MaHocSinh);
+                $diem->DiemHK = request('hocky' . $hocsinh->MaHocSinh);
+                $diem->DiemTongHK = $diemtonghk;
+                $diem->save(); 
+            }
+            
+                   
+        }
+        
+        return redirect(route('diemmonhocs.index'));
     }
 
     public function store(Request $req)

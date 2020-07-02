@@ -56,8 +56,8 @@ Route::prefix('monhoc')->group(function () {
 Route::prefix('diem')->group(function() {
     Route::get('/', 'DiemmonhocController@index')->name('diemmonhocs.index');
     Route::get('/them', 'DiemmonhocController@add');
-    Route::get('/sua', 'DiemmonhocController@viewEdit');
-    Route::post('/sua', 'DiemmonhocController@edit');
+    Route::get('/sua/{lop}/{mamonhoc}/{namhoc}/{hocky}', 'DiemmonhocController@viewEdit');
+    Route::put('/sua/{lop}/{mamonhoc}/{namhoc}/{hocky}', 'DiemmonhocController@edit');
     Route::post('/', 'DiemmonhocController@store');
     Route::post('/xem', 'DiemmonhocController@show');
 });

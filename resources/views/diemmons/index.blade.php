@@ -76,8 +76,8 @@
                 id="HocKy"
                 value=""
               >
-                <option value="1">Học kỳ I</option>
-                <option value="2">Học kỳ II</option>
+                <option value="1">Học kỳ 1</option>
+                <option value="2">Học kỳ 2</option>
               </select>
             </div>
           </div>
@@ -125,7 +125,7 @@
     </div>
   </div>
   <div class="text-center mt-5">
-    <a href="/diem/sua"><button class="btn-confirm mr-3">Sửa</button></a>
+    <a href="/diem/sua/{{ request('TenLop') ."/". request('MonHoc') ."/". request('NamHoc') ."/". request('HocKy') }}"><button class="btn-confirm mr-3">Sửa</button></a>
   </div>
 </div>
 

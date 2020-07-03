@@ -11578,7 +11578,7 @@ esources\\views/hocsinhs/detail.blade.php:57)
 #47 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #48 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #49 {main}
-"} 
+"}
 [2020-07-01 03:53:28] local.ERROR: Call to a member function format() on null (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\detail.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Call to a member function format() on null (View: C:\\Users\\hieupc\\Desktop\\student-management\
 esources\\views\\hocsinhs\\detail.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
 esources\\views/hocsinhs/detail.blade.php:57)
@@ -11686,7 +11686,7 @@ esources\\views/hocsinhs/detail.blade.php:57)
 #47 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #48 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #49 {main}
-"} 
+"}
 [2020-07-01 03:53:50] local.ERROR: Call to a member function format() on null (View: C:\Users\hieupc\Desktop\student-management\resources\views\hocsinhs\detail.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Call to a member function format() on null (View: C:\\Users\\hieupc\\Desktop\\student-management\
 esources\\views\\hocsinhs\\detail.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
 esources\\views/hocsinhs/detail.blade.php:57)
@@ -11794,7 +11794,7 @@ esources\\views/hocsinhs/detail.blade.php:57)
 #47 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #48 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #49 {main}
-"} 
+"}
 [2020-07-01 04:15:39] local.ERROR: syntax error, unexpected ')' (View: C:\Users\hieupc\Desktop\student-management\resources\views\lophocs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected ')' (View: C:\\Users\\hieupc\\Desktop\\student-management\
 esources\\views\\lophocs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
 esources\\views/lophocs/index.blade.php:36)
@@ -11900,7 +11900,7 @@ esources\\views/lophocs/index.blade.php:36)
 #46 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #47 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #48 {main}
-"} 
+"}
 [2020-07-01 07:36:50] local.ERROR: Undefined variable: hocsinhs (View: D:\xampp\htdocs\student-management\resources\views\diemmons\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: D:\\xampp\\htdocs\\student-management\
 esources\\views\\diemmons\\index.blade.php) at D:\\xampp\\htdocs\\student-management\
 esources\\views/diemmons/index.blade.php:111)
@@ -12011,7 +12011,7 @@ esources\\views/diemmons/index.blade.php(111): Illuminate\\Foundation\\Bootstrap
 #48 D:\\xampp\\htdocs\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 D:\\xampp\\htdocs\\student-management\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #50 {main}
-"} 
+"}
 [2020-07-01 07:39:10] local.ERROR: Invalid argument supplied for foreach() (View: D:\xampp\htdocs\student-management\resources\views\diemmons\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Invalid argument supplied for foreach() (View: D:\\xampp\\htdocs\\student-management\
 esources\\views\\diemmons\\index.blade.php) at D:\\xampp\\htdocs\\student-management\
 esources\\views/diemmons/index.blade.php:111)
@@ -12122,7 +12122,7 @@ esources\\views/diemmons/index.blade.php(111): Illuminate\\Foundation\\Bootstrap
 #48 D:\\xampp\\htdocs\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 D:\\xampp\\htdocs\\student-management\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #50 {main}
-"} 
+"}
 [2020-07-01 07:41:57] local.ERROR: Invalid argument supplied for foreach() (View: D:\xampp\htdocs\student-management\resources\views\diemmons\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Invalid argument supplied for foreach() (View: D:\\xampp\\htdocs\\student-management\
 esources\\views\\diemmons\\index.blade.php) at D:\\xampp\\htdocs\\student-management\
 esources\\views/diemmons/index.blade.php:111)
@@ -12233,7 +12233,7 @@ esources\\views/diemmons/index.blade.php(111): Illuminate\\Foundation\\Bootstrap
 #48 D:\\xampp\\htdocs\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 D:\\xampp\\htdocs\\student-management\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #50 {main}
-"} 
+"}
 [2020-07-01 07:42:27] local.ERROR: Undefined variable: hocsinhs (View: D:\xampp\htdocs\student-management\resources\views\diemmons\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: hocsinhs (View: D:\\xampp\\htdocs\\student-management\
 esources\\views\\diemmons\\index.blade.php) at D:\\xampp\\htdocs\\student-management\
 esources\\views/diemmons/index.blade.php:111)
@@ -12344,7 +12344,7 @@ esources\\views/diemmons/index.blade.php(111): Illuminate\\Foundation\\Bootstrap
 #48 D:\\xampp\\htdocs\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 D:\\xampp\\htdocs\\student-management\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #50 {main}
-"} 
+"}
 [2020-07-01 07:43:29] local.ERROR: Trying to get property 'hocsinhs' of non-object {"exception":"[object] (ErrorException(code: 0): Trying to get property 'hocsinhs' of non-object at D:\\xampp\\htdocs\\student-management\\app\\Http\\Controllers\\DiemmonhocController.php:27)
 [stacktrace]
 #0 D:\\xampp\\htdocs\\student-management\\app\\Http\\Controllers\\DiemmonhocController.php(27): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to get p...', 'D:\\\\xampp\\\\htdocs...', 27, Array)
@@ -12393,7 +12393,7 @@ esources\\views/diemmons/index.blade.php(111): Illuminate\\Foundation\\Bootstrap
 #43 D:\\xampp\\htdocs\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #44 D:\\xampp\\htdocs\\student-management\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #45 {main}
-"} 
+"}
 [2020-07-01 07:51:32] local.ERROR: Undefined variable: lops (View: D:\xampp\htdocs\student-management\resources\views\diemmons\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: lops (View: D:\\xampp\\htdocs\\student-management\
 esources\\views\\diemmons\\index.blade.php) at D:\\xampp\\htdocs\\student-management\
 esources\\views/diemmons/index.blade.php:23)
@@ -12504,7 +12504,7 @@ esources\\views/diemmons/index.blade.php(23): Illuminate\\Foundation\\Bootstrap\
 #48 D:\\xampp\\htdocs\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 D:\\xampp\\htdocs\\student-management\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #50 {main}
-"} 
+"}
 [2020-07-01 07:54:45] local.ERROR: array_key_exists(): The first argument should be either a string or an integer (View: D:\xampp\htdocs\student-management\resources\views\diemmons\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): array_key_exists(): The first argument should be either a string or an integer (View: D:\\xampp\\htdocs\\student-management\
 esources\\views\\diemmons\\index.blade.php) at D:\\xampp\\htdocs\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\HasAttributes.php:356)
 [stacktrace]
@@ -12634,7 +12634,7 @@ esources\\views/diemmons/index.blade.php(116): Illuminate\\Support\\Collection->
 #58 D:\\xampp\\htdocs\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #59 D:\\xampp\\htdocs\\student-management\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #60 {main}
-"} 
+"}
 [2020-07-01 08:09:06] local.ERROR: array_key_exists(): The first argument should be either a string or an integer (View: D:\xampp\htdocs\student-management\resources\views\diemmons\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): array_key_exists(): The first argument should be either a string or an integer (View: D:\\xampp\\htdocs\\student-management\
 esources\\views\\diemmons\\index.blade.php) at D:\\xampp\\htdocs\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\HasAttributes.php:356)
 [stacktrace]
@@ -12812,7 +12812,7 @@ esources\\views/diemmons/index.blade.php(116): Illuminate\\Support\\Collection->
 #43 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #44 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #45 {main}
-"} 
+"}
 [2020-07-01 07:56:52] local.ERROR: Object of class Illuminate\Database\Query\Builder could not be converted to string {"exception":"[object] (ErrorException(code: 0): Object of class Illuminate\\Database\\Query\\Builder could not be converted to string at C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\LophocController.php:26)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\LophocController.php(26): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(4096, 'Object of class...', 'C:\\\\Users\\\\hieupc...', 26, Array)
@@ -12861,7 +12861,7 @@ esources\\views/diemmons/index.blade.php(116): Illuminate\\Support\\Collection->
 #43 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #44 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #45 {main}
-"} 
+"}
 [2020-07-01 07:57:55] local.ERROR: Class 'App\Http\Controllers\Hocsinh' not found {"exception":"[object] (Error(code: 0): Class 'App\\Http\\Controllers\\Hocsinh' not found at C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\LophocController.php:28)
 [stacktrace]
 #0 [internal function]: App\\Http\\Controllers\\LophocController->show('111')
@@ -12909,7 +12909,7 @@ esources\\views/diemmons/index.blade.php(116): Illuminate\\Support\\Collection->
 #42 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #43 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #44 {main}
-"} 
+"}
 [2020-07-01 07:58:32] local.ERROR: Class 'App\Http\Controllers\Hocsinh' not found {"exception":"[object] (Error(code: 0): Class 'App\\Http\\Controllers\\Hocsinh' not found at C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\LophocController.php:28)
 [stacktrace]
 #0 [internal function]: App\\Http\\Controllers\\LophocController->show('111')
@@ -12957,7 +12957,7 @@ esources\\views/diemmons/index.blade.php(116): Illuminate\\Support\\Collection->
 #42 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #43 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #44 {main}
-"} 
+"}
 [2020-07-01 07:59:05] local.ERROR: array_push() expects parameter 1 to be array, object given {"exception":"[object] (ErrorException(code: 0): array_push() expects parameter 1 to be array, object given at C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\LophocController.php:30)
 [stacktrace]
 #0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'array_push() ex...', 'C:\\\\Users\\\\hieupc...', 30, Array)
@@ -13007,7 +13007,7 @@ esources\\views/diemmons/index.blade.php(116): Illuminate\\Support\\Collection->
 #44 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #46 {main}
-"} 
+"}
 [2020-07-01 07:59:23] local.ERROR: array_push() expects parameter 1 to be array, object given {"exception":"[object] (ErrorException(code: 0): array_push() expects parameter 1 to be array, object given at C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\LophocController.php:30)
 [stacktrace]
 #0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'array_push() ex...', 'C:\\\\Users\\\\hieupc...', 30, Array)
@@ -13057,7 +13057,7 @@ esources\\views/diemmons/index.blade.php(116): Illuminate\\Support\\Collection->
 #44 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #46 {main}
-"} 
+"}
 [2020-07-01 07:59:55] local.ERROR: array_push() expects parameter 1 to be array, object given {"exception":"[object] (ErrorException(code: 0): array_push() expects parameter 1 to be array, object given at C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\LophocController.php:30)
 [stacktrace]
 #0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'array_push() ex...', 'C:\\\\Users\\\\hieupc...', 30, Array)
@@ -13107,7 +13107,7 @@ esources\\views/diemmons/index.blade.php(116): Illuminate\\Support\\Collection->
 #44 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #46 {main}
-"} 
+"}
 [2020-07-01 07:59:58] local.ERROR: array_push() expects parameter 1 to be array, object given {"exception":"[object] (ErrorException(code: 0): array_push() expects parameter 1 to be array, object given at C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\LophocController.php:30)
 [stacktrace]
 #0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'array_push() ex...', 'C:\\\\Users\\\\hieupc...', 30, Array)
@@ -13157,7 +13157,7 @@ esources\\views/diemmons/index.blade.php(116): Illuminate\\Support\\Collection->
 #44 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #46 {main}
-"} 
+"}
 [2020-07-01 08:00:34] local.ERROR: syntax error, unexpected end of file (View: C:\Users\hieupc\Desktop\student-management\resources\views\lophocs\detail.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected end of file (View: C:\\Users\\hieupc\\Desktop\\student-management\
 esources\\views\\lophocs\\detail.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
 esources\\views/lophocs/detail.blade.php:165)
@@ -13263,7 +13263,7 @@ esources\\views/lophocs/detail.blade.php:165)
 #46 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #47 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #48 {main}
-"} 
+"}
 [2020-07-01 08:11:26] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`MaLopHoc` = ?' at line 1 (SQL: select * from `hocsinh_lophoc` where 7 `MaLopHoc` = 111) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`MaLopHoc` = ?' at line 1 (SQL: select * from `hocsinh_lophoc` where 7 `MaLopHoc` = 111) at C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:671)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(631): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -13375,7 +13375,7 @@ esources\\views/lophocs/detail.blade.php:165)
 #51 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #52 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #53 {main}
-"} 
+"}
 [2020-07-01 08:12:15] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`MaLopHoc` = ?' at line 1 (SQL: select * from `hocsinh_lophoc` where 7 `MaLopHoc` = 111) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`MaLopHoc` = ?' at line 1 (SQL: select * from `hocsinh_lophoc` where 7 `MaLopHoc` = 111) at C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:671)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(631): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -13487,7 +13487,7 @@ esources\\views/lophocs/detail.blade.php:165)
 #51 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #52 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #53 {main}
-"} 
+"}
 [2020-07-01 08:12:23] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`MaLopHoc` = ?' at line 1 (SQL: select * from `hocsinh_lophoc` where 7 `MaLopHoc` = 111) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`MaLopHoc` = ?' at line 1 (SQL: select * from `hocsinh_lophoc` where 7 `MaLopHoc` = 111) at C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:671)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(631): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -13599,7 +13599,7 @@ esources\\views/lophocs/detail.blade.php:165)
 #51 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #52 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #53 {main}
-"} 
+"}
 [2020-07-01 08:20:17] local.ERROR: Trying to get property 'MaLopHoc' of non-object (View: C:\Users\hieupc\Desktop\student-management\resources\views\lophocs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Trying to get property 'MaLopHoc' of non-object (View: C:\\Users\\hieupc\\Desktop\\student-management\
 esources\\views\\lophocs\\edit.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
 esources\\views/lophocs/edit.blade.php:11)
@@ -13710,7 +13710,7 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #48 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
-"} 
+"}
 [2020-07-01 12:52:52] local.ERROR: compact(): Undefined variable: hocsinhchuaxeplop {"exception":"[object] (ErrorException(code: 0): compact(): Undefined variable: hocsinhchuaxeplop at C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\LophocController.php:34)
 [stacktrace]
 #0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'compact(): Unde...', 'C:\\\\Users\\\\hieupc...', 34, Array)
@@ -13760,10 +13760,13 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #44 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #46 {main}
-"} 
-[2020-07-03 00:48:08] local.ERROR: Use of undefined constant cauhinhs - assumed 'cauhinhs' (this will throw an Error in a future version of PHP) (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Use of undefined constant cauhinhs - assumed 'cauhinhs' (this will throw an Error in a future version of PHP) (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\cauhinhs\\edit.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/edit.blade.php:19)
+"}
+[2020-07-03 00:48:08] local.ERROR: Use of undefined constant cauhinhs - assumed 'cauhinhs' (this will throw an Error in a future version of PHP) (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Use of undefined constant cauhinhs - assumed 'cauhinhs' (this will throw an Error in a future version of PHP) (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\cauhinhs\\edit.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/edit.blade.php:19)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/edit.blade.php(19): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'C:\\\\Users\\\\hieupc...', 23, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/edit.blade.php(19): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'C:\\\\Users\\\\hieupc...', 23, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -13868,10 +13871,13 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #48 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
-"} 
-[2020-07-03 00:48:35] local.ERROR: Use of undefined constant cauhinhs - assumed 'cauhinhs' (this will throw an Error in a future version of PHP) (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Use of undefined constant cauhinhs - assumed 'cauhinhs' (this will throw an Error in a future version of PHP) (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\cauhinhs\\edit.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/edit.blade.php:19)
+"}
+[2020-07-03 00:48:35] local.ERROR: Use of undefined constant cauhinhs - assumed 'cauhinhs' (this will throw an Error in a future version of PHP) (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Use of undefined constant cauhinhs - assumed 'cauhinhs' (this will throw an Error in a future version of PHP) (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\cauhinhs\\edit.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/edit.blade.php:19)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/edit.blade.php(19): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'C:\\\\Users\\\\hieupc...', 23, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/edit.blade.php(19): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'C:\\\\Users\\\\hieupc...', 23, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -13976,8 +13982,10 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #48 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
-"} 
-[2020-07-03 00:50:21] local.ERROR: syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')' (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')' (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\cauhinhs\\edit.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/edit.blade.php:20)
+"}
+[2020-07-03 00:50:21] local.ERROR: syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')' (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')' (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\cauhinhs\\edit.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/edit.blade.php:20)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -14080,8 +14088,10 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #46 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #47 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #48 {main}
-"} 
-[2020-07-03 00:52:32] local.ERROR: Cannot use object of type Illuminate\Database\Query\Builder as array (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Cannot use object of type Illuminate\\Database\\Query\\Builder as array (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\cauhinhs\\edit.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/edit.blade.php:20)
+"}
+[2020-07-03 00:52:32] local.ERROR: Cannot use object of type Illuminate\Database\Query\Builder as array (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\edit.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Cannot use object of type Illuminate\\Database\\Query\\Builder as array (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\cauhinhs\\edit.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/edit.blade.php:20)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include()
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
@@ -14186,7 +14196,7 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #47 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #48 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #49 {main}
-"} 
+"}
 [2020-07-03 00:55:33] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'laravel.thamso' doesn't exist (SQL: select exists(select * from `thamso` where (`id` = 1 and `TuoiToiThieu` = 15 and `SoLopToiDa` = 9 and `SiSoToiDa` = 20 and `DiemToiThieu` = 0 and `DiemToiDa` = 10 and `DiemDat` = 5)) as `exists`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'laravel.thamso' doesn't exist (SQL: select exists(select * from `thamso` where (`id` = 1 and `TuoiToiThieu` = 15 and `SoLopToiDa` = 9 and `SiSoToiDa` = 20 and `DiemToiThieu` = 0 and `DiemToiDa` = 10 and `DiemDat` = 5)) as `exists`) at C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:671)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(631): Illuminate\\Database\\Connection->runQueryCallback('select exists(s...', Array, Object(Closure))
@@ -14294,10 +14304,13 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #50 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #51 {main}
-"} 
-[2020-07-03 00:59:41] local.ERROR: Undefined property: Illuminate\Database\MySqlConnection::$TuoiToiThieu (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined property: Illuminate\\Database\\MySqlConnection::$TuoiToiThieu (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\cauhinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/index.blade.php:17)
+"}
+[2020-07-03 00:59:41] local.ERROR: Undefined property: Illuminate\Database\MySqlConnection::$TuoiToiThieu (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined property: Illuminate\\Database\\MySqlConnection::$TuoiToiThieu (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\cauhinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/index.blade.php:17)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/index.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined prope...', 'C:\\\\Users\\\\hieupc...', 21, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/index.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined prope...', 'C:\\\\Users\\\\hieupc...', 21, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -14402,10 +14415,13 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #48 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
-"} 
-[2020-07-03 01:00:26] local.ERROR: Undefined property: Illuminate\Database\MySqlConnection::$TuoiToiThieu (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined property: Illuminate\\Database\\MySqlConnection::$TuoiToiThieu (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\cauhinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/index.blade.php:17)
+"}
+[2020-07-03 01:00:26] local.ERROR: Undefined property: Illuminate\Database\MySqlConnection::$TuoiToiThieu (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined property: Illuminate\\Database\\MySqlConnection::$TuoiToiThieu (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\cauhinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/index.blade.php:17)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/index.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined prope...', 'C:\\\\Users\\\\hieupc...', 21, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/index.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined prope...', 'C:\\\\Users\\\\hieupc...', 21, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -14510,10 +14526,13 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #48 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
-"} 
-[2020-07-03 01:00:27] local.ERROR: Undefined property: Illuminate\Database\MySqlConnection::$TuoiToiThieu (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined property: Illuminate\\Database\\MySqlConnection::$TuoiToiThieu (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\cauhinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/index.blade.php:17)
+"}
+[2020-07-03 01:00:27] local.ERROR: Undefined property: Illuminate\Database\MySqlConnection::$TuoiToiThieu (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined property: Illuminate\\Database\\MySqlConnection::$TuoiToiThieu (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\cauhinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/index.blade.php:17)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/index.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined prope...', 'C:\\\\Users\\\\hieupc...', 21, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/index.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined prope...', 'C:\\\\Users\\\\hieupc...', 21, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -14618,10 +14637,13 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #48 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
-"} 
-[2020-07-03 01:00:32] local.ERROR: Undefined property: Illuminate\Database\MySqlConnection::$TuoiToiThieu (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined property: Illuminate\\Database\\MySqlConnection::$TuoiToiThieu (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\cauhinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/index.blade.php:17)
+"}
+[2020-07-03 01:00:32] local.ERROR: Undefined property: Illuminate\Database\MySqlConnection::$TuoiToiThieu (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined property: Illuminate\\Database\\MySqlConnection::$TuoiToiThieu (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\cauhinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/index.blade.php:17)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/index.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined prope...', 'C:\\\\Users\\\\hieupc...', 21, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/index.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined prope...', 'C:\\\\Users\\\\hieupc...', 21, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -14726,10 +14748,13 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #48 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
-"} 
-[2020-07-03 01:00:33] local.ERROR: Undefined property: Illuminate\Database\MySqlConnection::$TuoiToiThieu (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined property: Illuminate\\Database\\MySqlConnection::$TuoiToiThieu (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\cauhinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/index.blade.php:17)
+"}
+[2020-07-03 01:00:33] local.ERROR: Undefined property: Illuminate\Database\MySqlConnection::$TuoiToiThieu (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined property: Illuminate\\Database\\MySqlConnection::$TuoiToiThieu (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\cauhinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/index.blade.php:17)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/index.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined prope...', 'C:\\\\Users\\\\hieupc...', 21, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/index.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined prope...', 'C:\\\\Users\\\\hieupc...', 21, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -14834,10 +14859,13 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #48 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
-"} 
-[2020-07-03 01:00:36] local.ERROR: Undefined property: Illuminate\Database\MySqlConnection::$TuoiToiThieu (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined property: Illuminate\\Database\\MySqlConnection::$TuoiToiThieu (View: C:\\Users\\hieupc\\Desktop\\student-management\esources\\views\\cauhinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/index.blade.php:17)
+"}
+[2020-07-03 01:00:36] local.ERROR: Undefined property: Illuminate\Database\MySqlConnection::$TuoiToiThieu (View: C:\Users\hieupc\Desktop\student-management\resources\views\cauhinhs\index.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined property: Illuminate\\Database\\MySqlConnection::$TuoiToiThieu (View: C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views\\cauhinhs\\index.blade.php) at C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/index.blade.php:17)
 [stacktrace]
-#0 C:\\Users\\hieupc\\Desktop\\student-management\esources\\views/cauhinhs/index.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined prope...', 'C:\\\\Users\\\\hieupc...', 21, Array)
+#0 C:\\Users\\hieupc\\Desktop\\student-management\
+esources\\views/cauhinhs/index.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined prope...', 'C:\\\\Users\\\\hieupc...', 21, Array)
 #1 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(41): include('C:\\\\Users\\\\hieupc...')
 #2 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(57): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\hieupc...', Array)
 #3 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\hieupc...', Array)
@@ -14942,7 +14970,7 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #48 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #49 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #50 {main}
-"} 
+"}
 [2020-07-03 01:01:27] local.ERROR: syntax error, unexpected 'return' (T_RETURN) {"exception":"[object] (ParseError(code: 0): syntax error, unexpected 'return' (T_RETURN) at C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\CauhinhController.php:14)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('C:\\\\Users\\\\hieupc...')
@@ -14981,7 +15009,7 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #33 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #34 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #35 {main}
-"} 
+"}
 [2020-07-03 01:01:34] local.ERROR: Object of class Illuminate\Database\Query\Builder could not be converted to string {"exception":"[object] (ErrorException(code: 0): Object of class Illuminate\\Database\\Query\\Builder could not be converted to string at C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\CauhinhController.php:13)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\CauhinhController.php(13): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(4096, 'Object of class...', 'C:\\\\Users\\\\hieupc...', 13, Array)
@@ -15030,7 +15058,7 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #43 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #44 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #45 {main}
-"} 
+"}
 [2020-07-03 01:01:47] local.ERROR: Object of class Illuminate\Database\Query\Builder could not be converted to string {"exception":"[object] (ErrorException(code: 0): Object of class Illuminate\\Database\\Query\\Builder could not be converted to string at C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\CauhinhController.php:13)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\CauhinhController.php(13): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(4096, 'Object of class...', 'C:\\\\Users\\\\hieupc...', 13, Array)
@@ -15079,7 +15107,7 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #43 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #44 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #45 {main}
-"} 
+"}
 [2020-07-03 01:01:56] local.ERROR: Object of class Illuminate\Database\Query\Builder could not be converted to string {"exception":"[object] (ErrorException(code: 0): Object of class Illuminate\\Database\\Query\\Builder could not be converted to string at C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\CauhinhController.php:13)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\CauhinhController.php(13): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(4096, 'Object of class...', 'C:\\\\Users\\\\hieupc...', 13, Array)
@@ -15128,7 +15156,7 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #43 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #44 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #45 {main}
-"} 
+"}
 [2020-07-03 01:03:13] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'laravel.thamso' doesn't exist (SQL: select * from `thamso`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'laravel.thamso' doesn't exist (SQL: select * from `thamso`) at C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:671)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(631): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -15240,7 +15268,7 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #51 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #52 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #53 {main}
-"} 
+"}
 [2020-07-03 01:04:31] local.ERROR: Argument 2 passed to Symfony\Component\HttpFoundation\RedirectResponse::__construct() must be of the type int, array given, called in C:\Users\hieupc\Desktop\student-management\vendor\laravel\framework\src\Illuminate\Routing\Redirector.php on line 233 {"exception":"[object] (TypeError(code: 0): Argument 2 passed to Symfony\\Component\\HttpFoundation\\RedirectResponse::__construct() must be of the type int, array given, called in C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Redirector.php on line 233 at C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\symfony\\http-foundation\\RedirectResponse.php:35)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Redirector.php(233): Symfony\\Component\\HttpFoundation\\RedirectResponse->__construct('http://localhos...', Array, Array)
@@ -15292,7 +15320,7 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #46 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #47 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #48 {main}
-"} 
+"}
 [2020-07-03 01:05:06] local.ERROR: Argument 2 passed to Symfony\Component\HttpFoundation\RedirectResponse::__construct() must be of the type int, array given, called in C:\Users\hieupc\Desktop\student-management\vendor\laravel\framework\src\Illuminate\Routing\Redirector.php on line 233 {"exception":"[object] (TypeError(code: 0): Argument 2 passed to Symfony\\Component\\HttpFoundation\\RedirectResponse::__construct() must be of the type int, array given, called in C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Redirector.php on line 233 at C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\symfony\\http-foundation\\RedirectResponse.php:35)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Redirector.php(233): Symfony\\Component\\HttpFoundation\\RedirectResponse->__construct('http://localhos...', Array, Array)
@@ -15344,7 +15372,7 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #46 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #47 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #48 {main}
-"} 
+"}
 [2020-07-03 01:06:03] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY' (SQL: insert into `thamsos` (`id`, `TuoiToiThieu`, `SoLopToiDa`, `SiSoToiDa`, `DiemToiThieu`, `DiemToiDa`, `DiemDat`) values (1, 15, 9, 20, 0.00, 10.00, 6.00)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY' (SQL: insert into `thamsos` (`id`, `TuoiToiThieu`, `SoLopToiDa`, `SiSoToiDa`, `DiemToiThieu`, `DiemToiDa`, `DiemDat`) values (1, 15, 9, 20, 0.00, 10.00, 6.00)) at C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:671)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(631): Illuminate\\Database\\Connection->runQueryCallback('insert into `th...', Array, Object(Closure))
@@ -15454,7 +15482,7 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #50 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #51 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #52 {main}
-"} 
+"}
 [2020-07-03 01:08:01] local.ERROR: Call to undefined method Illuminate\Database\Query\Builder::findOrFail() {"exception":"[object] (BadMethodCallException(code: 0): Call to undefined method Illuminate\\Database\\Query\\Builder::findOrFail() at C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php:50)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3163): Illuminate\\Database\\Query\\Builder::throwBadMethodCallException('findOrFail')
@@ -15504,7 +15532,7 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #44 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #46 {main}
-"} 
+"}
 [2020-07-03 01:08:28] local.ERROR: Call to undefined method Illuminate\Database\Query\Builder::findOrFail() {"exception":"[object] (BadMethodCallException(code: 0): Call to undefined method Illuminate\\Database\\Query\\Builder::findOrFail() at C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php:50)
 [stacktrace]
 #0 C:\\Users\\hieupc\\Desktop\\student-management\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3163): Illuminate\\Database\\Query\\Builder::throwBadMethodCallException('findOrFail')
@@ -15554,7 +15582,7 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #44 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #46 {main}
-"} 
+"}
 [2020-07-03 01:09:20] local.ERROR: count(): Parameter must be an array or an object that implements Countable {"exception":"[object] (ErrorException(code: 0): count(): Parameter must be an array or an object that implements Countable at C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\CauhinhController.php:24)
 [stacktrace]
 #0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'count(): Parame...', 'C:\\\\Users\\\\hieupc...', 24, Array)
@@ -15604,7 +15632,7 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #44 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #45 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #46 {main}
-"} 
+"}
 [2020-07-03 01:10:00] local.ERROR: Call to undefined method stdClass::get() {"exception":"[object] (Error(code: 0): Call to undefined method stdClass::get() at C:\\Users\\hieupc\\Desktop\\student-management\\app\\Http\\Controllers\\CauhinhController.php:23)
 [stacktrace]
 #0 [internal function]: App\\Http\\Controllers\\CauhinhController->edit()
@@ -15652,4 +15680,4 @@ esources\\views/lophocs/edit.blade.php(11): Illuminate\\Foundation\\Bootstrap\\H
 #42 C:\\Users\\hieupc\\Desktop\\student-management\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #43 C:\\Users\\hieupc\\Desktop\\student-management\\server.php(21): require_once('C:\\\\Users\\\\hieupc...')
 #44 {main}
-"} 
+"}

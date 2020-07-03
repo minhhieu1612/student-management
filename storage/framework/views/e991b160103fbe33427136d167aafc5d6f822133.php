@@ -1,8 +1,8 @@
  <?php $__env->startSection('title','Chỉnh sửa học sinh'); ?>
 <?php $__env->startSection('content'); ?>
 <?php $__env->startComponent('components.pageTitle'); ?>
-  <?php $__env->slot('title'); ?> Chỉnh sửa học sinh
-  <?php $__env->endSlot(); ?>
+<?php $__env->slot('title'); ?> Chỉnh sửa học sinh
+<?php $__env->endSlot(); ?>
 <?php if (isset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55)): ?>
 <?php $component = $__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55; ?>
 <?php unset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55); ?>
@@ -21,40 +21,21 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group row">
-              <label class="label col-md-4" for="HoVaTen"
-                >Họ Và Tên <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="HoVaTen">Họ Và Tên <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="HoVaTen"
-                  id="HoVaTen"
-                  value="<?php echo e($hocsinh->HoVaTen); ?>"
-                  placeholder=""
-                  required
-                />
+                <input class="form-control" type="text" name="HoVaTen" id="HoVaTen" value="<?php echo e($hocsinh->HoVaTen); ?>"
+                  placeholder="" required />
               </div>
             </div>
             <div class="form-group row">
-              <label class="label col-md-4" for="NgaySinh"
-                >Ngày Sinh <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="NgaySinh">Ngày Sinh <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="date"
-                  name="NgaySinh"
-                  id="NgaySinh"
-                  value="<?php echo e($hocsinh->NgaySinh); ?>"
-                  required
-                />
+                <input class="form-control" type="date" name="NgaySinh" id="NgaySinh" value="<?php echo e($hocsinh->NgaySinh); ?>"
+                  required />
               </div>
             </div>
             <div class="form-group row">
-              <label class="label col-md-4" for="GioiTinh"
-                >Giới Tính <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="GioiTinh">Giới Tính <span class="text-danger">*</span></label>
               <div class="col-md-8">
                 <select class="form-control custom-select" name="GioiTinh" id="GioiTinh">
                   <option value="1"><?php echo e($hocsinh->GioiTinh ? "Nam" : "Nữ"); ?></option>
@@ -65,30 +46,16 @@
           </div>
           <div class="col-md-6">
             <div class="form-group row">
-              <label class="label col-md-4" for="DiaChi"
-                >Địa Chỉ <span class="text-danger">*</span></label
-              >
+              <label class="label col-md-4" for="DiaChi">Địa Chỉ <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="DiaChi"
-                  id="DiaChi"
-                  value="<?php echo e($hocsinh->DiaChi); ?>"
-                  required
-                />
+                <input class="form-control" type="text" name="DiaChi" id="DiaChi" value="<?php echo e($hocsinh->DiaChi); ?>"
+                  required />
               </div>
             </div>
             <div class="form-group row">
               <label class="label col-md-4" for="QueQuan">Quê quán</label>
               <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="QueQuan"
-                  id="QueQuan"
-                  value="<?php echo e($hocsinh->QueQUan); ?>"
-                />
+                <input class="form-control" type="text" name="QueQuan" id="QueQuan" value="<?php echo e($hocsinh->QueQuan); ?>" />
               </div>
             </div>
           </div>
@@ -99,18 +66,16 @@
       <div class="card-header">Thông tin lớp học</div>
       <div class="card-body">
         <div class="form-group row">
-          <label class="label col-md-3" for="MaLopHoc"
-            >Mã lớp học</label
-          >
+          <label class="label col-md-3" for="MaLopHoc">Chọn lớp</label>
           <div class="col-md-4">
-            <input
-              class="form-control"
-              type="text"
-              name="MaLopHoc"
-              id="MaLopHoc"
-              value="<?php echo e($malop); ?>"
-              placeholder=""
-            />
+            <select class="form-control custom-select" name="MaLopHoc" id="MaLopHoc">
+              <?php if(count($lophocs) > 0): ?>
+              <?php $__currentLoopData = $lophocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $lophoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+              <option value="<?php echo e($lophoc->MaLopHoc); ?>" <?php echo e($malop == $lophoc->MaLopHoc? 'selected':null); ?>>
+                <?php echo e($lophoc->TenLop); ?></option>
+              <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+              <?php endif; ?>
+            </select>
           </div>
         </div>
       </div>
@@ -123,5 +88,4 @@
 </div>
 
 <?php $__env->stopSection(); ?>
-
 <?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\student-management\resources\views/hocsinhs/edit.blade.php ENDPATH**/ ?>

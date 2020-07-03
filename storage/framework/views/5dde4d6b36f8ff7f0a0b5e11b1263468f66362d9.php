@@ -1,10 +1,14 @@
-@extends('templates.master') @section('title','Quản lý điểm số')
-@section('content') @component('components.pageTitle') @slot('title') Quản lý
-điểm số @endslot @endcomponent
+ <?php $__env->startSection('title','Quản lý điểm số'); ?>
+<?php $__env->startSection('content'); ?> <?php $__env->startComponent('components.pageTitle'); ?> <?php $__env->slot('title'); ?> Quản lý
+điểm số <?php $__env->endSlot(); ?> <?php if (isset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55)): ?>
+<?php $component = $__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55; ?>
+<?php unset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55); ?>
+<?php endif; ?>
+<?php echo $__env->renderComponent(); ?>
 
-<form action="/diem/sua/{{ $form[0] }}/{{ $form[1] }}/{{ $form[2] }}/{{ $form[3] }}" method="POST">
-  @csrf
-  @method('PUT')
+<form action="/diem/sua/<?php echo e($form[0]); ?>/<?php echo e($form[1]); ?>/<?php echo e($form[2]); ?>/<?php echo e($form[3]); ?>" method="POST">
+  <?php echo csrf_field(); ?>
+  <?php echo method_field('PUT'); ?>
   <div class="card mt-3">
     <div class="card-header">Thông tin chung</div>
     <div class="card-body">
@@ -13,13 +17,15 @@
           <div class="form-group row">
             <label class="label col-md-4">Tên lớp học</label>
             <div class="col-md-8">
-              {{ $form[0] }}
+              <?php echo e($form[0]); ?>
+
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Môn học</label>
             <div class="col-md-8">
-              {{ $tenmonhoc }}
+              <?php echo e($tenmonhoc); ?>
+
             </div>
           </div>
         </div>
@@ -27,13 +33,15 @@
           <div class="form-group row">
             <label class="label col-md-4">Năm học</label>
             <div class="col-md-8">
-              {{ $form[2] }}
+              <?php echo e($form[2]); ?>
+
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Học kỳ</label>
             <div class="col-md-8">
-              Học kỳ {{ $form[3] }}
+              Học kỳ <?php echo e($form[3]); ?>
+
             </div>
           </div>
         </div>
@@ -43,7 +51,7 @@
   <div class="card mt-3">
     <div class="card-header">Thông tin điểm học sinh</div>
     <div class="card-body">
-      <h4 class="text-center">{{ $form[0] }}</h4>
+      <h4 class="text-center"><?php echo e($form[0]); ?></h4>
       <table
         id="DataList"
         class="table table-bordered table-responsive-md table-hover"
@@ -61,58 +69,58 @@
           </tr>
         </thead>
         <tbody>
-          @foreach($hocsinhs ?? [] as $hocsinh)
+          <?php $__currentLoopData = $hocsinhs ?? []; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $hocsinh): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           <tr>
-            <td>{{ $loop->index + 1 }}</td>
-            <td>{{ $hocsinh->MaHocSinh }}</td>
-            <td>{{ $hocsinh->HoVaTen }}</td>
+            <td><?php echo e($loop->index + 1); ?></td>
+            <td><?php echo e($hocsinh->MaHocSinh); ?></td>
+            <td><?php echo e($hocsinh->HoVaTen); ?></td>
             <td>
               <input
                 class="form-control w-100 text-center"
                 type="number"
-                name="mieng{{ $hocsinh->MaHocSinh }}"
+                name="mieng<?php echo e($hocsinh->MaHocSinh); ?>"
                 max="10"
                 min="0"
                 step="0.1"
-                value="{{ $hocsinh->DiemMieng }}"
+                value="<?php echo e($hocsinh->DiemMieng); ?>"
               />
             </td>
             <td>
               <input
                 class="form-control w-100 text-center"
                 type="number"
-                name="15p{{ $hocsinh->MaHocSinh }}"
+                name="15p<?php echo e($hocsinh->MaHocSinh); ?>"
                 max="10"
                 min="0"
                 step="0.1"
-                value="{{ $hocsinh->Diem15P }}"
+                value="<?php echo e($hocsinh->Diem15P); ?>"
               />
             </td>
             <td>
               <input
                 class="form-control w-100 text-center"
                 type="number"
-                name="1tiet{{ $hocsinh->MaHocSinh }}"
+                name="1tiet<?php echo e($hocsinh->MaHocSinh); ?>"
                 max="10"
                 min="0"
                 step="0.1"
-                value="{{ $hocsinh->Diem1Tiet }}"
+                value="<?php echo e($hocsinh->Diem1Tiet); ?>"
               />
             </td>
             <td>
               <input
                 class="form-control w-100 text-center"
                 type="number"
-                name="hocky{{ $hocsinh->MaHocSinh }}"
+                name="hocky<?php echo e($hocsinh->MaHocSinh); ?>"
                 max="10"
                 min="0"
                 step="0.1"
-                value="{{ $hocsinh->DiemHK }}"
+                value="<?php echo e($hocsinh->DiemHK); ?>"
               />
             </td>
-            <td>{{ $hocsinh->DiemTongHK }}</td>
+            <td><?php echo e($hocsinh->DiemTongHK); ?></td>
           </tr>
-          @endforeach
+          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </tbody>
       </table>
     </div>
@@ -123,4 +131,6 @@
   </div>
 </form>
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\student-management\resources\views/diemmons/edit.blade.php ENDPATH**/ ?>

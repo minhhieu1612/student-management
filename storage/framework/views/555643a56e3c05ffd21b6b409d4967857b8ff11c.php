@@ -82,7 +82,7 @@
                 max="10"
                 min="0"
                 step="0.1"
-                value="<?php echo e($hocsinh->DiemMieng); ?>"
+                value="<?php echo e(App\Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $form[1]],['HocKy', $form[3]],['NamHoc', $form[2]]])->first()->DiemMieng ?? 0.0); ?>"
               />
             </td>
             <td>
@@ -93,7 +93,7 @@
                 max="10"
                 min="0"
                 step="0.1"
-                value="<?php echo e($hocsinh->Diem15P); ?>"
+                value="<?php echo e(App\Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $form[1]],['HocKy', $form[3]],['NamHoc', $form[2]]])->first()->Diem15P ?? 0.0); ?>"
               />
             </td>
             <td>
@@ -104,7 +104,7 @@
                 max="10"
                 min="0"
                 step="0.1"
-                value="<?php echo e($hocsinh->Diem1Tiet); ?>"
+                value="<?php echo e(App\Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $form[1]],['HocKy', $form[3]],['NamHoc', $form[2]]])->first()->Diem1Tiet ?? 0.0); ?>"
               />
             </td>
             <td>
@@ -115,10 +115,10 @@
                 max="10"
                 min="0"
                 step="0.1"
-                value="<?php echo e($hocsinh->DiemHK); ?>"
+                value="<?php echo e(App\Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $form[1]],['HocKy', $form[3]],['NamHoc', $form[2]]])->first()->DiemHK ?? 0.0); ?>"
               />
             </td>
-            <td><?php echo e($hocsinh->DiemTongHK); ?></td>
+            <td><?php echo e(App\Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $form[1]],['HocKy', $form[3]],['NamHoc', $form[2]]])->first()->DiemTongHK ?? 0.0); ?></td>
           </tr>
           <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </tbody>

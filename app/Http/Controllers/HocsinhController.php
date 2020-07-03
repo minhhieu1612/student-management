@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Hocsinh;
 use App\LopHoc;
+use App\Monhoc;
 use App\Diemmonhoc;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
@@ -102,6 +103,7 @@ class HocsinhController extends Controller
         if ($malop != null)
         {
             $lop = Lophoc::find($malop);
+            $monhocs = Monhoc::all();
 
             $diemmonhocs = Diemmonhoc::where([['MaHocSinh','=', $MaHocSinh],['NamHoc','=', $lop->NamHoc]])->get();
             $diemhk1 = $diemmonhocs->where('HocKy',1);
@@ -127,10 +129,11 @@ class HocsinhController extends Controller
             $lop = null;
             $diemhk1 = $diemhk2 = null;
             $tbhk1 = $tbhk2 = 0;
+            $monhocs = Monhoc::all();
         }
 
 
-        return view('hocsinhs.detail', compact('hocsinh', 'lop', 'diemhk1', 'diemhk2', 'tbhk1', 'tbhk2'));
+        return view('hocsinhs.detail', compact('hocsinh', 'lop', 'monhocs', 'diemhk1', 'diemhk2', 'tbhk1', 'tbhk2'));
     }
 
     public function delete($MaHocSinh)

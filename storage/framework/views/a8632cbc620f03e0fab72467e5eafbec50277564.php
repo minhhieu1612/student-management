@@ -112,200 +112,38 @@
     <div class="card-body">
       <div class="row semester d-flex">
         <div class="col-md-6">
+          <?php $__currentLoopData = $monhocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $monhoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           <div class="form-group row">
-            <label class="label col-md-4">Toán học</label>
+            <label class="label col-md-4"><?php echo e($monhoc->TenMonHoc); ?></label>
             <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk1[0]->DiemTongHK ?? ''); ?></p>
+              <p class="fs-14"><?php echo e($diemhk1->where('MaMonHoc', $monhoc->MaMonHoc)->first()->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Ngữ Văn</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk1[1]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Anh Văn</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk1[2]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Vật Lý</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk1[3]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Hóa Học</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk1[4]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group row">
-            <label class="label col-md-4">Sinh học</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk1[5]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Lịch Sử</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk1[6]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Địa Lý</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk1[7]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Giáo Dục Công Dân</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk1[8]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Thể Dục</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk1[9]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
+          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
       </div>
       <div class="row semester">
         <div class="col-md-6">
+          <?php $__currentLoopData = $monhocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $monhoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           <div class="form-group row">
-            <label class="label col-md-4">Toán học</label>
+            <label class="label col-md-4"><?php echo e($monhoc->TenMonHoc); ?></label>
             <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk2[0]->DiemTongHK ?? ''); ?></p>
+              <p class="fs-14"><?php echo e($diemhk2->where('MaMonHoc', $monhoc->MaMonHoc)->first()->DiemTongHK ?? ''); ?></p>
             </div>
           </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Ngữ Văn</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk2[1]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Anh Văn</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk2[2]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Vật Lý</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk2[3]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Hóa Học</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk2[4]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group row">
-            <label class="label col-md-4">Sinh học</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk2[5]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Lịch Sử</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk2[6]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Địa Lý</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk2[7]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Giáo Dục Công Dân</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk2[8]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Thể Dục</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e($diemhk2[9]->DiemTongHK ?? ''); ?></p>
-            </div>
-          </div>
+          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
       </div>
       <div class="row semester">
         <div class="col-md-6">
+          <?php $__currentLoopData = $monhocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $monhoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           <div class="form-group row">
-            <label class="label col-md-4">Toán học</label>
+            <label class="label col-md-4"><?php echo e($monhoc->TenMonHoc); ?></label>
             <div class="col-md-8">
-              <p class="fs-14"><?php echo e((($diemhk1[0]->DiemTongHK ?? 0.0) + ($diemhk2[0]->DiemTongHK ?? 0.0)) / 2); ?></p>
+              <p class="fs-14"><?php echo e((($diemhk1->where('MaMonHoc', $monhoc->MaMonHoc)->first()->DiemTongHK ?? 0.0) + ($diemhk2->where('MaMonHoc', $monhoc->MaMonHoc)->first()->DiemTongHK ?? 0.0)) / 2); ?></p>
             </div>
           </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Ngữ Văn</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e((($diemhk1[1]->DiemTongHK ?? 0.0) + ($diemhk2[1]->DiemTongHK ?? 0.0)) / 2); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Anh Văn</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e((($diemhk1[2]->DiemTongHK ?? 0.0) + ($diemhk2[2]->DiemTongHK ?? 0.0)) / 2); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Vật Lý</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e((($diemhk1[3]->DiemTongHK ?? 0.0) + ($diemhk2[3]->DiemTongHK ?? 0.0)) / 2); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Hóa Học</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e((($diemhk1[4]->DiemTongHK ?? 0.0) + ($diemhk2[4]->DiemTongHK ?? 0.0)) / 2); ?></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group row">
-            <label class="label col-md-4">Sinh học</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e((($diemhk1[5]->DiemTongHK ?? 0.0) + ($diemhk2[5]->DiemTongHK ?? 0.0)) / 2); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Lịch Sử</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e((($diemhk1[6]->DiemTongHK ?? 0.0) + ($diemhk2[6]->DiemTongHK ?? 0.0)) / 2); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Địa Lý</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e((($diemhk1[7]->DiemTongHK ?? 0.0) + ($diemhk2[7]->DiemTongHK ?? 0.0)) / 2); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Giáo Dục Công Dân</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e((($diemhk1[8]->DiemTongHK ?? 0.0) + ($diemhk2[8]->DiemTongHK ?? 0.0)) / 2); ?></p>
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="label col-md-4">Thể Dục</label>
-            <div class="col-md-8">
-              <p class="fs-14"><?php echo e((($diemhk1[9]->DiemTongHK ?? 0.0) + ($diemhk2[9]->DiemTongHK ?? 0.0)) / 2); ?></p>
-            </div>
-          </div>
+          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
       </div>
     </div>
@@ -344,4 +182,5 @@
 </div>
 
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\student-management\resources\views/hocsinhs/detail.blade.php ENDPATH**/ ?>

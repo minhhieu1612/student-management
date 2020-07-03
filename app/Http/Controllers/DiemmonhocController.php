@@ -16,26 +16,31 @@ class DiemmonhocController extends Controller
         $lops = Lophoc::select('TenLop')->groupBy('TenLop')->get();
         $namhocs = Lophoc::select('NamHoc')->groupBy('NamHoc')->get();
         $monhocs = Monhoc::all();
-
-        return view('diemmons.index', compact('lops', 'namhocs', 'monhocs'));
+        $malop = '';
+        $mamon = '';
+        $namhoc = '';
+        $hocky = '';
+        return view('diemmons.index', compact('lops', 'namhocs', 'monhocs','malop','mamon','namhoc', 'hocky'));
     }
 
     public function show()
     {
-        $lops = Lophoc::select('TenLop')->groupBy('TenLop')->get();
+        $lops = Lophoc::select('TenLop','MaLopHoc')->groupBy('TenLop','MaLopHoc')->get();
         $namhocs = Lophoc::select('NamHoc')->groupBy('NamHoc')->get();
         $monhocs = Monhoc::all();
         $malop = Lophoc::where([['TenLop', request('TenLop')],['Namhoc', request('NamHoc')]])->first()->MaLopHoc;
-
+        $mamon = request('MonHoc');
+        $namhoc = request('NamHoc');
+        $hocky = request('HocKy');
         $hocsinhs = DB::table('hocsinhs')
             ->join('hocsinh_lophoc','hocsinhs.MaHocSinh','hocsinh_lophoc.MaHocSinh')
             ->join('lophocs','hocsinh_lophoc.MaLopHoc','lophocs.MaLopHoc')
             ->join('diemmonhocs','hocsinhs.MaHocSinh','diemmonhocs.MaHocSinh')
             ->select('lophocs.MaLopHoc AS MaLopHoc', 'hocsinhs.MaHocSinh AS MaHocSinh','HoVaTen','MaMonHoc','HocKy','lophocs.NamHoc AS NamHoc','DiemMieng','Diem15P','Diem1Tiet','DiemHK','DiemTongHK')
-            ->where([['lophocs.MaLopHoc', $malop],['MaMonHoc', request('MonHoc')],['HocKy', request('HocKy')],['lophocs.NamHoc', request('NamHoc')]])
+            ->where([['lophocs.MaLopHoc', $malop],['MaMonHoc', $mamon],['HocKy', $hocky],['lophocs.NamHoc', $namhoc]])
             ->get();
         //return request('TenLop');
-        return view('diemmons.index', compact('lops', 'namhocs', 'monhocs', 'hocsinhs'));
+        return view('diemmons.index', compact('lops', 'namhocs', 'monhocs', 'hocsinhs','malop','mamon','namhoc', 'hocky'));
     }
 
     public function add()
@@ -43,7 +48,7 @@ class DiemmonhocController extends Controller
         return view('diemmons.add');
     }
 
-    public function viewEdit($lop, $mamonhoc, $namhoc, $hocky) 
+    public function viewEdit($lop, $mamonhoc, $namhoc, $hocky)
     {
         $malop = Lophoc::where([['TenLop', $lop],['Namhoc', $namhoc]])->first()->MaLopHoc;
         $hocsinhs = DB::table('hocsinhs')
@@ -75,12 +80,12 @@ class DiemmonhocController extends Controller
                 $diem->Diem1Tiet = request('1tiet' . $hocsinh->MaHocSinh);
                 $diem->DiemHK = request('hocky' . $hocsinh->MaHocSinh);
                 $diem->DiemTongHK = $diemtonghk;
-                $diem->save(); 
+                $diem->save();
             }
-            
-                   
+
+
         }
-        
+
         return redirect(route('diemmonhocs.index'));
     }
 

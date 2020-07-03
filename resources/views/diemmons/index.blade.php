@@ -10,35 +10,21 @@
         @csrf
         <div class="col-md-6">
           <div class="form-group row">
-            <label class="label col-md-4" for="TenLopHoc"
-              >Tên lớp học <span class="text-danger">*</span></label
-            >
+            <label class="label col-md-4" for="TenLopHoc">Tên lớp học <span class="text-danger">*</span></label>
             <div class="col-md-8">
-              <select
-                class="form-control custom-select"
-                name="TenLop"
-                id="TenLop"
-                value=""
-              >
+              <select class="form-control custom-select" name="TenLop" id="TenLop" value="">
                 @foreach($lops as $lop)
-                  <option value="{{ $lop->TenLop }}">{{ $lop->TenLop }}</option>
+                <option value="{{ $lop->TenLop }}" {{ '' == $malop ? '' : ($malop==$lop->MaLopHoc? 'selected': '') }}>{{ $lop->TenLop }}</option>
                 @endforeach
               </select>
             </div>
           </div>
           <div class="form-group row">
-            <label class="label col-md-4" for="MonHoc"
-              >Môn học <span class="text-danger">*</span></label
-            >
+            <label class="label col-md-4" for="MonHoc">Môn học <span class="text-danger">*</span></label>
             <div class="col-md-8">
-              <select
-                class="form-control custom-select"
-                name="MonHoc"
-                id="MonHoc"
-                value=""
-              >
+              <select class="form-control custom-select" name="MonHoc" id="MonHoc" value="">
                 @foreach($monhocs as $monhoc)
-                <option value="{{ $monhoc->MaMonHoc }}">{{ $monhoc->TenMonHoc }}</option>
+                <option value="{{ $monhoc->MaMonHoc }}" {{ '' == $mamon ? '' : ($mamon==$monhoc->MaMonHoc? 'selected': '') }}>{{ $monhoc->TenMonHoc }}</option>
                 @endforeach
               </select>
             </div>
@@ -49,35 +35,21 @@
         </div>
         <div class="col-md-6">
           <div class="form-group row">
-            <label class="label col-md-4" for="NamHoc"
-              >Năm học <span class="text-danger">*</span></label
-            >
+            <label class="label col-md-4" for="NamHoc">Năm học <span class="text-danger">*</span></label>
             <div class="col-md-8">
-              <select
-                class="form-control custom-select"
-                name="NamHoc"
-                id="NamHoc"
-                value=""
-              >
-                @foreach($namhocs as $namhoc)
-                  <option value="{{ $namhoc->NamHoc }}">{{ $namhoc->NamHoc }}</option>
+              <select class="form-control custom-select" name="NamHoc" id="NamHoc" value="">
+                @foreach($namhocs as $nh)
+                  <option value="{{ $nh->NamHoc }}" {{ '' == $namhoc ? '' : ($namhoc==$nh->NamHoc? 'selected': '') }}>{{ $nh->NamHoc }}</option>
                 @endforeach
               </select>
             </div>
           </div>
           <div class="form-group row">
-            <label class="label col-md-4" for="HocKy"
-              >Học kỳ <span class="text-danger">*</span></label
-            >
+            <label class="label col-md-4" for="HocKy">Học kỳ <span class="text-danger">*</span></label>
             <div class="col-md-8">
-              <select
-                class="form-control custom-select"
-                name="HocKy"
-                id="HocKy"
-                value=""
-              >
-                <option value="1">Học kỳ 1</option>
-                <option value="2">Học kỳ 2</option>
+              <select class="form-control custom-select" name="HocKy" id="HocKy" value="">
+                <option value="1" {{ '' == $hocky ? '' : ($hocky==1? 'selected': '') }}>Học kỳ 1</option>
+                <option value="2" {{ '' == $hocky ? '' : ($hocky==2? 'selected': '') }}>Học kỳ 2</option>
               </select>
             </div>
           </div>
@@ -90,10 +62,7 @@
     <div class="card-body">
       <button class="btn mb-3"><span><i class="fa fa-download mr-2"></i></span>Export</button>
       <h4 class="text-center">{{ request('TenLop') }}</h4>
-      <table
-        id="DataList"
-        class="table table-bordered table-responsive-md table-hover"
-      >
+      <table id="DataList" class="table table-bordered table-responsive-md table-hover">
 
         <thead>
           <tr>
@@ -124,9 +93,12 @@
       </table>
     </div>
   </div>
+  @if($malop != '')
   <div class="text-center mt-5">
-    <a href="/diem/sua/{{ request('TenLop') ."/". request('MonHoc') ."/". request('NamHoc') ."/". request('HocKy') }}"><button class="btn-confirm mr-3">Sửa</button></a>
+    <a href="/diem/sua/{{ request('TenLop') ."/". request('MonHoc') ."/". request('NamHoc') ."/". request('HocKy') }}"><button
+        class="btn-confirm mr-3">Sửa</button></a>
   </div>
+  @endif
 </div>
 
 @endsection

@@ -6,7 +6,9 @@
 <?php endif; ?>
 <?php echo $__env->renderComponent(); ?>
 
-<form action="/diem/sua" method="POST">
+<form action="/diem/sua/<?php echo e($form[0]); ?>/<?php echo e($form[1]); ?>/<?php echo e($form[2]); ?>/<?php echo e($form[3]); ?>" method="POST">
+  <?php echo csrf_field(); ?>
+  <?php echo method_field('PUT'); ?>
   <div class="card mt-3">
     <div class="card-header">Thông tin chung</div>
     <div class="card-body">
@@ -15,13 +17,15 @@
           <div class="form-group row">
             <label class="label col-md-4">Tên lớp học</label>
             <div class="col-md-8">
-              10A1
+              <?php echo e($form[0]); ?>
+
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Môn học</label>
             <div class="col-md-8">
-              Toán học
+              <?php echo e($tenmonhoc); ?>
+
             </div>
           </div>
         </div>
@@ -29,13 +33,15 @@
           <div class="form-group row">
             <label class="label col-md-4">Năm học</label>
             <div class="col-md-8">
-              2020
+              <?php echo e($form[2]); ?>
+
             </div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4">Học kỳ</label>
             <div class="col-md-8">
-              Học kỳ I
+              Học kỳ <?php echo e($form[3]); ?>
+
             </div>
           </div>
         </div>
@@ -45,7 +51,7 @@
   <div class="card mt-3">
     <div class="card-header">Thông tin điểm học sinh</div>
     <div class="card-body">
-      <h4 class="text-center">Lớp 10A1</h4>
+      <h4 class="text-center"><?php echo e($form[0]); ?></h4>
       <table
         id="DataList"
         class="table table-bordered table-responsive-md table-hover"
@@ -63,98 +69,58 @@
           </tr>
         </thead>
         <tbody>
+          <?php $__currentLoopData = $hocsinhs ?? []; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $hocsinh): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           <tr>
-            <td>1</td>
-            <td>HS001</td>
-            <td>Đặng Quan Hồng</td>
+            <td><?php echo e($loop->index + 1); ?></td>
+            <td><?php echo e($hocsinh->MaHocSinh); ?></td>
+            <td><?php echo e($hocsinh->HoVaTen); ?></td>
             <td>
               <input
                 class="form-control w-100 text-center"
-                type="text"
-                name="miengHS001"
+                type="number"
+                name="mieng<?php echo e($hocsinh->MaHocSinh); ?>"
                 max="10"
                 min="0"
-                value="7"
+                step="0.1"
+                value="<?php echo e($hocsinh->DiemMieng); ?>"
               />
             </td>
             <td>
               <input
                 class="form-control w-100 text-center"
-                type="text"
-                name="15pHS001"
+                type="number"
+                name="15p<?php echo e($hocsinh->MaHocSinh); ?>"
                 max="10"
                 min="0"
-                value="6.5"
+                step="0.1"
+                value="<?php echo e($hocsinh->Diem15P); ?>"
               />
             </td>
             <td>
               <input
                 class="form-control w-100 text-center"
-                type="text"
-                name="1tietHS001"
+                type="number"
+                name="1tiet<?php echo e($hocsinh->MaHocSinh); ?>"
                 max="10"
                 min="0"
-                value="8.5"
+                step="0.1"
+                value="<?php echo e($hocsinh->Diem1Tiet); ?>"
               />
             </td>
             <td>
               <input
                 class="form-control w-100 text-center"
-                type="text"
-                name="hockyHS001"
+                type="number"
+                name="hocky<?php echo e($hocsinh->MaHocSinh); ?>"
                 max="10"
                 min="0"
-                value="8"
+                step="0.1"
+                value="<?php echo e($hocsinh->DiemHK); ?>"
               />
             </td>
-            <td>7.6</td>
+            <td><?php echo e($hocsinh->DiemTongHK); ?></td>
           </tr>
-          <tr>
-            <td>2</td>
-            <td>HS002</td>
-            <td>Đặng Thùy Nhi</td>
-            <td>
-              <input
-                class="form-control w-100 text-center"
-                type="text"
-                name="miengHS002"
-                max="10"
-                min="0"
-                value="8"
-              />
-            </td>
-            <td>
-              <input
-                class="form-control w-100 text-center"
-                type="text"
-                name="15pHS002"
-                max="10"
-                min="0"
-                value="7.5"
-              />
-            </td>
-            <td>
-              <input
-                class="form-control w-100 text-center"
-                type="text"
-                name="1tietHS002"
-                max="10"
-                min="0"
-                value="8.5"
-              />
-            </td>
-            <td>
-              <input
-                class="form-control w-100 text-center"
-                type="text"
-                name="hockyHS002"
-                max="10"
-                min="0"
-                value="9"
-              />
-            </td>
-            <td>8.9</td>
-          </tr>
+          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </tbody>
       </table>
     </div>

@@ -28,7 +28,7 @@ class DiemmonhocController extends Controller
         $lops = Lophoc::select('TenLop','MaLopHoc')->groupBy('TenLop','MaLopHoc')->get();
         $namhocs = Lophoc::select('NamHoc')->groupBy('NamHoc')->get();
         $monhocs = Monhoc::all();
-        $malop = Lophoc::where([['TenLop', request('TenLop')],['Namhoc', request('NamHoc')]])->first()->MaLopHoc;
+        $malop = Lophoc::where([['TenLop', request('TenLop')],['Namhoc', request('NamHoc')]])->first()->MaLopHoc ?? 0;
         $mamon = request('MonHoc');
         $namhoc = request('NamHoc');
         $hocky = request('HocKy');

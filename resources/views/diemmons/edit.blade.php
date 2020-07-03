@@ -74,7 +74,7 @@
                 max="10"
                 min="0"
                 step="0.1"
-                value="{{ $hocsinh->DiemMieng }}"
+                value="{{ App\Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $form[1]],['HocKy', $form[3]],['NamHoc', $form[2]]])->first()->DiemMieng ?? 0.0 }}"
               />
             </td>
             <td>
@@ -85,7 +85,7 @@
                 max="10"
                 min="0"
                 step="0.1"
-                value="{{ $hocsinh->Diem15P }}"
+                value="{{ App\Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $form[1]],['HocKy', $form[3]],['NamHoc', $form[2]]])->first()->Diem15P ?? 0.0 }}"
               />
             </td>
             <td>
@@ -96,7 +96,7 @@
                 max="10"
                 min="0"
                 step="0.1"
-                value="{{ $hocsinh->Diem1Tiet }}"
+                value="{{ App\Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $form[1]],['HocKy', $form[3]],['NamHoc', $form[2]]])->first()->Diem1Tiet ?? 0.0 }}"
               />
             </td>
             <td>
@@ -107,10 +107,10 @@
                 max="10"
                 min="0"
                 step="0.1"
-                value="{{ $hocsinh->DiemHK }}"
+                value="{{ App\Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $form[1]],['HocKy', $form[3]],['NamHoc', $form[2]]])->first()->DiemHK ?? 0.0 }}"
               />
             </td>
-            <td>{{ $hocsinh->DiemTongHK }}</td>
+            <td>{{ App\Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $form[1]],['HocKy', $form[3]],['NamHoc', $form[2]]])->first()->DiemTongHK ?? 0.0 }}</td>
           </tr>
           @endforeach
         </tbody>

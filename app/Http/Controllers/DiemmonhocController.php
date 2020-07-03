@@ -8,6 +8,8 @@ use App\Lophoc;
 use App\Hocsinh;
 use App\Monhoc;
 use Illuminate\Support\Facades\DB;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\DiemmonhocsExport;
 
 class DiemmonhocController extends Controller
 {
@@ -87,24 +89,10 @@ class DiemmonhocController extends Controller
         return redirect(route('diemmonhocs.index'));
     }
 
-    public function store(Request $req)
+    public function export($lop, $mamonhoc, $namhoc, $hocky)
     {
-        if ($req->input('DiemMieng') <= 10 && $req->input('DiemMieng') > 0 &&
-            $req->input('Diem15P') <= 10 && $req->input('Diem15P') > 0 &&
-            $req->input('Diem1Tiet') <= 10 && $req->input('Diem1Tiet') > 0 &&
-            $req->input('DiemHK') <= 10 && $req->input('DiemHK') > 0 &&
-            $req->input('DiemTongHK') <= 10 && $req->input('DiemTongHK') > 0)
-        {
-            $lophoc = Lophoc::findOrFail($request->input('MaLopHoc'));
-            $hocsinhs = $lophoc->hocsinhs();
-            foreach ($hocsinhs as $hocsinh)
-            {
-                Diemmonhoc::where('MaHocSinh',$hocsinh->MaHocSinh)
-                        ->where('MaMonHoc',$request->input('MaMonHoc'))
-                        ->where('HocKy',$request->input('HocKy'))
-                        ->where('NamHoc',$request->input('NamHoc'))
-                        ->insert([]);
-            }
-        }
+        $malop = Lophoc::where([['TenLop', $lop],['Namhoc', $namhoc]])->first()->MaLopHoc;
+        $tenmonhoc = Monhoc::find($mamonhoc)->TenMonHoc;
+        return Excel::download(new DiemmonhocsExport($lop, $tenmonhoc, $malop, $mamonhoc, $namhoc, $hocky), 'diem.csv');
     }
 }

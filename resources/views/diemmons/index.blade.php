@@ -60,7 +60,7 @@
   <div class="card mt-3">
     <div class="card-header">Thông tin điểm học sinh</div>
     <div class="card-body">
-      <button class="btn mb-3"><span><i class="fa fa-download mr-2"></i></span>Export</button>
+      <a href="/diem/export/{{ request('TenLop') ."/". request('MonHoc') ."/". request('NamHoc') ."/". request('HocKy') }}" class="btn mb-3"><span><i class="fa fa-download mr-2"></i></span>Export</a>
       <h4 class="text-center">{{ request('TenLop') }}</h4>
       <table id="DataList" class="table table-bordered table-responsive-md table-hover">
 

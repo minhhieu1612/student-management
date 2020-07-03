@@ -60,6 +60,7 @@ Route::prefix('diem')->group(function() {
     Route::put('/sua/{lop}/{mamonhoc}/{namhoc}/{hocky}', 'DiemmonhocController@edit');
     Route::post('/', 'DiemmonhocController@store');
     Route::post('/xem', 'DiemmonhocController@show');
+    Route::get('/export/{lop}/{mamonhoc}/{namhoc}/{hocky}', 'DiemmonhocController@export');
 });
 
 Route::prefix('baocao')->group(function() {

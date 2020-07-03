@@ -12,36 +12,40 @@ tham số <?php $__env->endSlot(); ?> <?php if (isset($__componentOriginal019f52
       Thông tin tham số
     </div>
     <div class="card-body">
+      <?php $__currentLoopData = $cauhinhs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cauhinh): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+      <?php if($loop->index == 0): ?>
       <div class="row">
         <div class="col-md-6">
           <div class="form-group row">
             <label class="label col-md-4" for="TuoiToiThieu">Tuổi tối thiểu <span class="text-danger">*</span></label>
-            <div class="col-md-8">15</div>
+          <div class="col-md-8"><?php echo e($cauhinh->TuoiToiThieu); ?></div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4" for="SoLopToiDa">Số lớp tối đa <span class="text-danger">*</span></label>
-            <div class="col-md-8">9</div>
+            <div class="col-md-8"><?php echo e($cauhinh->SoLopToiDa); ?></div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4" for="SiSoToiDa">Sĩ số tối đa <span class="text-danger">*</span></label>
-            <div class="col-md-8">20</div>
+            <div class="col-md-8"><?php echo e($cauhinh->SiSoToiDa); ?></div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="form-group row">
             <label class="label col-md-4" for="DiemToiThieu">Điểm tối thiểu <span class="text-danger">*</span></label>
-            <div class="col-md-8">0</div>
+            <div class="col-md-8"><?php echo e($cauhinh->DiemToiThieu); ?></div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4" for="DiemToiDa">Điểm tối đa <span class="text-danger">*</span></label>
-            <div class="col-md-8">10</div>
+            <div class="col-md-8"><?php echo e($cauhinh->DiemToiDa); ?></div>
           </div>
           <div class="form-group row">
             <label class="label col-md-4" for="DiemDat">Điểm đạt <span class="text-danger">*</span></label>
-            <div class="col-md-8">5</div>
+            <div class="col-md-8"><?php echo e($cauhinh->DiemDat); ?></div>
           </div>
         </div>
       </div>
+      <?php endif; ?>
+      <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </div>
   </div>
   <div class="text-center mt-5">

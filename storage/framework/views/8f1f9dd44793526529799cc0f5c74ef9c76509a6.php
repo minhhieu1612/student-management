@@ -48,7 +48,7 @@ Hồ sơ học sinh
 <table id="DataList" class="table table-bordered table-responsive-md table-hover">
   <thead>
     <tr>
-      <th>Mã Học Sinh</th>
+      <th>STT</th>
       <th>Họ và Tên</th>
       <th>Giới Tính</th>
       <th>Ngày Sinh</th>
@@ -61,7 +61,7 @@ Hồ sơ học sinh
     <?php //Vòng lập foreach lấy giá vào bảng?>
     <?php $__currentLoopData = $hocsinhs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $hocsinh): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
     <tr>
-      <td><?php echo e($hocsinh->MaHocSinh); ?></td>
+      <td><?php echo e($loop->index + 1); ?></td>
       <td><a href="/hosohocsinh/xem/<?php echo e($hocsinh->MaHocSinh); ?>"><?php echo e($hocsinh->HoVaTen); ?></a></td>
       <td><?php echo e($hocsinh->GioiTinh ? "Nam" : "Nữ"); ?></td>
       <td><?php echo e($hocsinh->NgaySinh); ?></td>
@@ -110,5 +110,4 @@ Hồ sơ học sinh
   </tbody>
 </table>
 <?php $__env->stopSection(); ?>
-
 <?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\hieupc\Desktop\student-management\resources\views/hocsinhs/index.blade.php ENDPATH**/ ?>

@@ -69,5 +69,6 @@ Route::prefix('baocao')->group(function() {
 
 Route::prefix('cauhinh')->group(function() {
     Route::get('/', 'CauhinhController@index')->name('cauhinhs.index');
-    Route::get('/sua', 'CauhinhController@edit');
+    Route::get('/sua', 'CauhinhController@show_edit');
+    Route::post('/sua', 'CauhinhController@edit');
 });

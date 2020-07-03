@@ -45,7 +45,7 @@ Hồ sơ học sinh
 <table id="DataList" class="table table-bordered table-responsive-md table-hover">
   <thead>
     <tr>
-      <th>Mã Học Sinh</th>
+      <th>STT</th>
       <th>Họ và Tên</th>
       <th>Giới Tính</th>
       <th>Ngày Sinh</th>
@@ -58,7 +58,7 @@ Hồ sơ học sinh
     <?php //Vòng lập foreach lấy giá vào bảng?>
     @foreach($hocsinhs as $hocsinh)
     <tr>
-      <td>{{ $hocsinh->MaHocSinh }}</td>
+      <td>{{ $loop->index + 1 }}</td>
       <td><a href="/hosohocsinh/xem/{{ $hocsinh->MaHocSinh }}">{{ $hocsinh->HoVaTen }}</a></td>
       <td>{{ $hocsinh->GioiTinh ? "Nam" : "Nữ" }}</td>
       <td>{{ $hocsinh->NgaySinh }}</td>

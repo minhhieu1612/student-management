@@ -14,108 +14,58 @@ tham số <?php $__env->endSlot(); ?> <?php if (isset($__componentOriginal019f52
         Thông tin tham số
       </div>
       <div class="card-body">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group row">
-              <label class="label col-md-4" for="TuoiToiThieu"
-                >Tuổi tối thiểu <span class="text-danger">*</span></label
-              >
-              <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="TuoiToiThieu"
-                  id="TuoiToiThieu"
-                  value=""
-                  placeholder=""
-                  required
-                />
+        <?php $__currentLoopData = $cauhinhs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cauhinh): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        <?php if($loop->index == 0): ?>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" value="1" name="MaCauHinh" class="d-none">
+              <div class="form-group row">
+                <label class="label col-md-4" for="TuoiToiThieu">Tuổi tối thiểu <span class="text-danger">*</span></label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="TuoiToiThieu" id="TuoiToiThieu" value="<?php echo e($cauhinh->TuoiToiThieu ?? ""); ?>"
+                    placeholder="" required />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="label col-md-4" for="SoLopToiDa">Số lớp tối đa <span class="text-danger">*</span></label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="SoLopToiDa" id="SoLopToiDa" value="<?php echo e($cauhinh->SoLopToiDa ?? ""); ?>" placeholder=""
+                    required />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="label col-md-4" for="SiSoToiDa">Sĩ số tối đa <span class="text-danger">*</span></label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="SiSoToiDa" id="SiSoToiDa" value="<?php echo e($cauhinh->SiSoToiDa ?? ""); ?>" placeholder=""
+                    required />
+                </div>
               </div>
             </div>
-            <div class="form-group row">
-              <label class="label col-md-4" for="SoLopToiDa"
-                >Số lớp tối đa <span class="text-danger">*</span></label
-              >
-              <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="SoLopToiDa"
-                  id="SoLopToiDa"
-                  value=""
-                  placeholder=""
-                  required
-                />
+            <div class="col-md-6">
+              <div class="form-group row">
+                <label class="label col-md-4" for="DiemToiThieu">Điểm tối thiểu <span class="text-danger">*</span></label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="DiemToiThieu" id="DiemToiThieu" value="<?php echo e($cauhinh->DiemToiThieu ?? ""); ?>" placeholder=""
+                    required />
+                </div>
               </div>
-            </div>
-            <div class="form-group row">
-              <label class="label col-md-4" for="SiSoToiDa"
-                >Sĩ số tối đa <span class="text-danger">*</span></label
-              >
-              <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="SiSoToiDa"
-                  id="SiSoToiDa"
-                  value=""
-                  placeholder=""
-                  required
-                />
+              <div class="form-group row">
+                <label class="label col-md-4" for="DiemToiDa">Điểm tối đa <span class="text-danger">*</span></label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="DiemToiDa" id="DiemToiDa" value="<?php echo e($cauhinh->DiemToiDa ?? ""); ?>" placeholder=""
+                    required />
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group row">
-              <label class="label col-md-4" for="DiemToiThieu"
-                >Điểm tối thiểu <span class="text-danger">*</span></label
-              >
-              <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="DiemToiThieu"
-                  id="DiemToiThieu"
-                  value=""
-                  placeholder=""
-                  required
-                />
-              </div>
-            </div>
-            <div class="form-group row">
-              <label class="label col-md-4" for="DiemToiDa"
-                >Điểm tối đa <span class="text-danger">*</span></label
-              >
-              <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="DiemToiDa"
-                  id="DiemToiDa"
-                  value=""
-                  placeholder=""
-                  required
-                />
-              </div>
-            </div>
-            <div class="form-group row">
-              <label class="label col-md-4" for="DiemDat"
-                >Điểm đạt <span class="text-danger">*</span></label
-              >
-              <div class="col-md-8">
-                <input
-                  class="form-control"
-                  type="text"
-                  name="DiemDat"
-                  id="DiemDat"
-                  value=""
-                  placeholder=""
-                  required
-                />
+              <div class="form-group row">
+                <label class="label col-md-4" for="DiemDat">Điểm đạt <span class="text-danger">*</span></label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" name="DiemDat" id="DiemDat" value="<?php echo e($cauhinh->DiemDat ?? ""); ?>" placeholder="" required />
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        <?php endif; ?>
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
       </div>
     </div>
     <div class="text-center mt-5">

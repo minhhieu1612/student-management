@@ -5,6 +5,7 @@ namespace App\Exports;
 use App\Diemmonhoc;
 use Maatwebsite\Excel\Concerns\FromQuery;
 use Maatwebsite\Excel\Concerns\WithHeadings;
+use Maatwebsite\Excel\Concerns\WithMapping;
 use Maatwebsite\Excel\Concerns\ShouldAutoSize;
 
 class DiemmonhocsExport implements FromQuery, WithHeadings, ShouldAutoSize
@@ -16,13 +17,25 @@ class DiemmonhocsExport implements FromQuery, WithHeadings, ShouldAutoSize
     public function headings(): array
     {
         return [
-            'Ma Hoc Sinh',
-            'Ho Va Ten',
-            'Diem mieng',
-            'Diem 15p',
-            'Diem 1 tiet',
-            'Diem hoc ky',
-            'Diem tong ket',
+            [
+                'Lop: ' . $this->lop,
+                '',
+                'Nam hoc: ' . $this->namhoc,
+            ],
+            [
+                'Mon: ' . $this->tenmonhoc,
+                '',
+                'Hoc ky: ' . $this->hocky
+            ],
+            [
+                'Ma Hoc Sinh',
+                'Ho Va Ten',
+                'Diem mieng',
+                'Diem 15p',
+                'Diem 1 tiet',
+                'Diem hoc ky',
+                'Diem tong ket',
+            ]
         ];
     }
 

@@ -1,12 +1,16 @@
-@extends('templates.master') @section('title','Báo cáo tổng kết theo học kỳ')
-@section('content') @component('components.pageTitle') @slot('title') Báo cáo tổng kết theo học kỳ @endslot @endcomponent
+ <?php $__env->startSection('title','Báo cáo tổng kết theo học kỳ'); ?>
+<?php $__env->startSection('content'); ?> <?php $__env->startComponent('components.pageTitle'); ?> <?php $__env->slot('title'); ?> Báo cáo tổng kết theo học kỳ <?php $__env->endSlot(); ?> <?php if (isset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55)): ?>
+<?php $component = $__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55; ?>
+<?php unset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55); ?>
+<?php endif; ?>
+<?php echo $__env->renderComponent(); ?>
 
 <div>
   <div class="card mt-3">
     <div class="card-header">Thông tin chung</div>
     <div class="card-body">
       <form action="/baocao/theohocky" method="POST" class="row">
-        @csrf
+        <?php echo csrf_field(); ?>
         <div class="col-md-6">
          <div class="form-group row">
             <label class="label col-md-4" for="HocKy"
@@ -40,9 +44,9 @@
                 id="NamHoc"
                 value=""
               >
-                @foreach($namhocs as $namhoc)
-                <option value="{{ $namhoc->NamHoc }}">{{ $namhoc->NamHoc }}</option>
-                @endforeach
+                <?php $__currentLoopData = $namhocs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $namhoc): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <option value="<?php echo e($namhoc->NamHoc); ?>"><?php echo e($namhoc->NamHoc); ?></option>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
               </select>
             </div>
           </div>
@@ -70,21 +74,23 @@
           </tr>
         </thead>
         <tbody>
-          @foreach($lops ?? [] as $index => $lop)
+          <?php $__currentLoopData = $lops ?? []; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $index => $lop): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           <tr>
-            <td>{{ $index + 1 }}</td>
-            <td>{{ $lop->MaLopHoc }}</td>
-            <td>{{ $lop->Khoi }}</td>
-            <td>{{ $lop->TenLop }}</td>
-            <td>{{ $lop->SiSo }}</td>
-            <td>{{ $dats[$index] }}</td>
-            <td>{{ $dats[$index] / $lop->SiSo * 100 }}%</td>
+            <td><?php echo e($index + 1); ?></td>
+            <td><?php echo e($lop->MaLopHoc); ?></td>
+            <td><?php echo e($lop->Khoi); ?></td>
+            <td><?php echo e($lop->TenLop); ?></td>
+            <td><?php echo e($lop->SiSo); ?></td>
+            <td><?php echo e($dats[$index]); ?></td>
+            <td><?php echo e($dats[$index] / $lop->SiSo * 100); ?>%</td>
           </tr>
-          @endforeach
+          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </tbody>
       </table>
     </div>
   </div>
 </div>
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\student-management\resources\views/baocaos/bySemester.blade.php ENDPATH**/ ?>

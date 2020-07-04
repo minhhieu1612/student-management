@@ -66,6 +66,8 @@ Route::prefix('diem')->group(function() {
 Route::prefix('baocao')->group(function() {
     Route::get('/theomon', 'BaocaoController@bySubject')->name('baocaos.bySubject');
     Route::get('/theohocky', 'BaocaoController@bySemester');
+    Route::post('/theomon', 'BaocaoController@showBySubject');
+    Route::post('/theohocky', 'BaocaoController@showBySemester');
 });
 
 Route::prefix('cauhinh')->group(function() {

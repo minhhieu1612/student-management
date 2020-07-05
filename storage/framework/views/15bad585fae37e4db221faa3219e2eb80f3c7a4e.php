@@ -1,9 +1,9 @@
 
-<?php $__env->startSection('title','Thêm mới lớp học'); ?>
+<?php $__env->startSection('title','Chỉnh sửa lớp học'); ?>
 <?php $__env->startSection('content'); ?>
 
 <?php $__env->startComponent('components.pageTitle'); ?>
-<?php $__env->slot('title'); ?> Thêm mới lớp học
+<?php $__env->slot('title'); ?> Chỉnh sửa lớp học
 <?php $__env->endSlot(); ?>
 <?php if (isset($__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55)): ?>
 <?php $component = $__componentOriginal019f52bf54f3f8d29d2774d8872dfcd2ae2cbe55; ?>
@@ -12,7 +12,7 @@
 <?php echo $__env->renderComponent(); ?>
 
 <div>
-  <form method="POST" action="/lophoc/taomoi">
+  <form method="POST" action="/lophoc/sua/<?php echo e($lophoc->MaLopHoc); ?>">
     <?php echo csrf_field(); ?>
     <div class="card">
       <div class="card-header">
@@ -24,13 +24,15 @@
             <div class="form-group row">
               <label class="label col-md-4" for="TenLop">Tên lớp học <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <input class="form-control" type="text" name="TenLop" id="TenLop" value="" placeholder="" required />
+                <input class="form-control" type="text" name="TenLop" id="TenLop" value="<?php echo e($lophoc->TenLop); ?>"
+                  placeholder="" required />
               </div>
             </div>
             <div class="form-group row">
               <label class="label col-md-4" for="Khoi">Khối <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <input class="form-control" type="number" name="Khoi" id="Khoi" value="" placeholder="" required />
+                <input class="form-control" type="number" name="Khoi" id="Khoi" value="<?php echo e($lophoc->Khoi); ?>"
+                  placeholder="" required />
               </div>
             </div>
           </div>
@@ -38,7 +40,8 @@
             <div class="form-group row">
               <label class="label col-md-4" for="NamHoc">Năm học <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <input class="form-control" type="number" name="NamHoc" id="NamHoc" value="" placeholder="" required />
+                <input class="form-control" type="number" name="NamHoc" id="NamHoc" value="<?php echo e($lophoc->NamHoc); ?>"
+                  placeholder="" required />
               </div>
             </div>
           </div>
@@ -54,4 +57,4 @@
 
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\student-management\resources\views/lophocs/create.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('templates.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\xampp\htdocs\student-management\resources\views/lophocs/edit.blade.php ENDPATH**/ ?>

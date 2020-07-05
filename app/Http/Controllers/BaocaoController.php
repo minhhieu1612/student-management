@@ -6,17 +6,33 @@ use Illuminate\Http\Request;
 use App\Monhoc;
 use App\Lophoc;
 use Illuminate\Support\Facades\DB;
+use Maatwebsite\Excel\Facades\Excel;
+use App\Exports\BaocaotheomonsExport;
 
 class BaocaoController extends Controller
 {
     public function bySubject()
     {
+        $lophocs = Lophoc::all();
+        foreach ($lophocs as $lophoc)
+        {
+          $siso = DB::table('hocsinh_lophoc')->where('MaLopHoc', $lophoc->MaLopHoc)->count();
+          $lophoc->SiSo = $siso;
+          $lophoc->save();
+        }
         $namhocs = Lophoc::select('NamHoc')->groupBy('NamHoc')->get();
         $monhocs = Monhoc::all();
         return view('baocaos.bySubject', compact('namhocs', 'monhocs'));
     }
 
     public function bySemester() {
+        $lophocs = Lophoc::all();
+        foreach ($lophocs as $lophoc)
+        {
+          $siso = DB::table('hocsinh_lophoc')->where('MaLopHoc', $lophoc->MaLopHoc)->count();
+          $lophoc->SiSo = $siso;
+          $lophoc->save();
+        }
         $namhocs = Lophoc::select('NamHoc')->groupBy('NamHoc')->get();
         return view('baocaos.bySemester', compact('namhocs'));
     }
@@ -81,6 +97,12 @@ class BaocaoController extends Controller
         }
 
         return view('baocaos.bySemester', compact('hocky', 'namhoc', 'namhocs', 'lops', 'dats'));
+    }
+
+    public function exportBySubject($mamonhoc, $namhoc, $hocky)
+    {
+        $tenmonhoc = Monhoc::find($mamonhoc)->TenMonHoc;
+        return Excel::download(new BaocaotheomonsExport($tenmonhoc, $mamonhoc, $namhoc, $hocky), 'baocaotheomon.csv');
     }
 }
 

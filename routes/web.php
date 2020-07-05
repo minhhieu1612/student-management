@@ -68,6 +68,7 @@ Route::prefix('baocao')->group(function() {
     Route::get('/theohocky', 'BaocaoController@bySemester');
     Route::post('/theomon', 'BaocaoController@showBySubject');
     Route::post('/theohocky', 'BaocaoController@showBySemester');
+    Route::get('/theomon/export/{mamonhoc}/{namhoc}/{hocky}', 'BaocaoController@exportBySubject');
 });
 
 Route::prefix('cauhinh')->group(function() {

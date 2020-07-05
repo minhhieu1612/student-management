@@ -12,6 +12,12 @@ class LophocController extends Controller
     public function index()
     {
         $lophocs = Lophoc::all();
+        foreach ($lophocs as $lophoc)
+        {
+          $siso = DB::table('hocsinh_lophoc')->where('MaLopHoc', $lophoc->MaLopHoc)->count();
+          $lophoc->SiSo = $siso;
+          $lophoc->save();
+        }
         return view('lophocs.index', compact('lophocs'));
     }
 
@@ -88,29 +94,19 @@ class LophocController extends Controller
       return back();
     }
 
-    public function store1(Request $request)
+    public function store1()
     {
-        $max_siso = DB::table('thamsos')->value('SiSoToiDa');
         $max_solop = DB::table('thamsos')->value('SoLopToiDa');
-        $MaHocSinhs = explode(',', $request->input('MaHocSinh'));
-        $siso = count($MaHocSinhs);
-        $solop = Lophoc::where('Khoi', $request->input('Khoi'))->get()->count();
+        $solop = Lophoc::where('Khoi', request('Khoi'))->get()->count();
 
-        if ($siso <= $max_siso && $solop <= $max_solop)
+        if ($solop <= $max_solop)
         {
-            $id = DB::table('lophocs')->insertGetID([
-                'NamHoc' => $request->input('NamHoc'),
-                'Khoi' => $request->input('Khoi'),
-                'TenLop' => $request->input('TenLop'),
-                'SiSo' => $siso,
-            ]);
-            foreach ($MaHocSinhs as $ma)
-            {
-               DB::table('hocsinh_lophoc')->insert([
-                    'MaLopHoc' => $id,
-                    'MaHocSinh' => $ma
-                ]);
-            }
+          Lophoc::create([
+            'TenLop' => request('TenLop'),
+            'Khoi' => request('Khoi'),
+            'NamHoc' => request('NamHoc'),
+            'SiSo' => 0
+          ]);
         }
 
         return redirect(route('lophocs.index'));

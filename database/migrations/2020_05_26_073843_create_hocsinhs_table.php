@@ -20,7 +20,6 @@ class CreateHocsinhsTable extends Migration
             $table->date('NgaySinh');
             $table->text('DiaChi');
             $table->text('QueQuan')->nullable();
-            $table->timestamps();
         });
     }
 

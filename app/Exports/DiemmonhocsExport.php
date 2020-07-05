@@ -18,23 +18,23 @@ class DiemmonhocsExport implements FromQuery, WithHeadings, ShouldAutoSize
     {
         return [
             [
-                'Lop: ' . $this->lop,
+                'Lớp: ' . $this->lop,
                 '',
-                'Nam hoc: ' . $this->namhoc,
+                'Năm học: ' . $this->namhoc,
             ],
             [
-                'Mon: ' . $this->tenmonhoc,
+                'Môn: ' . $this->tenmonhoc,
                 '',
-                'Hoc ky: ' . $this->hocky
+                'Học kỳ: ' . $this->hocky
             ],
             [
-                'Ma Hoc Sinh',
-                'Ho Va Ten',
-                'Diem mieng',
-                'Diem 15p',
-                'Diem 1 tiet',
-                'Diem hoc ky',
-                'Diem tong ket',
+                'Mã Học Sinh',
+                'Họ Và Tên',
+                'Điểm miệng',
+                'Điểm 15p',
+                'Điểm 1 tiết',
+                'Điểm học kỳ',
+                'Điểm tổng kết',
             ]
         ];
     }

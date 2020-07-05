@@ -82,7 +82,7 @@
             <td><?php echo e($lop->TenLop); ?></td>
             <td><?php echo e($lop->SiSo); ?></td>
             <td><?php echo e($dats[$index]); ?></td>
-            <td><?php echo e($dats[$index] / $lop->SiSo * 100); ?>%</td>
+            <td><?php echo e($dats[$index] / (($lop->SiSo == 0) ? 1 : $lop->SiSo) * 100); ?>%</td>
           </tr>
           <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </tbody>

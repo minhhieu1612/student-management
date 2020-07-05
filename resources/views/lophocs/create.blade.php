@@ -26,11 +26,7 @@
             <div class="form-group row">
               <label class="label col-md-4" for="Khoi">Khối <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <select class="form-control custom-select" name="Khoi" id="Khoi" value="Chọn khối">
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
-                </select>
+                <input class="form-control" type="number" name="Khoi" id="Khoi" value="" placeholder="" required />
               </div>
             </div>
           </div>
@@ -38,11 +34,7 @@
             <div class="form-group row">
               <label class="label col-md-4" for="NamHoc">Năm học <span class="text-danger">*</span></label>
               <div class="col-md-8">
-                <select class="form-control custom-select" name="NamHoc" id="NamHoc" value="Chọn khối">
-                  <option value="2018">2018</option>
-                  <option value="2019">2019</option>
-                  <option value="2020">2020</option>
-                </select>
+                <input class="form-control" type="number" name="NamHoc" id="NamHoc" value="" placeholder="" required />
               </div>
             </div>
           </div>

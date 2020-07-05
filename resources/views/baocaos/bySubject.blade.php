@@ -70,7 +70,7 @@
   <div class="card mt-3">
     <div class="card-header">Thông tin điểm học sinh</div>
     <div class="card-body">
-      <button class="btn mb-3"><span><i class="fa fa-download mr-2"></i></span>Export</button>
+      <a href="/baocao/theomon/export/{{ request('MonHoc') ."/". request('NamHoc') ."/". request('HocKy') }}" class="btn mb-3"><span><i class="fa fa-download mr-2"></i></span>Export</a>
       <table
         id="DataList"
         class="table table-bordered table-responsive-md table-hover"
@@ -95,7 +95,7 @@
             <td>{{ $lop->TenLop }}</td>
             <td>{{ $lop->SiSo }}</td>
             <td>{{ $dats[$index] }}</td>
-            <td>{{ $dats[$index] / $lop->SiSo * 100 }}%</td>
+            <td>{{ $dats[$index] / (($lop->SiSo == 0) ? 1 : $lop->SiSo) * 100 }}%</td>
           </tr>
           @endforeach
         </tbody>

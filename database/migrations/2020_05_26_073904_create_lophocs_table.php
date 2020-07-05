@@ -19,7 +19,7 @@ class CreateLophocsTable extends Migration
             $table->string('TenLop');
             $table->integer('NamHoc');
             $table->integer('SiSo');
-            $table->timestamps();
+            $table->unique(['Khoi', 'TenLop', 'NamHoc']);
         });
     }
 

@@ -74,7 +74,7 @@
   <div class="card mt-3">
     <div class="card-header">Thông tin điểm học sinh</div>
     <div class="card-body">
-      <button class="btn mb-3"><span><i class="fa fa-download mr-2"></i></span>Export</button>
+      <a href="/baocao/theomon/export/<?php echo e(request('MonHoc') ."/". request('NamHoc') ."/". request('HocKy')); ?>" class="btn mb-3"><span><i class="fa fa-download mr-2"></i></span>Export</a>
       <table
         id="DataList"
         class="table table-bordered table-responsive-md table-hover"
@@ -99,7 +99,7 @@
             <td><?php echo e($lop->TenLop); ?></td>
             <td><?php echo e($lop->SiSo); ?></td>
             <td><?php echo e($dats[$index]); ?></td>
-            <td><?php echo e($dats[$index] / $lop->SiSo * 100); ?>%</td>
+            <td><?php echo e($dats[$index] / (($lop->SiSo == 0) ? 1 : $lop->SiSo) * 100); ?>%</td>
           </tr>
           <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </tbody>

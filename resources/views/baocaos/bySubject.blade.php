@@ -73,7 +73,7 @@
             <td>{{ $lop->SiSo }}</td>
             <td>{{ $dats[$index] }}</td>
             <td {{ ($dats[$index] / (($lop->SiSo == 0) ? 1 : $lop->SiSo)) == 1 ? 'class=text-passed':'' }}>
-              {{ $dats[$index] / (($lop->SiSo == 0) ? 1 : $lop->SiSo) * 100 }}%</td>
+              {{ round($dats[$index] / (($lop->SiSo == 0) ? 1 : $lop->SiSo) * 100,0) }}%</td>
           </tr>
           @endforeach
         </tbody>

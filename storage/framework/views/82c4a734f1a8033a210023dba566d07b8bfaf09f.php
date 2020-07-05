@@ -77,7 +77,7 @@
             <td><?php echo e($lop->SiSo); ?></td>
             <td><?php echo e($dats[$index]); ?></td>
             <td <?php echo e(($dats[$index] / (($lop->SiSo == 0) ? 1 : $lop->SiSo)) == 1 ? 'class=text-passed':''); ?>>
-              <?php echo e($dats[$index] / (($lop->SiSo == 0) ? 1 : $lop->SiSo) * 100); ?>%</td>
+              <?php echo e(round($dats[$index] / (($lop->SiSo == 0) ? 1 : $lop->SiSo) * 100,0)); ?>%</td>
           </tr>
           <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </tbody>

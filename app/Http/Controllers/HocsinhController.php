@@ -37,6 +37,8 @@ class HocsinhController extends Controller
         $birthday = new Carbon(request('NgaySinh'));
         $diff = $today->diff($birthday);
         $min_age = DB::table('thamsos')->value('TuoiToiThieu');
+        $max_siso = DB::table('thamsos')->value('SiSoToiDa');
+
         if ($diff->y >= $min_age)
         {
             $hocsinh = new Hocsinh();
@@ -49,7 +51,15 @@ class HocsinhController extends Controller
 
             if(!is_null(request('MaLopHoc')))
             {
-                DB::table('hocsinh_lophoc')->insert(['MaHocSinh' => $hocsinh->MaHocSinh, 'MaLopHoc' => request('MaLopHoc')]);
+                $lop = Lophoc::find(request('MaLopHoc'));
+                $siso = $lop->SiSo;
+                if ($siso < $max_siso)
+                {
+                    DB::table('hocsinh_lophoc')->insert(['MaHocSinh' => $hocsinh->MaHocSinh, 'MaLopHoc' => request('MaLopHoc')]);
+                    $lop->SiSo += 1;
+                    $lop->save();
+                }
+                
             }
 
         }
@@ -80,11 +90,27 @@ class HocsinhController extends Controller
 
         if (!is_null(request('MaLopHoc')))
         {
-           DB::table('hocsinh_lophoc')
-            ->updateOrInsert([
-                'MaHocSinh' => $MaHocSinh,
-                'MaLopHoc' => request('MaLopHoc')
-            ]);
+            $check = DB::table('hocsinh_lophoc')->where('MaHocSinh', $MaHocSinh)->first();
+            if($check != null)
+            {
+                $malopcu = $check->MaLopHoc;
+                $lopcu = Lophoc::find($malopcu);
+                $lopcu->Siso -= 1;
+                $lopcu->save();
+            }
+            
+            $lop = Lophoc::find(request('MaLopHoc'));
+            $siso = $lop->SiSo;
+            if ($siso < $max_siso)
+            {
+                DB::table('hocsinh_lophoc')
+                ->updateOrInsert([
+                    'MaHocSinh' => $MaHocSinh,
+                    'MaLopHoc' => request('MaLopHoc')
+                ]);
+                $lop->SiSo += 1;
+                $lop->save();
+            }
         }
 
 

@@ -73,7 +73,7 @@
                 name="mieng{{ $hocsinh->MaHocSinh }}"
                 max="10"
                 min="0"
-                step="0.1"
+                step="0.5"
                 value="{{ App\Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $form[1]],['HocKy', $form[3]],['NamHoc', $form[2]]])->first()->DiemMieng ?? 0.0 }}"
               />
             </td>
@@ -84,7 +84,7 @@
                 name="15p{{ $hocsinh->MaHocSinh }}"
                 max="10"
                 min="0"
-                step="0.1"
+                step="0.5"
                 value="{{ App\Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $form[1]],['HocKy', $form[3]],['NamHoc', $form[2]]])->first()->Diem15P ?? 0.0 }}"
               />
             </td>
@@ -95,7 +95,7 @@
                 name="1tiet{{ $hocsinh->MaHocSinh }}"
                 max="10"
                 min="0"
-                step="0.1"
+                step="0.5"
                 value="{{ App\Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $form[1]],['HocKy', $form[3]],['NamHoc', $form[2]]])->first()->Diem1Tiet ?? 0.0 }}"
               />
             </td>
@@ -106,7 +106,7 @@
                 name="hocky{{ $hocsinh->MaHocSinh }}"
                 max="10"
                 min="0"
-                step="0.1"
+                step="0.5"
                 value="{{ App\Diemmonhoc::where([['MaHocSinh', $hocsinh->MaHocSinh],['MaMonHoc', $form[1]],['HocKy', $form[3]],['NamHoc', $form[2]]])->first()->DiemHK ?? 0.0 }}"
               />
             </td>

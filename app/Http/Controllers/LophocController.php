@@ -12,12 +12,6 @@ class LophocController extends Controller
     public function index()
     {
         $lophocs = Lophoc::all();
-        foreach ($lophocs as $lophoc)
-        {
-          $siso = DB::table('hocsinh_lophoc')->where('MaLopHoc', $lophoc->MaLopHoc)->count();
-          $lophoc->SiSo = $siso;
-          $lophoc->save();
-        }
         return view('lophocs.index', compact('lophocs'));
     }
 
@@ -97,9 +91,9 @@ class LophocController extends Controller
     public function store1()
     {
         $max_solop = DB::table('thamsos')->value('SoLopToiDa');
-        $solop = Lophoc::where('Khoi', request('Khoi'))->get()->count();
+        $solop = Lophoc::all()->count();
 
-        if ($solop <= $max_solop)
+        if ($solop < $max_solop)
         {
           Lophoc::create([
             'TenLop' => request('TenLop'),

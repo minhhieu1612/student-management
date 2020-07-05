@@ -23,8 +23,6 @@
       <th>Tên lớp học</th>
       <th>Nam Hoc</th>
       <th>Sĩ Số</th>
-      <th>Ngày tạo</th>
-      <th>Ngày cập nhật</th>
       <th></th>
     </tr>
   </thead>
@@ -37,8 +35,6 @@
       <td><a href="/lophoc/xem/<?php echo e($lophoc->MaLopHoc); ?>"><?php echo e($lophoc->TenLop); ?></a></td>
       <td><?php echo e($lophoc->NamHoc); ?></td>
       <td><?php echo e($lophoc->SiSo); ?></td>
-      <td><?php echo e($lophoc->created_at ? $lophoc->created_at->format('d/m/Y H:i'):''); ?></td>
-      <td><?php echo e($lophoc->updated_at ? $lophoc->updated_at->format('d/m/Y H:i'):''); ?></td>
       <td>
         <div class="dropdown">
           <button class="btn btn-primary mt-n1 dropdown-toggle" type="button" id="action-<?php echo e($lophoc->MaLopHoc); ?>"

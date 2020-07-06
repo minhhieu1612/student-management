@@ -107,40 +107,40 @@
     </div>
     <div class="card-body">
       <div class="row semester d-flex">
-        <div class="col-md-6">
-          @foreach($monhocs as $monhoc)
+        @foreach($monhocs as $monhoc)
+        @if($loop->index == 0 || $loop->index == 5 )<div class="col-md-6"> @endif
           <div class="form-group row">
             <label class="label col-md-4">{{ $monhoc->TenMonHoc }}</label>
             <div class="col-md-8">
               <p class="fs-14">{{ $diemhk1->where('MaMonHoc', $monhoc->MaMonHoc)->first()->DiemTongHK ?? '' }}</p>
             </div>
           </div>
-          @endforeach
-        </div>
+        @if($loop->index == 4 || $loop->index == $loop->count-1  )</div> @endif
+        @endforeach
       </div>
       <div class="row semester">
-        <div class="col-md-6">
-          @foreach($monhocs as $monhoc)
+        @foreach($monhocs as $monhoc)
+        @if($loop->index == 0 || $loop->index == 5 )<div class="col-md-6"> @endif
           <div class="form-group row">
             <label class="label col-md-4">{{ $monhoc->TenMonHoc }}</label>
             <div class="col-md-8">
               <p class="fs-14">{{ $diemhk2->where('MaMonHoc', $monhoc->MaMonHoc)->first()->DiemTongHK ?? '' }}</p>
             </div>
           </div>
-          @endforeach
-        </div>
+        @if($loop->index == 4 || $loop->index == $loop->count-1  )</div> @endif
+        @endforeach
       </div>
       <div class="row semester">
-        <div class="col-md-6">
-          @foreach($monhocs as $monhoc)
+        @foreach($monhocs as $monhoc)
+          @if($loop->index == 0 || $loop->index == 5 )<div class="col-md-6"> @endif
           <div class="form-group row">
             <label class="label col-md-4">{{ $monhoc->TenMonHoc }}</label>
             <div class="col-md-8">
               <p class="fs-14">{{ (($diemhk1->where('MaMonHoc', $monhoc->MaMonHoc)->first()->DiemTongHK ?? 0.0) + ($diemhk2->where('MaMonHoc', $monhoc->MaMonHoc)->first()->DiemTongHK ?? 0.0)) / 2 }}</p>
             </div>
           </div>
-          @endforeach
-        </div>
+          @if($loop->index == 4 || $loop->index == $loop->count-1  )</div> @endif
+        @endforeach
       </div>
     </div>
   </div>
